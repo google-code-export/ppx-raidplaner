@@ -20,13 +20,16 @@ You can change the password manually in the "raid_User" table by encoding your d
 
 *RP_PASS* refers to the password of the given RP_USER.
 
-*RP_TABLE_PREFIX* should not be changed unless you renamed all tables to use another prefix. The default is "raid_".
+*RP_TABLE_PREFIX* should not be changed unless you renamed all tables to use another prefix.
+The default prefix is "raid_".
 
-*ALLOW_REGISTRATION* should be set to "false" if you do not want users to register manually. This only makes sense if your raidplaner is connected to e.g. a PhpBB3 forum.
+*ALLOW_REGISTRATION* should be set to "false" if you do not want users to register manually.
+This only makes sense if your raidplaner is connected to e.g. a PhpBB3 forum.
 
 = phpbb3.config.php =
 
-*PHPBB3_BINDING* should be set to "false" if the raidplaner is not bound to a PhpBB3 Forum. If you do that, ALLOW_REGISTRATION in the config.php should be set to "true".
+*PHPBB3_BINDING* should be set to "false" if the raidplaner is not bound to a PhpBB3 Forum.
+If you do that, ALLOW_REGISTRATION in the config.php should be set to "true".
 
 *PHPBB3_TABLE* refers to the database holding your PhpBB3 forum, e.g. "mytable".
 
@@ -34,10 +37,13 @@ You can change the password manually in the "raid_User" table by encoding your d
 
 *PHPBB3_PASS* refers to the password of the given PHPBB3_USER.
 
-*PHPBB3_TABLE_PREFIX* should be set to the value preceding all your PhpBB3 tables, e.g. "phpbb_". Use an empty string if your tables have no prefix.
+*PHPBB3_TABLE_PREFIX* should be set to the value preceding all your PhpBB3 tables, e.g. "phpbb_".
+Use an empty string if your tables have no prefix.
 
-*PHPBB3_MEMBER_GROUPS* Should be a comma separated list of PhpBB3 group ids (e.g. "2, 3, 4"). Users within these groups will be automatically assigned the "member" status if they login the first time.
+*PHPBB3_MEMBER_GROUPS* Should be a comma separated list of PhpBB3 group ids (e.g. "2, 3, 4").
+Users within these groups will be automatically assigned the "member" status if they login the first time.
 
-*PHPBB3_RAIDLEAD_GROUPS* Should be a comma separated list of  PhpBB3 group ids (e.g. "1"). Users within these groups will be automatically assigned the "raidlead" status if they login the first time.
+*PHPBB3_RAIDLEAD_GROUPS* Should be a comma separated list of  PhpBB3 group ids (e.g. "1").
+Users within these groups will be automatically assigned the "raidlead" status if they login the first time.
 
 You can find your PhpBB3 group ids in the table "phpbb_groups". The Id needed is from the column "group_id".
