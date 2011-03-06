@@ -6,6 +6,10 @@
 
 3. Edit the two config files located in "lib/config" to match your setup.
 
+4. Login with the user "admin" and the password "admin".
+
+You can change the password manually in the "raid_User" table by encoding your desired password with an SHA1 hash.
+
 = Config.php =
 
 *SQL_HOST* refers to the server your database is running on, e.g. "mysqlhost.myhoster.com".
