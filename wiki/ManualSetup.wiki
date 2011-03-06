@@ -1,0 +1,39 @@
+= Manual setup instructions =
+
+1. Copy the unzipped data in a separate folder on your server, e.g. "raid".
+
+2. Import the database default layout into your database. A good tool for that is the import function from phpMyAdmin. All tables will be preceded by "raid_" so you can import everything into a database already in use by other systems (e.g. PhpBB3)
+
+3. Edit the two config files located in "lib/config" to match your setup.
+
+= Config.php =
+
+*SQL_HOST* refers to the server your database is running on, e.g. "mysqlhost.myhoster.com".
+
+*RP_TABLE* refers to the database you imported the default layout into, e.g. "mytable".
+
+*RP_USER* refers to the mysql user that has access to the RP_TABLE, e.g. "root".
+
+*RP_PASS* refers to the password of the given RP_USER.
+
+*RP_TABLE_PREFIX* should not be changed unless you renamed all tables to use another prefix. The default is "raid_".
+
+*ALLOW_REGISTRATION* should be set to "false" if you do not want users to register manually. This only makes sense if your raidplaner is connected to e.g. a PhpBB3 forum.
+
+= phpbb3.config.php =
+
+*PHPBB3_BINDING* should be set to "false" if the raidplaner is not bound to a PhpBB3 Forum. If you do that, ALLOW_REGISTRATION in the config.php should be set to "true".
+
+*PHPBB3_TABLE* refers to the database holding your PhpBB3 forum, e.g. "mytable".
+
+*PHPBB3_USER* refers to the mysql user that has access to the PHPBB3_TABLE, e.g. "root".
+
+*PHPBB3_PASS* refers to the password of the given PHPBB3_USER.
+
+*PHPBB3_TABLE_PREFIX* should be set to the value preceding all your PhpBB3 tables, e.g. "phpbb_". Use an empty string if your tables have no prefix.
+
+*PHPBB3_MEMBER_GROUPS* Should be a comma separated list of PhpBB3 group ids (e.g. "2, 3, 4"). Users within these groups will be automatically assigned the "member" status if they login the first time.
+
+*PHPBB3_RAIDLEAD_GROUPS* Should be a comma separated list of  PhpBB3 group ids (e.g. "1"). Users within these groups will be automatically assigned the "raidlead" status if they login the first time.
+
+You can find your PhpBB3 group ids in the table "phpbb_groups". The Id needed is from the column "group_id".
