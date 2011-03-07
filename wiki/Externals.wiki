@@ -1,0 +1,7 @@
+= Externals =
+
+Packedpixel Raidplaner uses the following 3rd party libraries:
+
+jQuery (http://www.jquery.com)
+jQuery UI (http://jqueryui.com/)
+Chris Schuld's Browser detection (http://chrisschuld.com/projects/browser-php-detecting-a-users-browser-from-php/)
