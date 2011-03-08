@@ -21,7 +21,6 @@ Version 7: tested ok, some display problems<br>
 Older versions: NOT SUPPORTED<br>
 
 *Opera*<br>
-Version 12: not tested<br>
 Version 11: tested ok<br>
 Version 10: tested ok<br>
 Older versions: NOT SUPPORTED<br>
