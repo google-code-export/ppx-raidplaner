@@ -1,5 +1,6 @@
 = Supported Browsers =
 
+Last version tested was 0.89.
 PPX Raidplaner has been tested successfully on the following browsers:
 
 *Google Chrome*<br>
