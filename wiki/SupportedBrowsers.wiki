@@ -1,0 +1,25 @@
+= Supported Browsers =
+
+PPX Raidplaner has been tested successfully on the following browsers:
+
+*Google Chrome*<br>
+Version 9: tested ok
+Version 8: tested ok
+older: not tested
+
+*Mozilla Firefox*<br>
+Version 4: tested ok
+Version 3.5: tested ok
+Version 3: not tested
+Version 2: NOT SUPPORTED
+
+*Internet Explorer*<br>
+Version 9: tested, minor display problems
+Version 8: tested, some display problems
+Version 7: tested, some display problems
+older: not tested
+
+*Opera*<br>
+Version 11: tested ok
+Version 10: tested ok
+older: not tested
