@@ -15,9 +15,9 @@ Version 3: not tested<br>
 Version 2: NOT SUPPORTED<br>
 
 *Internet Explorer*<br>
-Version 9: tested, minor display problems<br>
-Version 8: tested, some display problems<br>
-Version 7: tested, some display problems<br>
+Version 9: tested ok, minor display problems<br>
+Version 8: tested ok, some display problems<br>
+Version 7: tested ok, some display problems<br>
 older: not tested<br>
 
 *Opera*<br>
