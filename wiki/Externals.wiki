@@ -1,6 +1,6 @@
 = Externals =
 
-Packedpixel Raidplaner uses the following 3rd party libraries:
+Packedpixel Raidplaner uses the following 3rd party scripts:
 
   * jQuery (http://www.jquery.com)
 
