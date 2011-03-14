@@ -1,10 +1,16 @@
+= Introduction =
+
+As of Version 0.8.12 there is a setup script, located in the folder "setup". You can run this script to create your database and config files.<br>
+If you've got problems with the script you can follow the instructions below to configure the raidplaner by yourself.
+
 = Manual setup instructions =
 
 1. Copy the unzipped data in a separate folder on your server, e.g. "raid".
 
 2. Import the database default layout into your database. A good tool for that is the import function from phpMyAdmin. All tables will be preceded by "raid_" so you can import everything into a database already in use by other systems (e.g. PhpBB3)
 
-3. Edit the two config files located in "lib/config" to match your setup.
+3. Create and Edit the two config files located in "lib/config" to match your setup.
+The two files are named "config.php" and "config.phpbb3.php".
 
 4. Login with the user "admin" and the password "admin".
 
@@ -26,7 +32,7 @@ The default prefix is "raid_".
 *ALLOW_REGISTRATION* should be set to "false" if you do not want users to register manually.
 This only makes sense if your raidplaner is connected to e.g. a PhpBB3 forum.
 
-= phpbb3.config.php =
+= config.phpbb3.php =
 
 *PHPBB3_BINDING* should be set to "false" if the raidplaner is not bound to a PhpBB3 Forum.
 If you do that, ALLOW_REGISTRATION in the config.php should be set to "true".
