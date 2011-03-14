@@ -7,3 +7,5 @@ Packedpixel Raidplaner uses the following 3rd party libraries:
   * jQuery UI (http://jqueryui.com/)
 
   * Chris Schuld's Browser detection (http://chrisschuld.com/projects/browser-php-detecting-a-users-browser-from-php/)
+ 
+  * PHPpass for PHPBB3 (http://www.openwall.com/phpass/)
