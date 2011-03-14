@@ -14,7 +14,7 @@ You can change the password manually in the "raid_User" table by encoding your d
 
 *SQL_HOST* refers to the server your database is running on, e.g. "mysqlhost.myhoster.com".
 
-*RP_TABLE* refers to the database you imported the default layout into, e.g. "mytable".
+*RP_DATABASE* refers to the database you imported the default layout into, e.g. "mytable".
 
 *RP_USER* refers to the mysql user that has access to the RP_TABLE, e.g. "root".
 
@@ -31,7 +31,7 @@ This only makes sense if your raidplaner is connected to e.g. a PhpBB3 forum.
 *PHPBB3_BINDING* should be set to "false" if the raidplaner is not bound to a PhpBB3 Forum.
 If you do that, ALLOW_REGISTRATION in the config.php should be set to "true".
 
-*PHPBB3_TABLE* refers to the database holding your PhpBB3 forum, e.g. "mytable".
+*PHPBB3_DATABASE* refers to the database holding your PhpBB3 forum, e.g. "mytable".
 
 *PHPBB3_USER* refers to the mysql user that has access to the PHPBB3_TABLE, e.g. "root".
 
