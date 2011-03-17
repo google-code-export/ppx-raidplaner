@@ -5,7 +5,7 @@ Items and timing may change.
 
 = Version 0.9 =
 
-ETA: mid-April 2011
+ETA: mid-April 2011<br>
 "Make it feature complete"
 
  * Working and tested setup script
@@ -19,7 +19,7 @@ ETA: mid-April 2011
 
 = Version 1.0 =
 
-ETA: May 2011
+ETA: May 2011<br>
 "Polishing & code cleanup"
 
  * At least one more external user binding
