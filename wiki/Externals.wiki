@@ -6,7 +6,7 @@ Packedpixel Raidplaner uses the following 3rd party scripts:
 
   * jQuery UI (http://jqueryui.com/)
 
- * jQuery HashChange event plugin (http://benalman.com/projects/jquery-hashchange-plugin/)
+ * jQuery hash change event plugin (http://benalman.com/projects/jquery-hashchange-plugin/)
 
   * Chris Schuld's Browser detection (http://chrisschuld.com/projects/browser-php-detecting-a-users-browser-from-php/)
  
