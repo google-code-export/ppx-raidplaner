@@ -12,6 +12,7 @@ Older Versions: not tested<br>
 *Mozilla Firefox*<br>
 Version 4: tested ok<br>
 Version 3.6: tested ok<br>
+Version 3.5: test FAILED (no hashChange support)<br>
 Version 3: test FAILED (no hashChange support)<br>
 Older versions: NOT SUPPORTED<br>
 
