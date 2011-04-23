@@ -5,13 +5,14 @@ Items and timing may change.
  
 = Version 1.0 =
 
-ETA: May 2011<br>
+ETA: June 2011<br>
 "Polishing & code cleanup"
 
- * Product page 
- * Tutorial
  * Login without page reload
+ * Better drag and drop for raid setup (more like user management)
  * At least one more external user binding
  * Security checks on SQL injections and session/user hijacking
  * Cleanup code (especially the older scripts)
- * Better drag and drop for raid setup (more like user management)
+ * Product page 
+ * Tutorial
+ 
