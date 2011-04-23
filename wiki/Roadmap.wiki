@@ -3,7 +3,7 @@
 Short todo list for upcoming versions.
 Items and timing may change.
  
-= Version 1.0 =
+= Version 0.95 =
 
 ETA: June 2011<br>
 "Polishing & code cleanup"
@@ -16,3 +16,10 @@ ETA: June 2011<br>
  * Product page 
  * Tutorial
  
+= Version 1.0 =
+
+ETA: August 2011<br>
+"Release"
+
+ * API 100% fixed
+ * "Bug Free"
