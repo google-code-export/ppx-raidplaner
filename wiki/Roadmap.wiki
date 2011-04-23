@@ -2,26 +2,16 @@
 
 Short todo list for upcoming versions.
 Items and timing may change.
-
-= Version 0.9 =
-
-ETA: mid-April 2011<br>
-"Make it feature complete"
-
- * Working and tested setup script
- * Editable comments for reserved slots
- * Login without page reload
- * Visual more attractive display of twink characters
- * Better drag and drop for raid setup (more like user management)
- * Bugs marked as necessary for 0.9
- * Product page 
- * Tutorial
-
+ 
 = Version 1.0 =
 
 ETA: May 2011<br>
 "Polishing & code cleanup"
 
+ * Product page 
+ * Tutorial
+ * Login without page reload
  * At least one more external user binding
  * Security checks on SQL injections and session/user hijacking
  * Cleanup code (especially the older scripts)
+ * Better drag and drop for raid setup (more like user management)
