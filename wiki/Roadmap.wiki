@@ -23,4 +23,4 @@ ETA: August 2011<br>
 
  * API 100% fixed
  * "Bug Free"
- * Working correctly on IE7+, Safari, Chrome, Firefox3+, Opera10+ and Android2+ devices
+ * Displaying correctly on IE7+, Safari, Chrome, Firefox3+, Opera10+ and Android2+ devices
