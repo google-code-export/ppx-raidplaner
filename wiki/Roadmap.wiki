@@ -24,3 +24,4 @@ ETA: August 2011<br>
  * API 100% fixed
  * "Bug Free"
  * Displaying correctly on IE7+, Safari, Chrome, Firefox3+, Opera10+ and Android2+ devices
+ * Working with touch devices
