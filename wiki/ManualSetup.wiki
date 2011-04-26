@@ -9,8 +9,8 @@ If you've got problems with the script you can follow the instructions below to 
 
 2. Import the database default layout into your database. A good tool for that is the import function from phpMyAdmin. All tables will be preceded by "raid_" so you can import everything into a database already in use by other systems (e.g. PhpBB3)
 
-3. Create and Edit the two config files located in "lib/config" to match your setup.
-The two files are named "config.php" and "config.phpbb3.php".
+3. Create (or edit) the config files located in "lib/config" to match your setup.
+The files are listed in the section below.
 
 4. Login with the user "admin" and the password "admin".
 
