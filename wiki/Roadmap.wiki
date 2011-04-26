@@ -9,7 +9,7 @@ ETA: June 2011<br>
 "Polishing & code cleanup"
 
  * Better drag and drop for raid setup (more like user management)
- * At least one more external user binding (PHPBB2)
+ * At least one more external user binding (vBulletin, eqdkp)
  * Android (touchscreen) support
  * Security checks on SQL injections and session/user hijacking
  * Cleanup code (especially the older scripts)
