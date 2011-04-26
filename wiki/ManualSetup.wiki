@@ -18,7 +18,12 @@ You can change the password manually in the "raid_User" table by encoding your d
 The following defines can be made in each of the files listed below, e.g.
 {{{
 <?php
-   define("ALLOW_REGISTRATION", true);
+	 define("SQL_HOST", "localhost");
+	define("RP_DATABASE", "raid");
+	define("RP_USER", "root");
+	define("RP_PASS", "root");
+	define("RP_TABLE_PREFIX", "raid_");
+	define("ALLOW_REGISTRATION", false);
 ?>
 }}}
 
