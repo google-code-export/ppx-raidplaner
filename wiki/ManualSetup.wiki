@@ -39,7 +39,7 @@ If you do that, ALLOW_REGISTRATION in the config.php should be set to "true".
 
 *PHPBB3_DATABASE* refers to the database holding your PhpBB3 forum, e.g. "mytable".
 
-*PHPBB3_USER* refers to the mysql user that has access to the PHPBB3_TABLE, e.g. "root".
+*PHPBB3_USER* refers to the mysql user that has access to the PHPBB3_DATABASE, e.g. "root".
 
 *PHPBB3_PASS* refers to the password of the given PHPBB3_USER.
 
@@ -53,3 +53,41 @@ Users within these groups will be automatically assigned the "member" status if 
 Users within these groups will be automatically assigned the "raidlead" status if they login the first time.
 
 You can find your PhpBB3 group ids in the table "phpbb_groups". The Id needed is from the column "group_id".
+
+= config.eqdkp.php =
+
+*EQDKP_BINDING* should be set to "false" if the raidplaner is not bound to an EQDKP installation.
+If you do that, ALLOW_REGISTRATION in the config.php should be set to "true".
+
+*EQDKP_DATABASE* refers to the database holding your EQDKP data, e.g. "mytable".
+
+*EQDKP_USER* refers to the mysql user that has access to the EQDKP_DATABASE, e.g. "root".
+
+*EQDKP_PASS* refers to the password of the given EQDKP_USER.
+
+*EQDKP_TABLE_PREFIX* should be set to the value preceding all your EQDKP tables, e.g. "eqdkp_".
+Use an empty string if your tables have no prefix.
+
+Note that users with rights to edit raids in eqdkp are automatically considered raidleads.
+
+= config.vb3.php =
+
+*VB3_BINDING* should be set to "false" if the raidplaner is not bound to a vBulletin3 Forum.
+If you do that, ALLOW_REGISTRATION in the config.php should be set to "true".
+
+*VB3_DATABASE* refers to the database holding your vBulletin3 forum, e.g. "mytable".
+
+*VB3_USER* refers to the mysql user that has access to the VB3_DATABASE, e.g. "root".
+
+*VB3_PASS* refers to the password of the given VB3_USER.
+
+*VB3_TABLE_PREFIX* should be set to the value preceding all your vBulletin3 tables, e.g. "vb_".
+Use an empty string if your tables have no prefix.
+
+*VB3_MEMBER_GROUPS* Should be a comma separated list of vBulletin3 group ids (e.g. "2,3").
+Users within these groups will be automatically assigned the "member" status if they login the first time.
+
+*VB3_RAIDLEAD_GROUPS* Should be a comma separated list of  vBulletin3 group ids (e.g. "6").
+Users within these groups will be automatically assigned the "raidlead" status if they login the first time.
+
+You can find your vBulletin3 group ids in the table "vb_usergroup". The Id needed is from the column "usergroupid".
