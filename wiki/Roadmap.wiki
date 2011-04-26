@@ -25,3 +25,14 @@ ETA: August 2011<br>
  * "Bug Free"
  * Displaying correctly on IE7+, Safari, Chrome, Firefox3+, Opera10+ and Android2+ devices
  * Working with touch devices
+
+= Current status for 0.95 =
+Current repository version is 0.91
+
+Done:
+ * Better drag and drop for raids
+ * Fixed sticky login (damn, I hate these session quirks)
+ 
+Next on the list:
+ * eqdkp binding should be easy
+ * vBulletin is commercial, so I'm currently checking if a binding will have any legal problems
