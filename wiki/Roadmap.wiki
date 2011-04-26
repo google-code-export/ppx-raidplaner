@@ -2,8 +2,9 @@
 
 Short todo list for upcoming versions.
 Items and timing may change.
- 
-= Version 0.95 =
+
+
+= Version 0.9.5 =
 
 ETA: June 2011<br>
 "Polishing & code cleanup"
@@ -26,8 +27,8 @@ ETA: August 2011<br>
  * Displaying correctly on IE7+, Safari, Chrome, Firefox3+, Opera10+ and Android2+ devices
  * Working with touch devices
 
-= Current status for 0.95 =
-Current repository version is 0.92
+= Current status for 0.9.5 =
+Current repository version is 0.9.2
 
 Done:
  * Better drag and drop for raids
