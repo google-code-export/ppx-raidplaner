@@ -7,7 +7,7 @@ PPX Raidplaner has been tested successfully on the following browsers:
 Version 10: tested ok<br>
 Older Versions: not tested, but most likely ok<br>
 
-*Safari*
+*Safari*<br>
 Version 5: tested ok<br>
 Older Versions: not tested<br>
 
