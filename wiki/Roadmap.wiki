@@ -39,3 +39,4 @@ Done:
  
 Next on the list:
  * The setup script needs support for the two new bindings
+ * Finding and handling the renaming of external users, as well as password change for local users
