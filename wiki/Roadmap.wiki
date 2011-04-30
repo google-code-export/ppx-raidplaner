@@ -12,10 +12,12 @@ Done:
  * EQDKP binding added
  * vBulletin 3.x binding added
  * some potential SQL injection vectors removed
+ * Finding and handling the renaming of external users fixes
  
 Next on the list:
- * Finding and handling the renaming of external users, as well as password change for local users
  * Android devices cannot use double click, so I need to think of something else here
+ * Password change for local users
+ * Integrated user statistics 
  * The setup script needs support for the two new bindings
 
 ----
