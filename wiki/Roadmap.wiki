@@ -14,8 +14,9 @@ Done:
  * some potential SQL injection vectors removed
  
 Next on the list:
- * The setup script needs support for the two new bindings
  * Finding and handling the renaming of external users, as well as password change for local users
+ * Android devices cannot use double click, so I need to think of something else here
+ * The setup script needs support for the two new bindings
 
 ----
 
