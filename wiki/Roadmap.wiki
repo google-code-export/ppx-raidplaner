@@ -13,9 +13,9 @@ Done:
  * vBulletin 3.x binding added
  * some potential SQL injection vectors removed
  * Finding and handling the renaming of external users fixes
- 
+ * Android devices now count as "supported"
+
 Next on the list:
- * Android devices cannot use double click, so I need to think of something else here
  * The setup script needs support for the two new bindings
  * Release 0.9.3
  * Password change for local users
