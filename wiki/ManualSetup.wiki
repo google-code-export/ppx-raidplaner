@@ -3,6 +3,11 @@
 As of Version 0.8.12 there is a setup script, located in the folder "setup". You can run this script to create your database and config files.<br>
 If you've got problems with the script you can follow the instructions below to configure the raidplaner by yourself.
 
+You need the following services to install the raidplaner:<br>
+ * MySQL 4.1 or better
+ * PHP 5.3 or better with mcrypt
+ * At the moment Windows based servers will have problems with some pathes
+
 = Manual setup instructions =
 
 1. Copy the unzipped data in a separate folder on your server, e.g. "raid".
