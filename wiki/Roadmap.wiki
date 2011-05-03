@@ -14,9 +14,9 @@ Done:
  * some potential SQL injection vectors removed
  * Finding and handling the renaming of external users fixes
  * Android devices now count as "supported"
-
-Next on the list:
  * Showing members that have not yet decided to participate as "unavailable" in raids
+ 
+Next on the list:
  * The setup script needs support for the two new bindings
  * IE7 Login bug
 
