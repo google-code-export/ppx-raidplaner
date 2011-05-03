@@ -5,8 +5,22 @@ If you've got problems with the script you can follow the instructions below to 
 
 You need the following services to install the raidplaner:<br>
  * MySQL 4.1 or better
- * PHP 5.3 or better with mcrypt
- * At the moment Windows based servers will have problems with some pathes
+ * PHP 5.2 or better with mcrypt
+ * An Apache webserver (no other servers were tested)
+
+= Upgrade instructions 0.9 to 0.9.3 =
+
+1. Backup your database - just in case ;)
+
+2. Download the raidplaner_upgrade_091.sql and raidplaner_upgrade_092.sql files
+
+3. Import both files using phpMyAdmin
+
+4. Download the raidplaner_093.zip, unzip it and upload it to your server.<br>
+As some files have been removed it might be adviseable to delete the old installation's files before uploading and run the setup script again.<br>
+Your database will not be compromised by an additional run of the setup script.
+
+If you do not want to run the setup script make sure all config files exist. See the section below for detailed instructions.
 
 = Manual setup instructions =
 
