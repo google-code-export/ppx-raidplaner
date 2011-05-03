@@ -4,34 +4,14 @@ Short todo list for upcoming versions.
 Items and timing may change.
 
 = Current status =
-Current repository version is 0.9.3 (pre-release)
+Current repository version is 0.9.3
 
 Done:
- * Better drag and drop for raids
- * Fixed sticky login (damn, I hate these session quirks)
- * EQDKP binding added
- * vBulletin 3.x binding added
- * some potential SQL injection vectors removed
- * Finding and handling the renaming of external users fixes
- * Android devices now count as "supported"
- * Showing members that have not yet decided to participate as "unavailable" in raids
- * The setup script supports the two new bindings
- 
+ * nothing, yet
+
 Next on the list:
- * IE7 Login bug
-
-----
-
-= Version 0.9.3 =
-
-ETA: End of May 2011<br>
-"External bindings"
-
- * Better drag and drop for raid setup (more like user management)
- * At least one more external user binding (vBulletin, eqdkp)
- * Android (touchscreen) support
- * Better synchronization of external users
- * Display of raid non-participants
+ * Vacation :)
+ * User statistics about attendance
 
 ----
 
