@@ -23,7 +23,7 @@ Next on the list:
 
 = Version 0.9.3 =
 
-ETA: May 2011<br>
+ETA: End of May 2011<br>
 "External bindings"
 
  * Better drag and drop for raid setup (more like user management)
