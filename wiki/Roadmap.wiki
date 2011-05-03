@@ -15,9 +15,9 @@ Done:
  * Finding and handling the renaming of external users fixes
  * Android devices now count as "supported"
  * Showing members that have not yet decided to participate as "unavailable" in raids
+ * The setup script supports the two new bindings
  
 Next on the list:
- * The setup script needs support for the two new bindings
  * IE7 Login bug
 
 ----
