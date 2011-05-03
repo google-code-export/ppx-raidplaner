@@ -16,8 +16,10 @@ Done:
  * Android devices now count as "supported"
 
 Next on the list:
+ * Showing members that have not yet decided to participate as "unavailable" in raids
  * The setup script needs support for the two new bindings
- * Release 0.9.3
+ * - Release 0.9.3 -
+ * Default settings for raid start and size
  * Password change for local users
  * Integrated user statistics 
 
@@ -36,6 +38,10 @@ ETA: June 2011<br>
  * Security checks on SQL injections and session/user hijacking
  * Cleanup code (especially the older scripts)
  * Product page 
+
+----
+
+*Feature freeze*
 
 ----
  
