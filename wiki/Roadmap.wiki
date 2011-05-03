@@ -36,7 +36,7 @@ ETA: End of May 2011<br>
 
 = Version 0.9.5 =
 
-ETA: June 2011<br>
+ETA: Mid-June 2011<br>
 "Polishing & code cleanup"
 
  * User statistics about attendance
@@ -56,7 +56,7 @@ ETA: June 2011<br>
  
 = Version 1.0 =
 
-ETA: August 2011<br>
+ETA: End of August 2011<br>
 "Release"
 
  * API cleaned up and 100% releaseable
