@@ -18,6 +18,7 @@ Done:
 Next on the list:
  * Showing members that have not yet decided to participate as "unavailable" in raids
  * The setup script needs support for the two new bindings
+ * IE7 Login bug
 
 ----
 
