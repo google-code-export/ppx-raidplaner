@@ -3,6 +3,10 @@
 Last version tested was 0.9.3.<br>
 PPX Raidplaner has been tested successfully on the following browsers:
 
+*Android*<br>
+Version 2.1: tested ok<br>
+Version 3: tested ok<br>
+
 *Google Chrome*<br>
 Version 9: tested ok<br>
 Version 10: tested ok<br>
