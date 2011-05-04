@@ -15,13 +15,16 @@ Next on the list:
 
 ----
 
-= Version 0.9.5 =
+= Version 0.9.6 =
 
 ETA: Mid-June 2011<br>
-"Polishing & code cleanup"
+"Settings & Tutorials"
 
  * User statistics about attendance
  * Editable default settings for new Raids
+ * Editable locations
+ * Password change for local users
+ * Android support for Settings
  * Security checks on SQL injections and session/user hijacking
  * Tutorial
  * Product page 
