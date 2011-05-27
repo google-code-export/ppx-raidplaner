@@ -6,7 +6,7 @@ During my vacation I had a chance to test the raidplaner on an iPad, but I was n
 
 The controls are much too small for touch devices and the layout is not ... well ... fitting the screen as it should. So I will add some more work to shrink the vertical size of the raidplaner to 720px (from now 768px), resize some buttons and play around with the selection boxes a bit more.
 
-For the latter I'm not quite sure how to handle those exactly. I could create a new skin which is more touch friendly, but this would also restrict the mouse users to use a more "clunky" version, reducing the usability.
-Removing the skin for touch devices would help on iPhones (as they display an extra widget), but I've not yet tested that solution with android devices.
+For the latter I'm not quite sure about how to handle those exactly. I could create a new skin which is more touch friendly, but this would also restrict the mouse users to a more "clunky" version, reducing the usability for the PC platform.
+Removing the skin only for touch devices would help on iPhones (as they display an extra widget), but I've not yet tested that solution with android devices and there might be additional layout problems as I would always have to support two code pathes.
 
 So before I start with the implementation of user statistics I will first make some changes to make the raidplaner more touch-friendly which will delay everything by another week or so.
