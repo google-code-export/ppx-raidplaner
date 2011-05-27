@@ -10,7 +10,8 @@ Done:
  * nothing, yet
 
 Next on the list:
- * Vacation :)
+ * Better select boxes for touch devices
+ * Fixing some layout problems on touch devices
  * User statistics about attendance
 
 ----
