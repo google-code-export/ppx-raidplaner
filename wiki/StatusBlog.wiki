@@ -1,5 +1,11 @@
 = Current Status =
 
+*_June 4th 2011_*<br>
+I started experimenting with some jQuery plugins that enable touch events.
+Sadly I did not yet find something that provides a convenient drag&grop solution similar to jQuery UI's draggable/droppable functionality. So that problem will be delayed a bit further. At the up side, I can now access a "double tap" event so that I can re-enable shortcut functions for touch devices, too.
+
+As for the selection boxes, I decided to switch back to the "classic" style for mobile devices (removing the jQuery UI skin). This way I can let the device decide what's best without having to create any compromises for desktop PCs. The only thing left here is how to create an "editable selectionbox" which is not available with standard forms, but I guess a simple popup will do the trick here.
+
 *_May 25th 2011_*<br>
 My vacation, and a short crunch phase at work is over, so I guess development will start again soon.
 During my vacation I had a chance to test the raidplaner on an iPad, but I was not really satisfied with the results.
