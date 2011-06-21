@@ -1,8 +1,9 @@
 = Current Status =
 
 *_June 21st 2011_*<br>
-Yeah, it's been a while since my last update, but I got quite a lot things to do here at home and at work (and sometimes work at home :/ ) so the raidplaner had to wait. Additionally I switched guilds in WoW, and my new Guild is using EQDKP now (which is still a pain in the ass to use), so I'm currently "starving" on frequent feedback : /.
-However - I guess my work will keep me busy for an additional 1 or 2 weekends, so don't expect too many updates in the next two weeks. The good news about that: While waiting the folks a t jquery released a beta of their "mobile" jquery framework, which *might* just fix some issues I have with drag and drop so I now tend to wait a little bit more before going deeper into the touch device problems. This means I will most likely start to implement the new features like user statistics, etc. before returning to the touch device problems.
+Yeah, it's been a while since my last update, but I got quite a lot of things to do at home and at work (and sometimes work at home :/ ) so the raidplaner had to step back. Additionally I switched guilds in WoW, and my new Guild is using EQDKP now (which is still a pain in the ass to use), so I'm currently kind of "starving" on frequent feedback :/.<br>
+However - I guess my work will keep me busy for an additional 1 or 2 weekends, so don't expect too many updates during that time. The good news about that: While "waiting" for a free weekend the folks a t jquery released a beta of their "mobile" jquery framework, which *might* just fix some issues I have with drag and drop so I now tend to wait a little bit more before going deeper into the touch device problems.<br>
+This again means that I will most likely start to implement the new features like user statistics, etc. before returning to the touch device problems.
 
 *_June 4th 2011_*<br>
 I started experimenting with some jQuery plugins that enable touch events.
