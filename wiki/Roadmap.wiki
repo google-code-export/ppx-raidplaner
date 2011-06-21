@@ -18,7 +18,7 @@ Next on the list:
 
 = Version 0.9.6 =
 
-ETA: Mid-June 2011<br>
+ETA: ~~Mid-June 2011~~ *delayed*<br>
 "Settings & Tutorials"
 
  * User statistics about attendance
@@ -41,7 +41,7 @@ ETA: Mid-June 2011<br>
  
 = Version 1.0 =
 
-ETA: End of August 2011<br>
+ETA: ~~End of August 2011~~ *delayed*<br>
 "Release"
 
  * API cleaned up and 100% releaseable
