@@ -10,10 +10,8 @@ Done:
  * nothing, yet
 
 Next on the list:
- * Better select boxes for touch devices
- * Fixing some layout problems on touch devices
- * User statistics about attendance
-
+* User statistics about attendance 
+ 
 ----
 
 = Version 0.9.6 =
