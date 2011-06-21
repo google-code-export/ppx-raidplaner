@@ -10,7 +10,7 @@ Done:
  * nothing, yet
 
 Next on the list:
-* User statistics about attendance 
+ * User statistics about attendance 
  
 ----
 
