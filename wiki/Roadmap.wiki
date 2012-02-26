@@ -4,19 +4,21 @@ Short todo list for upcoming versions.
 Items and timing may change.
 
 = Current status =
-Current repository version is 0.9.3
+Current repository version is 0.9.4
 
 Done:
- * nothing, yet
+ * Use latest jQuery and jQuery UI
+ * User statistics about attendance
 
 Next on the list:
- * User statistics about attendance 
+ * User statistics overview
+ * Editable locations 
  
 ----
 
 = Version 0.9.6 =
 
-ETA: ~~Mid-June 2011~~ *delayed*<br>
+ETA: April 2012<br>
 "Settings & Tutorials"
 
  * User statistics about attendance
@@ -26,7 +28,7 @@ ETA: ~~Mid-June 2011~~ *delayed*<br>
  * Android support for Settings
  * Security checks on SQL injections and session/user hijacking
  * Tutorial
- * Product page 
+ * ~~Product page~~ 
 
 ----
 
@@ -39,7 +41,7 @@ ETA: ~~Mid-June 2011~~ *delayed*<br>
  
 = Version 1.0 =
 
-ETA: ~~End of August 2011~~ *delayed*<br>
+ETA: Not available<br>
 "Release"
 
  * API cleaned up and 100% releaseable
