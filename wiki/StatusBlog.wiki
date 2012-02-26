@@ -3,7 +3,7 @@
 *_February 25th 2012_*<br>
 Holy timewarp, Batman. As I already mentioned I switched guildes back in june last year ... well, turned out I quit WoW at around September. During all that time I did not either find time or motivation to continue the programming work.<br>
 Well, things changed. I recieved several emails in the last weeks from people using the raidplaner. I got curious and had a look at my google analytics and ... erm ... wow. Turns out that placing the right keywords does work a lot better than expected :)<br>
-Ok. Long story short - I am now continuing work on the raidplaner, starting with adding the last missing features already mentioned in the roadmap. I will also post some more frequent news on the progress on [https://plus.google.com/117150740075713142892 Google+]. The more people I see following me, the more motivated I will get ;) 
+Ok. Long story short - I am now continuing work on the raidplaner, starting with adding the last missing features already mentioned in the roadmap. I will also post some more frequent news on the progress on [https://plus.google.com/117920822853814771101 Google+]. The more people I see following me, the more motivated I will get ;) 
 
 *_June 21st 2011_*<br>
 Yeah, it's been a while since my last update, but I got quite a lot of things to do at home and at work (and sometimes work at home :/ ) so the raidplaner had to step back. Additionally I switched guilds in WoW, and my new Guild is using EQDKP now (which is still a pain in the ass to use), so I'm currently kind of "starving" on frequent feedback :/.<br>
