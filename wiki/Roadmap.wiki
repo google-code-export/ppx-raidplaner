@@ -7,6 +7,7 @@ Items and timing may change.
 Current repository version is 0.9.4
 
 Done:
+ * Icons for the "latest" raids (firelands and deathwing)
  * Use latest jQuery and jQuery UI
  * User statistics about attendance
 
