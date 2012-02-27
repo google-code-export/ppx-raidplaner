@@ -7,29 +7,40 @@ Items and timing may change.
 Current repository version is 0.9.4
 
 Done:
- * Icons for the "latest" raids (firelands and deathwing)
+ * Icons for the "latest" raids (Firelands and Deathwing)
  * Use latest jQuery and jQuery UI
  * User statistics about attendance
+ * Google+ product page
 
 Next on the list:
  * User statistics overview
  * Editable locations 
+ * Editable default settings for new Raids
  
 ----
 
-= Version 0.9.6 =
+= Version 0.9.4 =
+ETA: March 2012
 
-ETA: April 2012<br>
+ * Icons for the "latest" raids (Firelands and Deathwing)
+ * Use latest jQuery and jQuery UI
+ * User statistics about attendance
+ * Google+ product page
+ * User statistics overview
+ * Editable locations 
+ * Editable default settings for new Raids
+ * Password change for local users
+
+----
+
+= Version 0.9.5 =
+
+ETA: April or May 2012<br>
 "Settings & Tutorials"
 
- * User statistics about attendance
- * Editable default settings for new Raids
- * Editable locations
- * Password change for local users
- * Android support for Settings
+ * Works on Android tablets
  * Security checks on SQL injections and session/user hijacking
  * Tutorial
- * ~~Product page~~ 
 
 ----
 
