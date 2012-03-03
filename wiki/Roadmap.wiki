@@ -4,18 +4,19 @@ Short todo list for upcoming versions.
 Items and timing may change.
 
 = Current status =
-Current repository version is 0.9.4
+Current repository version is 0.9.4 (experimental)
 
 Done:
  * Icons for the "latest" raids (Firelands and Deathwing)
  * Use latest jQuery and jQuery UI
  * User statistics about attendance
  * Google+ product page
+ * Editable locations 
+ * Editable default settings for new Raids
 
 Next on the list:
  * User statistics overview
- * Editable locations 
- * Editable default settings for new Raids
+ * Testing of the latest changes
  
 ----
 
