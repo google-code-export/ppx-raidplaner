@@ -37,18 +37,20 @@ ETA: March 2012
 = Version 0.9.5 =
 
 ETA: April or May 2012<br>
-"Settings & Tutorials"
+"Release candiadate ready"
 
- * Works on Android tablets
+ * Usablity improvements for larger touch devices
  * Security checks on SQL injections and session/user hijacking
- * Tutorial
+ * Minimal theming support
+ * Minified javascript version for faster loading times
+ * Video tutorial
 
 ----
 
 = Feature freeze =
 
- * Version 0.9.8 -> RC1
- * Version 0.9.9 -> RC2
+ * Version 0.9.6 -> RC1
+ * Version 0.9.7 - 0.9.9 -> RC2/3/4 (if necessary)
 
 ----
  
@@ -57,6 +59,13 @@ ETA: April or May 2012<br>
 ETA: Not available<br>
 "Release"
 
- * API cleaned up and 100% releaseable
+ * API cleaned up, documented and "releaseable"
  * "Bug Free"
  * Displaying 100% correctly on IE7+, Safari, Chrome, Firefox3+, Opera10+ and Android2+ devices
+
+= Beyond 1.0 =
+
+The following features can be described as "yeah, I would totally like to see those, but they do not make sense before 1.0". If they make it into a version depends on how much sense they make / how much they will break the code or concept.
+
+ * Mobile phone version
+ * SWTOR version
