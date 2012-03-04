@@ -37,7 +37,7 @@ ETA: March 2012
 = Version 0.9.5 =
 
 ETA: April or May 2012<br>
-"Release candiadate ready"
+"Feature complete for 1.0"
 
  * Usablity improvements for larger touch devices
  * Security checks on SQL injections and session/user hijacking
