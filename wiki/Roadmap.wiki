@@ -17,8 +17,9 @@ Done:
 
 Next on the list:
 
- * Testing of the latest changes
+ * Testing of the latest changes / code review and cleanup
  * Password change for local users
+ * Cleanup of the new banner images
  
 ----
 
