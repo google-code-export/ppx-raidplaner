@@ -10,13 +10,15 @@ Done:
  * Icons for the "latest" raids (Firelands and Deathwing)
  * Use latest jQuery and jQuery UI
  * User statistics about attendance
- * Google+ product page
+ * Google+ product page / blog
  * Editable locations 
  * Editable default settings for new Raids
+ * User statistics overview
 
 Next on the list:
- * User statistics overview
+
  * Testing of the latest changes
+ * Password change for local users
  
 ----
 
