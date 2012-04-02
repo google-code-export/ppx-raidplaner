@@ -28,7 +28,7 @@ Next on the list:
 ----
 
 = Version 0.9.4 =
-ETA: March 2012
+ETA: April 23rd 2012
 
  * Icons for the "latest" raids (Firelands and Deathwing)
  * Use latest jQuery and jQuery UI
@@ -43,7 +43,7 @@ ETA: March 2012
 
 = Version 0.9.5 =
 
-ETA: April or May 2012<br>
+ETA: June 2012<br>
 "Feature complete for 1.0"
 
  * Usablity improvements for larger touch devices
@@ -76,3 +76,4 @@ The following features can be described as "yeah, I would totally like to see th
 
  * Mobile phone version
  * SWTOR version
+ * Use JSON instead of XML
