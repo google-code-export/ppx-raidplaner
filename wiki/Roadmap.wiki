@@ -17,11 +17,11 @@ Done:
  * Testing of the latest changes / code review and cleanup
  * update installer
  * add "upgrade database" option to installer
+ * Cleanup of the new banner images
  
 Next on the list:
 
  * *Password change and reset for local users*
- * Cleanup of the new banner images
  * IE7 fixes, final testing & release
 
 ----
