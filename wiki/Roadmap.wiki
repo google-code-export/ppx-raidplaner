@@ -18,11 +18,12 @@ Done:
  * update installer
  * add "upgrade database" option to installer
  * Cleanup of the new banner images
- 
-Next on the list:
-
- * *Password change and reset for local users*
+ * Password change and reset for local users
  * IE7 fixes, final testing & release
+
+Todo:
+
+ * *preparing and testing package for release*
 
 ----
 
