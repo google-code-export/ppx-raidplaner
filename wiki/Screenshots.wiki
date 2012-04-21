@@ -2,3 +2,4 @@ http://www.packedpixel.de/raidplaner/screenshots/calendar.png
 http://www.packedpixel.de/raidplaner/screenshots/setup.png
 http://www.packedpixel.de/raidplaner/screenshots/profile.png
 http://www.packedpixel.de/raidplaner/screenshots/settings.png
+http://www.packedpixel.de/raidplaner/screenshots/settings2.png
