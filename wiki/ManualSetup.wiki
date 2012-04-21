@@ -8,30 +8,22 @@ You need the following services to install the raidplaner:<br>
  * PHP 5.2 or better with mcrypt
  * An Apache webserver (no other servers were tested)
 
-= Upgrade instructions 0.9 to 0.9.3 =
+= Upgrade instructions =
 
-1. Backup your database - just in case ;)
+ # *Backup your current files and database!*
+ # Copy the contents of the new package to your FTP. Make sure that your "lib/config" folder is not overwritten
+ # Open http://<your url>/setup, click on "update" and follow the instructions
 
-2. Download the raidplaner_upgrade_091.sql and raidplaner_upgrade_092.sql files
-
-3. Import both files using phpMyAdmin
-
-4. Download the raidplaner_093.zip, unzip it and upload it to your server.<br>
-As some files have been removed it might be adviseable to delete the old installation's files before uploading and run the setup script again.<br>
-Your database will not be compromised by an additional run of the setup script.
-
-If you do not want to run the setup script make sure all config files exist. See the section below for detailed instructions.
+If you've used an intermediate version of Raidplaner, there might be some error messages during the update process. As the update script tries to take partially updated installations into account you can ignore these in almost all cases.
+However - if something went wrong it will help me to know which update steps failed, so it is advisable to keep the messages somewhere (e.g. make a screenshot).
 
 = Manual setup instructions =
 
-1. Copy the unzipped data in a separate folder on your server, e.g. "raid".
-
-2. Import the database default layout (from the download section) into your database. A good tool for this is the import function from phpMyAdmin. All tables will be preceded by "raid`_`" so you can import everything into a database already in use by other systems (e.g. PhpBB3)
-
-3. Create (or edit) the config files located in "lib/config" to match your setup.
+ # Copy the unzipped data in a separate folder on your server, e.g. "raid".
+ # Import the database default layout (from the download section) into your database. A good tool for this is the import function from phpMyAdmin. All tables will be preceded by "raid`_`" so you can import everything into a database already in use by other systems (e.g. PhpBB3)
+ # Create (or edit) the config files located in "lib/config" to match your setup.
 The files are listed in the section below.
-
-4. Login with the user "admin" and the password "admin".
+ # Login with the user "admin" and the password "admin".
 
 You can change the password manually in the "raid_User" table by encoding your desired password with an SHA1 hash.<br>
 The following defines can be made in each of the files listed below, e.g.
