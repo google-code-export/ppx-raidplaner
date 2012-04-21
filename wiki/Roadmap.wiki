@@ -4,7 +4,7 @@ Short todo list for upcoming versions.
 Items and timing may change.
 
 = Current status =
-Current repository version is 0.9.4 (experimental)
+Current repository version is 0.9.4 (candidate)
 
 Done:
  * Icons for the "latest" raids (Firelands and Deathwing)
