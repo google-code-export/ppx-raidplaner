@@ -1,6 +1,7 @@
 = Released versions =
 
-== Version 0.9.4 ==
+== Version 0.9.4 (April 2012) ==
+
 To upgrade version 0.9.3 to the latest version use the upgrade option from the setup tool.
 If you encounter any errors, please file a bug in the Issues section.
 
@@ -11,7 +12,9 @@ If you encounter any errors, please file a bug in the Issues section.
  * Exchangeable banner
  * Upgrade option in the installer
 
-== Version 0.9.3 ==
+
+== Version 0.9.3 (May 2011) ==
+
 If you upgrade from 0.9 make sure to install the 0.9.1 and 0.9.2 Database upgrades (for example via phpMyAdmin).<br>
 
  * Better drag and drop for raid setup (more like user management)
