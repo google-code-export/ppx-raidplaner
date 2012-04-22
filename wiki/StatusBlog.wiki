@@ -1,5 +1,9 @@
 = Current Status =
 
+== This blog has moved to [https://plus.google.com/117920822853814771101 Google+] ==
+Older entries:
+
+
 *_February 25th 2012_*<br>
 Holy timewarp, Batman. As I already mentioned I switched guildes back in june last year ... well, turned out I quit WoW at around September. During all that time I did not either find time or motivation to continue the programming work.<br>
 Well, things changed. I recieved several emails in the last weeks from people using the raidplaner. I got curious and had a look at my google analytics and ... erm ... wow. Turns out that placing the right keywords does work a lot better than expected :)<br>
