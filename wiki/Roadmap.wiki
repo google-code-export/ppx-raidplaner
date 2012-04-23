@@ -11,7 +11,7 @@ Done:
 
 Todo:
 
- * Theming support
+ * Extended theming support
 
 ----
 
@@ -20,12 +20,23 @@ Todo:
 ETA: June 2012<br>
 "Feature complete for 1.0"
 
- * Theming support
- * Usablity improvements for larger touch devices
- * Bugfixes for 0.9.4
- * Security checks on SQL injections and session/user hijacking
+ * Extended theming support
+ * Support for 12h time formats
+ * Change localization keys to make it easier to correct spelling mistakes
+ * Usablity improvements for tablets
  * Minified javascript version for faster loading times
  * Video tutorial
+
+-----
+
+= RC1 = 
+
+ETA: Not yet set<br>
+"Release candidate 1"
+
+ * Security checks on SQL injections and session/user hijacking
+ * Fix all bugs tagged for release
+ * Code cleanup
 
 ----
 
