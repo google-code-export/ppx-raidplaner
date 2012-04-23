@@ -1,3 +1,4 @@
+#labels Featured
 = Roadmap =
 
 Short todo list for upcoming versions.
@@ -53,8 +54,10 @@ ETA: Not available<br>
 "Release"
 
  * API cleaned up, documented and "releaseable"
- * "Bug Free"
- * Displaying 100% correctly on IE7+, Safari, Chrome, Firefox3+, Opera10+ and Android2+ devices
+ * Bug Free
+ * Displaying 100% correctly on IE7+, Safari, Chrome, Firefox3.5+, Opera10+ and Android2+ devices
+
+----
 
 = Beyond 1.0 =
 
