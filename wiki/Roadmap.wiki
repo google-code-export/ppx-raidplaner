@@ -31,7 +31,7 @@ ETA: June 2012<br>
 
 -----
 
-= RC1 = 
+= Version 0.9.6 (RC1) = 
 
 ETA: Not yet set<br>
 "Release candidate 1"
@@ -41,17 +41,10 @@ ETA: Not yet set<br>
  * Code cleanup
 
 ----
-
-= Feature freeze =
-
- * Version 0.9.6 -> RC1
- * Version 0.9.7 - 0.9.9 -> RC2/3/4 (if necessary)
-
-----
  
 = Version 1.0 =
 
-ETA: Not available<br>
+ETA: Not yet set<br>
 "Release"
 
  * API cleaned up, documented and "releaseable"
