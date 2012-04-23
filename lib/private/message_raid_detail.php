@@ -7,9 +7,7 @@
 	    	
 	        $ListRaidSt = $Connector->prepare("Select ".RP_TABLE_PREFIX."Raid.*, ".RP_TABLE_PREFIX."Location.Name AS LocationName, ".RP_TABLE_PREFIX."Location.Image AS LocationImage, ".
 	        								  RP_TABLE_PREFIX."Attendance.UserId, ".RP_TABLE_PREFIX."Attendance.CharacterId, ".RP_TABLE_PREFIX."Attendance.Status, ".RP_TABLE_PREFIX."Attendance.Role, ".RP_TABLE_PREFIX."Attendance.Comment, ".
-	        								  RP_TABLE_PREFIX."Character.Name, ".RP_TABLE_PREFIX."Character.Class, ".RP_TABLE_PREFIX."Character.Mainchar, ".RP_TABLE_PREFIX."Character.Role1, ".RP_TABLE_PREFIX."Character.Role2, ".
-	        								  "UNIX_TIMESTAMP(".RP_TABLE_PREFIX."Raid.Start) AS StartUTC, ".
-	                                          "UNIX_TIMESTAMP(".RP_TABLE_PREFIX."Raid.End) AS EndUTC ".
+	        								  RP_TABLE_PREFIX."Character.Name, ".RP_TABLE_PREFIX."Character.Class, ".RP_TABLE_PREFIX."Character.Mainchar, ".RP_TABLE_PREFIX."Character.Role1, ".RP_TABLE_PREFIX."Character.Role2 ".
 	        								  "FROM `".RP_TABLE_PREFIX."Raid` ".
 	        								  "LEFT JOIN `".RP_TABLE_PREFIX."Location` USING(LocationId) ".
 	        								  "LEFT JOIN `".RP_TABLE_PREFIX."Attendance` USING(RaidId) ".
@@ -30,18 +28,15 @@
 	        	
 	        	$Participants = Array();
 	        	
-	        	$StartDate = getdate($Data["StartUTC"]);
-		        $EndDate   = getdate($Data["EndUTC"]);
-		        
 	        	echo "<raidId>".$Data["RaidId"]."</raidId>";
                 echo "<locationId>".$Data["LocationId"]."</locationId>";
                 echo "<location>".$Data["LocationName"]."</location>";
 		        echo "<stage>".$Data["Stage"]."</stage>";
                 echo "<image>".$Data["LocationImage"]."</image>";
                 echo "<size>".$Data["Size"]."</size>";
-                echo "<startDate>".$StartDate["year"]."-".LeadingZero10($StartDate["mon"])."-".LeadingZero10($StartDate["mday"])."</startDate>";
-                echo "<start>".LeadingZero10($StartDate["hours"]).":".LeadingZero10($StartDate["minutes"])."</start>";
-                echo "<end>".LeadingZero10($EndDate["hours"]).":".LeadingZero10($EndDate["minutes"])."</end>";
+                echo "<startDate>".substr( $Data["Start"], 0, 10 )."</startDate>";
+                echo "<start>".substr( $Data["Start"], 11, 5 )."</start>";
+                echo "<end>".substr( $Data["End"], 11, 5 )."</end>";
                 echo "<description>".$Data["Description"]."</description>";
                 echo "<tankSlots>".$Data["TankSlots"]."</tankSlots>";
                 echo "<dmgSlots>".$Data["DmgSlots"]."</dmgSlots>";

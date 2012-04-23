@@ -106,25 +106,7 @@
 		$g_Locale[ "Your account is currently locked." ]				= "Dein Account ist momentan gesperrt.";
 		$g_Locale[ "Please tell us why you will be absent." ]			= "Bitte teile uns mit warum du abwesend bist.";
 		$g_Locale[ "Set to absent" ]									= "Ich bin abwesend";
-		$g_Locale[ "Input required" ]									= "Eingabe erwartet";		
-		
-		$g_Locale[ "Raid attendance" ]									= "Raidteilnahme";
-		$g_Locale[ "Roles in attended raids" ]							= "Rollenverteilung in raids";
-		$g_Locale[ "Queued" ]											= "Angemeldet";
-		$g_Locale[ "Attended" ]											= "Teilgenommen";
-		$g_Locale[ "Missed" ]											= "Verpasst";
-		$g_Locale[ "Default raid start time" ]							= "Voreingestellter Raidstart";
-		$g_Locale[ "Default raid end time" ]							= "Voreingestelltes Raidende";
-		$g_Locale[ "Default raid size" ]								= "Voreingestellte Raidgr&ouml;&szlig;e";
-		$g_Locale[ "Banner click landing page" ]						= "Banner-Klick Zielseite";
-		$g_Locale[ "Site banner" ]										= "Seitenbanner";
-		$g_Locale[ "Delete location and raids" ]						= "Instanz und Raids entfernen";		
-		$g_Locale[ "Do you really want to delete this location?" ]		= "M&ouml;chtest du diese Instanz wirklich l&ouml;schen?";
-		$g_Locale[ "This will also delete all raids at this location." ] = "Alle Raids in dieser Instanz werden ebenfalls gel&ouml;scht.";
-		$g_Locale[ "Change password" ] 									= "Passwort &auml;ndern";
-		$g_Locale[ "Old password" ] 									= "Altes Passwort";
-		$g_Locale[ "Wrong password" ] 									= "Falsches Passwort";
-		$g_Locale[ "Password cannot be changed." ]						= "Passwort kann nicht ver&auml;ndert werden.";	
+		$g_Locale[ "Input required" ]									= "Eingabe erwartet";
 		
 		$g_Locale[ "Please contact your admin to get your account unlocked." ] 								= "Bitte wende dich an deinen Administrator um deinen Account freizuschalten.";
 		$g_Locale[ "Continue without updating" ]															= "Ohne Aktualisierung fortfahren";
@@ -200,22 +182,6 @@
 		$g_Locale[ "EQDKP Database passwords did not match." ] = "EQDKP Datenbank-Passwoerter stimmen nicht ueberein";
 		$g_Locale[ "vBulletin Database password must not be empty." ] = "vBulletin Datenbank Passwort darf nicht leer sein";
 		$g_Locale[ "vBulletin Database passwords did not match." ] = "vBulletin Datenbank-Passwoerter stimmen nicht ueberein";
-		$g_Locale[ "Install" ] = "Installieren";
-		$g_Locale[ "Update" ] = "Updaten";
 		
-		$g_Locale[ "Version detection and update" ] = "Versionserkennung und Update";
-		$g_Locale[ "Setup will try to detect your current version." ] = "Setup versucht die aktuelle Version zu erkennen.";
-		$g_Locale[ "If the detected version does not match your installed version you may always choose manually, too." ] = "Wenn die erkannte Version nicht der installierten Version entspricht kann die korrekte Version manuell ausgew&auml;hlt werden.";
-		$g_Locale[ "The update will only affect changes in the database." ] = "Das update betrifft nur &auml;nderungen in der Datenbank.";
-		$g_Locale[ "If the database did not change you will not need to do this step." ] = "Wurde die Datenbank nicht ver&auml;ndert, kann dieser Schritt &uuml;bersprungen werden.";
-		$g_Locale[ "Detected version" ] = "Erkannte Version";
-		$g_Locale[ "No update necessary." ] = "Kein Update notwendig";
-		$g_Locale[ "Update from version" ] = "Update der Version";
-		$g_Locale[ "to version" ] = "auf Version";
-		$g_Locale[ "Update errors" ] = "Fehler w&auml;hrend des Updates";
-		$g_Locale[ "The following errors were reported during update." ] = "Die folgenden Fehler wurden w&auml;hrend des updates gemeldet.";
-		$g_Locale[ "This may hint on an already (partially) updated database." ] = "Dies kann auf eine bereits (teilweise) upgedatete Datenbank hinweisen.";
-	    $g_Locale[ "Ignore" ] = "Ignorieren";
-	    $g_Locale[ "Retry" ] = "Wiederholen";
 	}
 ?>

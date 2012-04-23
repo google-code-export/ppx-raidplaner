@@ -1,5 +1,4 @@
 <?php
-	
 	function msgRaidList( $Request )
 	{
 		if (ValidUser())
@@ -10,9 +9,7 @@
 	    	
 	    	$NextRaidSt = $Connector->prepare(	"Select ".RP_TABLE_PREFIX."Raid.*, ".RP_TABLE_PREFIX."Location.*, ".
         										RP_TABLE_PREFIX."Attendance.CharacterId, ".RP_TABLE_PREFIX."Attendance.UserId, ".
-        								 		RP_TABLE_PREFIX."Attendance.Status, ".RP_TABLE_PREFIX."Attendance.Role, ".RP_TABLE_PREFIX."Attendance.Comment, ".
-	                                            "UNIX_TIMESTAMP(".RP_TABLE_PREFIX."Raid.Start) AS StartUTC, ".
-	                                            "UNIX_TIMESTAMP(".RP_TABLE_PREFIX."Raid.End) AS EndUTC ".
+        								 		RP_TABLE_PREFIX."Attendance.Status, ".RP_TABLE_PREFIX."Attendance.Role, ".RP_TABLE_PREFIX."Attendance.Comment ".
 	    										"FROM `".RP_TABLE_PREFIX."Raid` ".
 	                                          	"LEFT JOIN `".RP_TABLE_PREFIX."Location` USING(LocationId) ".
 	                                          	"LEFT JOIN `".RP_TABLE_PREFIX."Attendance` USING(RaidId) ".
@@ -35,9 +32,7 @@
 	        
 	        // -------------------------
 	        
-	        $ListRaidSt = $Connector->prepare("Select ".RP_TABLE_PREFIX."Raid.*, ".RP_TABLE_PREFIX."Location.*, ".
-	                                          "UNIX_TIMESTAMP(".RP_TABLE_PREFIX."Raid.Start) AS StartUTC, ".
-	                                          "UNIX_TIMESTAMP(".RP_TABLE_PREFIX."Raid.End) AS EndUTC ".
+	        $ListRaidSt = $Connector->prepare("Select ".RP_TABLE_PREFIX."Raid.*, ".RP_TABLE_PREFIX."Location.* ".
 	        								  "FROM `".RP_TABLE_PREFIX."Raid` ".
 	                                          "LEFT JOIN `".RP_TABLE_PREFIX."Location` USING(LocationId) ".
 	                                          "WHERE ".RP_TABLE_PREFIX."Raid.Start < FROM_UNIXTIME(:Start)".
@@ -55,18 +50,15 @@
 	        	
 		        while ( $Data = $ListRaidSt->fetch( PDO::FETCH_ASSOC ) )
 		        {
-		            $StartDate = getdate($Data["StartUTC"]);
-		            $EndDate   = getdate($Data["EndUTC"]);
-		            
 		        	echo "<raid>";
 		        	echo "<id>".$Data["RaidId"]."</id>";
 		        	echo "<location>".$Data["Name"]."</location>";
 		        	echo "<stage>".$Data["Stage"]."</stage>";
 		        	echo "<image>".$Data["Image"]."</image>";
 		        	echo "<size>".$Data["Size"]."</size>";
-		        	echo "<startDate>".$StartDate["year"]."-".LeadingZero10($StartDate["mon"])."-".LeadingZero10($StartDate["mday"])."</startDate>";
-                	echo "<start>".LeadingZero10($StartDate["hours"]).":".LeadingZero10($StartDate["minutes"])."</start>";
-                	echo "<end>".LeadingZero10($EndDate["hours"]).":".LeadingZero10($EndDate["minutes"])."</end>";
+		        	echo "<startDate>".substr( $Data["Start"], 0, 10 )."</startDate>";
+                	echo "<start>".substr( $Data["Start"], 11, 5 )."</start>";
+                	echo "<end>".substr( $Data["End"], 11, 5 )."</end>";
                 	echo "</raid>";
 		        }
 		        

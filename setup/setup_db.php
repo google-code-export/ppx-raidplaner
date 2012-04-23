@@ -9,7 +9,7 @@
 		<title>Raidplaner config</title>
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         
-        <script type="text/javascript" src="../lib/script/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="../lib/script/jquery-1.5.2.min.js"></script>
         <script type="text/javascript" src="script/main.js"></script>
         <script type="text/javascript" src="script/setup_db.js.php"></script>
         
@@ -36,7 +36,7 @@
 					<input type="password" id="password"/> <?php echo L("Password for that user"); ?><br/>
 					<input type="password" id="password_check"/> <?php echo L("Please repeat the password"); ?><br/>
 					<br/>
-					<input type="text" id="prefix" value="<?php echo (defined("RP_TABLE_PREFIX")) ? RP_TABLE_PREFIX : "raids_" ?>"/> <?php echo L("Prefix for tables in the database"); ?><br/>
+					<input type="text" id="prefix" value="<?php echo (defined("RP_TABLE_PREFIX")) ? RP_TABLE_PREFIX : "table_" ?>"/> <?php echo L("Prefix for tables in the database"); ?><br/>
 				</div>
 				
 				<div style="margin-top: 1.5em">

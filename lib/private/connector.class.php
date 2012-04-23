@@ -12,7 +12,7 @@
 		
 		// --------------------------------------------------------------------------------------------
 	
-		public function __construct($_Host, $_Database, $_User, $_Pass, $_Rethrow = false)
+		public function __construct($_Host, $_Database, $_User, $_Pass)
 		{
 			try
 			{
@@ -22,33 +22,26 @@
 			}
 			catch (PDOException $Exception)
 			{
-                if ( $_Rethrow )
-                {
-                    throw $Exception;
-                }
-                else
-                {
-				    echo "<error>Database connection error</error>";
-				    echo "<error>".xmlentities( $Exception->getMessage(), ENT_COMPAT, "UTF-8" )."</error>";
-                }
-            }
+				echo "<error>Database connection error</error>";
+				echo "<error>".xmlentities( $Exception->getMessage(), ENT_COMPAT, "UTF-8" )."</error>";
+			}
 		}
 		
 		// --------------------------------------------------------------------------------------------
 		
-		public static function GetInstance( $_Rethrow = false )
+		public static function GetInstance()
 		{
 		    require_once(dirname(__FILE__)."/../config/config.php");
-			return self::GetExternInstance(SQL_HOST, RP_DATABASE, RP_USER, RP_PASS, false);
+			return self::GetExternInstance(SQL_HOST, RP_DATABASE, RP_USER, RP_PASS);
 		}
 		
 		// --------------------------------------------------------------------------------------------
 		
-		public static function GetExternInstance($_Host, $_Database, $_User, $_Pass, $_Rethrow = false)
+		public static function GetExternInstance($_Host, $_Database, $_User, $_Pass)
 		{
 			if (self::$Instance == NULL)
 			{
-				self::$Instance = new Connector($_Host, $_Database, $_User, $_Pass, $_Rethrow);
+				self::$Instance = new Connector($_Host, $_Database, $_User, $_Pass);
             }
             else
             {
@@ -56,7 +49,7 @@
                     (self::$Instance->Database != $_Database))
                 {
                     self::$Instance = NULL;
-                    self::$Instance = new Connector($_Host, $_Database, $_User, $_Pass, $_Rethrow);
+                    self::$Instance = new Connector($_Host, $_Database, $_User, $_Pass);
                 }       
             }
 				

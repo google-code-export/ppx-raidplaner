@@ -1,7 +1,6 @@
 <?php
 	header("Content-type: text/xml");
     echo "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n";
-    echo "<bindings>";    
     
 	require_once("../../lib/private/connector.class.php");
 	
@@ -12,7 +11,7 @@
 	// phpbb3
 	
 	fwrite( $phpbb3_config, "<?php\n");
-	fwrite( $phpbb3_config, "\tdefine(\"PHPBB3_BINDING\", ".(($_REQUEST["phpbb3_allow"]) ? "true" : "false").");\n");
+	fwrite( $phpbb3_config, "\tdefine(\"PHPBB3_BINDING\", ".$_REQUEST["phpbb3_allow"].");\n");
 	
 	if ( $_REQUEST["phpbb3_allow"] == "true" )
 	{
@@ -31,7 +30,7 @@
 	// eqdkp
 	
 	fwrite( $eqdkp_config, "<?php\n");
-	fwrite( $eqdkp_config, "\tdefine(\"EQDKP_BINDING\", ".(($_REQUEST["eqdkp_allow"]) ? "true" : "false").");\n");
+	fwrite( $eqdkp_config, "\tdefine(\"EQDKP_BINDING\", ".$_REQUEST["eqdkp_allow"].");\n");
 	
 	if ( $_REQUEST["eqdkp_allow"] == "true" )
 	{
@@ -47,7 +46,7 @@
 	// vBulletin
 	
 	fwrite( $vb3_config, "<?php\n");
-	fwrite( $vb3_config, "\tdefine(\"VB3_BINDING\", ".(($_REQUEST["vb3_allow"]) ? "true" : "false").");\n");
+	fwrite( $vb3_config, "\tdefine(\"VB3_BINDING\", ".$_REQUEST["vb3_allow"].");\n");
 	
 	if ( $_REQUEST["vb3_allow"] == "true" )
 	{
@@ -62,6 +61,4 @@
 	
 	fwrite( $vb3_config, "?>");	
 	fclose( $vb3_config );
-	
-	echo "</bindings>";    
 ?>

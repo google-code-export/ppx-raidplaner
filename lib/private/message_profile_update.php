@@ -6,9 +6,9 @@ function msgProfileUpdate( $Request )
     {
     	$userId = intval( $_SESSION["User"]["UserId"] );
     	
-    	if ( ValidAdmin() && isset( $Request["userid"] ) )
+    	if ( ValidAdmin() && isset( $_REQUEST["userid"] ) )
 		{
-			$userId = intval( $Request["userid"] );
+			$userId = intval( $_REQUEST["userid"] );
 		}
 		
     	$Connector = Connector::GetInstance();
@@ -162,7 +162,7 @@ function msgProfileUpdate( $Request )
 	   		$Connector->commit();
 	    }
 	    
-	    if ( ValidAdmin() && isset( $Request["userid"] ) )
+	    if ( ValidAdmin() && isset( $_REQUEST["userid"] ) )
 		{
 			msgQuerySettings( $Request );
 		}

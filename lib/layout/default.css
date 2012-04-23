@@ -28,28 +28,10 @@ body {
 
 #logo {
 	display: block;
+	background-repeat: no-repeat;
+	background-image: url(images/logo.jpg);
 	height: 140px;
 	width: 1024px;
-}
-
-.logo_wotlk {
-	background-repeat: no-repeat;
-	background-image: url(images/logo_wotlk.jpg);
-}
-
-.logo_cata {
-	background-repeat: no-repeat;
-	background-image: url(images/logo_cata.jpg);
-}
-
-.logo_mop {
-	background-repeat: no-repeat;
-	background-image: url(images/logo_mop.jpg);
-}
-
-.logo_bc {
-	background-repeat: no-repeat;
-	background-image: url(images/logo_bc.jpg);
 }
 
 #menu {
@@ -250,9 +232,9 @@ body {
 
 .login .buttonfield {
 	width: 150px;
-	position: absolute;
+	position: relative;
 	left: 50%;
-	top: 70px;
+	top: 10px;
 	margin-left: -70px;
 }
 

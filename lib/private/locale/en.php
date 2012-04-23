@@ -106,26 +106,8 @@
 		$g_Locale[ "Your account is currently locked." ]				= null;
 		$g_Locale[ "Please tell us why you will be absent." ]			= null;
 		$g_Locale[ "Set to absent" ]									= null;
-		$g_Locale[ "Input required" ]									= null;
+		$g_Locale[ "Input required" ]									= null;	
 		
-		$g_Locale[ "Raid attendance" ]									= null;
-		$g_Locale[ "Roles in attended raids" ]							= null;			
-		$g_Locale[ "Queued" ]											= null;
-		$g_Locale[ "Attended" ]											= null;
-		$g_Locale[ "Missed" ]											= null;
-		$g_Locale[ "Default raid start time" ]							= null;
-		$g_Locale[ "Default raid end time" ]							= null;
-		$g_Locale[ "Default raid size" ]								= null;
-		$g_Locale[ "Banner click landing page" ]						= null;
-		$g_Locale[ "Site banner" ]										= null;
-		$g_Locale[ "Delete location and raids" ]						= null;		
-		$g_Locale[ "Do you really want to delete this location?" ]		= null;
-		$g_Locale[ "This will also delete all raids at this location." ] = null;
-		$g_Locale[ "Change password" ] 									= null;
-		$g_Locale[ "Old password" ] 									= null;
-		$g_Locale[ "Wrong password" ] 									= null;
-		$g_Locale[ "Password cannot be changed." ]						= null;	
-
 		$g_Locale[ "Please contact your admin to get your account unlocked." ] 								= null;
 		$g_Locale[ "Continue without updating" ]															= null;
 		$g_Locale[ "Please update your browser" ]															= null;
@@ -199,22 +181,5 @@
 		$g_Locale[ "EQDKP Database passwords did not match." ] = null;
 		$g_Locale[ "vBulletin Database password must not be empty." ] = null;
 		$g_Locale[ "vBulletin Database passwords did not match." ] = null;
-		
-		$g_Locale[ "Version detection and update" ] = null;
-		$g_Locale[ "Install" ] = null;
-		$g_Locale[ "Update" ] = null;
-		$g_Locale[ "Setup will try to detect your current version." ] = null;
-		$g_Locale[ "If the detected version does not match your installed version you may always choose manually, too." ] = null;
-		$g_Locale[ "The update will only affect changes in the database." ] = null;
-		$g_Locale[ "If the database did not change you will not need to do this step." ] = null;
-		$g_Locale[ "Detected version" ] = null;
-		$g_Locale[ "No update necessary." ] = null;
-		$g_Locale[ "Update from version" ] = null;
-		$g_Locale[ "to version" ] = null;
-		$g_Locale[ "Update errors" ] = null;
-		$g_Locale[ "The following errors were reported during update." ] = null;
-		$g_Locale[ "This may hint on an already (partially) updated database." ] = null;
-		$g_Locale[ "Ignore" ] = null;
-	    $g_Locale[ "Retry" ] = null;
 	}
 ?>

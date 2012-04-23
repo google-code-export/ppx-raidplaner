@@ -15,7 +15,7 @@
     require_once("lib/private/users.php");
     
     UserProxy::GetInstance(); // Init user
-    $siteVersion = "0.9.4";
+    $siteVersion = "0.9.3";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
@@ -29,7 +29,7 @@
 		<link rel="stylesheet" type="text/css" href="lib/layout/raid.css?version=<?php echo $siteVersion; ?>"/>
 		<link rel="stylesheet" type="text/css" href="lib/layout/raidlist.css?version=<?php echo $siteVersion; ?>"/>
 		<link rel="stylesheet" type="text/css" href="lib/layout/profile.css?version=<?php echo $siteVersion; ?>"/>
-		<link rel="stylesheet" type="text/css" href="lib/layout/jquery-ui-1.8.18.custom.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/layout/jquery-ui-1.8.10.custom.css"/>
 		<link rel="stylesheet" type="text/css" href="lib/layout/tooltip.css?version=<?php echo $siteVersion; ?>"/>
 		<link rel="stylesheet" type="text/css" href="lib/layout/shadow.css?version=<?php echo $siteVersion; ?>"/>
 		<link rel="stylesheet" type="text/css" href="lib/layout/sheet.css?version=<?php echo $siteVersion; ?>"/>
@@ -55,8 +55,8 @@
 		<link rel="stylesheet" type="text/css" href="lib/layout/settings.css?version=<?php echo $siteVersion; ?>"/>
 		<?php } ?>
 		
-		<script type="text/javascript" src="lib/script/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript" src="lib/script/jquery-ui-1.8.18.custom.min.js"></script>
+		<script type="text/javascript" src="lib/script/jquery-1.5.2.min.js"></script>
+		<script type="text/javascript" src="lib/script/jquery-ui-1.8.10.custom.min.js"></script>
 		<script type="text/javascript" src="lib/script/jquery.ba-hashchange.min.js"></script>
 		
 		<script type="text/javascript" src="lib/script/locale.js.php?version=<?php echo $siteVersion; ?>"></script>		
@@ -93,36 +93,7 @@
 	<body>
 		<div style="width: 1024px; height: 1px">&nbsp;</div>
 		<div id="appwindow">
-			<?php 
-			
-				$Connector = Connector::GetInstance();
-				$Settings = $Connector->prepare("Select `Name`, `TextValue` FROM `".RP_TABLE_PREFIX."Setting` WHERE Name=\"Site\" OR Name=\"Banner\"");
-    	
-		        if ( $Settings->execute() )
-		        {
-		        	$Values = array( "Site" => "", "Banner" => "cata" );	        
-			        while ( $Data = $Settings->fetch( PDO::FETCH_ASSOC ) )
-			        {
-			        	$Values[$Data["Name"]] = $Data["TextValue"];
-			        }
-			        
-			        if ( $Values["Site"] == "" )
-			       	{
-			        	echo "<div id=\"logo\" class=\"logo_".$Values["Banner"]."\"></div>";
-			        }
-			        else
-			        {			        
-			        	echo "<a href=\"".$Values["Site"]."\" id=\"landingPage\"><div id=\"logo\" class=\"logo_".$Values["Banner"]."\"></div></a>";
-			       	}
-			    }
-			    else
-			   	{
-			   		echo "<div id=\"logo\" class=\"logo_cata\"></div>";
-			   	}
-			    	
-		        $Settings->closeCursor();
-				
-			?>
+    		<div id="logo"></div>
     		<div id="menu">
     			<?php if ( RegisteredUser() ) { ?>
     			
@@ -246,7 +217,7 @@
 								<option value="22">22</option>
 								<option value="21">21</option>
 								<option value="20">20</option>
-								<option value="19">19</option>
+								<option value="19" selected>19</option>
 								<option value="18">18</option>
 								<option value="17">17</option>
 								<option value="16">16</option>
@@ -266,7 +237,7 @@
 							<select id="startminute" style="width: 48px">
 								<option value="0">00</option>
 								<option value="15">15</option>
-								<option value="30">30</option>
+								<option value="30" selected>30</option>
 								<option value="45">45</option>
 							</select>
 							<span style="display: inline-block; width: 29px; text-align:center"><?php echo L("to"); ?></span>
@@ -276,7 +247,7 @@
 								<option value="2">2</option>
 								<option value="1">1</option>
 								<option value="0">24</option>
-								<option value="23">23</option>
+								<option value="23" selected>23</option>
 								<option value="22">22</option>
 								<option value="21">21</option>
 								<option value="20">20</option>
@@ -298,7 +269,7 @@
 							</select>
 							<span>:</span>
 							<select id="endminute" style="width: 48px">
-								<option value="0">00</option>
+								<option value="0" selected>00</option>
 								<option value="15">15</option>
 								<option value="30">30</option>
 								<option value="45">45</option>
