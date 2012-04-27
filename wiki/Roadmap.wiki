@@ -25,6 +25,7 @@ ETA: June 2012<br>
  * Extended theming support
  * Support for 12h time formats
  * Change localization keys to make it easier to correct spelling mistakes
+ * "About" section and update notifications
  * Usablity improvements for tablets
  * Minified javascript version for faster loading times
  * Video tutorial
