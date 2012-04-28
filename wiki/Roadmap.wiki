@@ -5,15 +5,17 @@ Short todo list for upcoming versions.
 Items and timing may change.
 
 = Current status =
-Current repository version is 0.9.4
+Current repository version is 0.9.4 with changes for 0.9.5
 
 Done:
 
+ * Favicon
+ * Support for Monks
+ * About screen and version check
 
 Todo:
 
  * Extended theming support
- * Favicon :)
 
 ----
 
