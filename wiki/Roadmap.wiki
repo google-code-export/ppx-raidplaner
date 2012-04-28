@@ -15,6 +15,7 @@ Done:
 
 Todo:
 
+ * Support for 12h time formats
  * Extended theming support
 
 ----
