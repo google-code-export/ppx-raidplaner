@@ -12,11 +12,12 @@ Done:
  * Favicon
  * Support for Monks
  * About screen and version check
+ * Support for 12h time formats
+ * Extended theming support
 
 Todo:
 
- * Support for 12h time formats
- * Extended theming support
+ * Usablity improvements for tablets
 
 ----
 
