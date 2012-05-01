@@ -17,7 +17,6 @@ Done:
 
 Todo:
 
- * Rendering performance tests
  * Usablity improvements for tablets
 
 ----
