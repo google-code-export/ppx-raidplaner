@@ -14,10 +14,12 @@ Done:
  * About screen and version check
  * Support for 12h time formats
  * Extended theming support
+ * Usablity improvements for tablets
 
 Todo:
 
- * Usablity improvements for tablets
+ * Testing ...
+ * Video tutorial
 
 ----
 
