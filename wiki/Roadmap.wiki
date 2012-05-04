@@ -45,6 +45,7 @@ ETA: Not yet set<br>
  * Security checks on SQL injections and session/user hijacking
  * Fix all bugs tagged for release
  * Code cleanup
+ * Minified script and css version
 
 ----
  
@@ -66,3 +67,4 @@ The following features can be described as "yeah, I would totally like to see th
  * Mobile phone version
  * SWTOR version
  * Use JSON instead of XML
+ * DKP Support
