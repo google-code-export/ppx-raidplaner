@@ -1,6 +1,21 @@
 #labels Featured
+= Version 0.9 =
+
 http://www.packedpixel.de/raidplaner/screenshots/calendar.png
 http://www.packedpixel.de/raidplaner/screenshots/setup.png
+
+= Version 0.9.4 =
+
 http://www.packedpixel.de/raidplaner/screenshots/profile.png
 http://www.packedpixel.de/raidplaner/screenshots/settings.png
 http://www.packedpixel.de/raidplaner/screenshots/settings2.png
+
+= Version 0.9.5 =
+
+
+http://www.packedpixel.de/raidplaner/screenshots/theme_cata.png
+http://www.packedpixel.de/raidplaner/screenshots/theme_wotlk.png
+http://www.packedpixel.de/raidplaner/screenshots/theme_bc.png
+http://www.packedpixel.de/raidplaner/screenshots/theme_mop.png
+http://www.packedpixel.de/raidplaner/screenshots/raid_setup1.png
+http://www.packedpixel.de/raidplaner/screenshots/raid_setup2.png
