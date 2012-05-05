@@ -15,10 +15,13 @@ Done:
  * Support for 12h time formats
  * Extended theming support
  * Usablity improvements for tablets
+ * Drag and drop for touch devices
+ * IE7 tests
+ * Upgrade test
 
 Todo:
 
- * Testing ...
+ * Image tooltips do not stay open under certain conditions
  * Video tutorial
 
 ----
