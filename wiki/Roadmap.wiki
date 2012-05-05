@@ -21,8 +21,8 @@ Done:
 
 Todo:
 
- * [bug] Image tooltips do not stay open under certain conditions
- * [bug] Theme switching from repeat-xy to repeat-x does not work
+ * bug: Image tooltips do not stay open under certain conditions
+ * bug: Theme switching from repeat-xy to repeat-x does not work on first update
  * Video tutorial
 
 ----
