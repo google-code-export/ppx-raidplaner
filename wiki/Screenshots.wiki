@@ -1,4 +1,9 @@
 #labels Featured
+= Screenshots =
+
+Although the language seen on the screenshots is german, the raidplaner will display all text in english (or any other supported language) depending on your browser's language.<br>
+Newer screenshots can be found at the bottom of the page.
+
 = Version 0.9 =
 
 http://www.packedpixel.de/raidplaner/screenshots/calendar.png
