@@ -19,3 +19,4 @@ http://www.packedpixel.de/raidplaner/screenshots/theme_bc.png
 http://www.packedpixel.de/raidplaner/screenshots/theme_mop.png
 http://www.packedpixel.de/raidplaner/screenshots/raid_setup1.png
 http://www.packedpixel.de/raidplaner/screenshots/raid_setup2.png
+http://www.packedpixel.de/raidplaner/screenshots/monk.png
