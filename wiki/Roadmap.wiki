@@ -49,7 +49,7 @@ ETA: Not yet set<br>
 
  * Security checks on SQL injections and session/user hijacking
  * Fix all bugs tagged for release
- * Code cleanup
+ * Code cleanup and performance checks
  * Minified script and css version
 
 ----
