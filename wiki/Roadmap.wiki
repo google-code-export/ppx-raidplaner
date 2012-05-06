@@ -21,7 +21,6 @@ Done:
 
 Todo:
 
- * bug: Theme switching from repeat-xy to repeat-x does not work on first update
  * bug: Reserved slots can be dropped to the wrong list under certain conditions
  * Change localization keys
  * Video tutorial
