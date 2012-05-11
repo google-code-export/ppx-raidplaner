@@ -18,12 +18,13 @@ Done:
  * Drag and drop for touch devices
  * IE7 tests
  * Upgrade test
+ * Support for 5 man groups
 
 Todo:
 
  * bug: Reserved slots can be dropped to the wrong list under certain conditions
  * Change localization keys
- * Video tutorial
+ * Add icons for 5 man dungeons
 
 ----
 
