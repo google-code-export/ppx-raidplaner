@@ -23,6 +23,7 @@ Done:
 Todo:
 
  * bug: Reserved slots can be dropped to the wrong list under certain conditions
+ * bug: Tooltips disappear when clicking on player icon bages (should become sticky instead)
  * Change localization keys
  * Add icons for 5 man dungeons
 
