@@ -20,12 +20,12 @@ Done:
  * Upgrade test
  * Support for 5 man groups
  * Make certain aspects of the game configurable (classes, raid sizes)
+ * Add icons for 5 man dungeons (achievements, timerun, etc.)
 
 Todo:
 
  * Change localization keys
  * bug: Reserved slots can be dropped to the wrong list under certain conditions
- * Add icons for 5 man dungeons
 
 ----
 
