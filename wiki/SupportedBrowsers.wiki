@@ -4,7 +4,7 @@ Last version tested was 0.9.4.<br>
 PPX Raidplaner has been tested successfully on the following browsers:
 
 *Android*<br>
-Version 2.1: last tested with 0.9.3<br>
+Version 2.1: tested ok, minor display problems<br>
 Version 3: last tested with 0.9.3<br>
 
 *Google Chrome*<br>
@@ -15,8 +15,12 @@ Older Versions: not tested, but most likely ok<br>
 Version 5: tested ok<br>
 Older Versions: not tested<br>
 
+*Safari (iPad)*<br>
+iOS 5: tested ok, minor display problems<br>
+Older Versions: not tested<br>
+
 *Mozilla Firefox*<br>
-Version 4: tested ok<br>
+version 13: tested ok<br>
 Version 3.5: tested ok<br>
 Older versions: NOT SUPPORTED<br>
 
