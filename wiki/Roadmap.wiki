@@ -25,22 +25,21 @@ Done:
 
 Todo:
 
- * bug: Reserved slots can be dropped to the wrong list under certain conditions
  * Testing, packaging and release
 
 ----
 
 = Version 0.9.5 =
 
-ETA: June 2012<br>
+June 11, 2012<br>
 "Feature complete for 1.0"
 
- * Extended theming support
+ * Extended theming support and visual update
  * Support for 12h time formats
  * Change localization keys to make it easier to correct spelling mistakes
  * "About" section and update notifications
  * Usablity improvements for tablets
- * Video tutorial
+ * Support for MOP and other/future games
 
 -----
 
