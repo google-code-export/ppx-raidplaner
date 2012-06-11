@@ -5,54 +5,28 @@ Short todo list for upcoming versions.
 Items and timing may change.
 
 = Current status =
-Current repository version is 0.9.5 (candidate)
-
-Done:
-
- * Favicon
- * Support for Monks
- * About screen and version check
- * Support for 12h time formats
- * Extended theming support
- * Usablity improvements for tablets
- * Drag and drop for touch devices
- * IE7 tests
- * Upgrade test
- * Support for 5 man groups
- * Make certain aspects of the game configurable (classes, raid sizes)
- * Add icons for 5 man dungeons (achievements, timerun, etc.)
- * Change localization keys
-
-Todo:
-
- * Testing, packaging and release
+Current repository version is 0.9.5
 
 ----
 
-= Version 0.9.5 =
-
-June 11, 2012<br>
-"Feature complete for 1.0"
-
- * Extended theming support and visual update
- * Support for 12h time formats
- * Change localization keys to make it easier to correct spelling mistakes
- * "About" section and update notifications
- * Usablity improvements for tablets
- * Support for MOP and other/future games
-
------
-
-= Version 0.9.6 (RC1) = 
-
-ETA: September 2012<br>
+= Version 0.9.6 (RC1) =
+ETA: August 2012<br>
 "Release candidate 1"
 
+ * Bugfixes
  * Security checks on SQL injections and session/user hijacking
- * Fix all bugs tagged for release
- * Code cleanup and performance checks
  * Minified script and css version
+
+----
+
+= Version 0.9.7 (RC2) = 
+
+ETA: October 2012<br>
+"Release candidate 2"
+
+ * Fix all bugs tagged for release
  * Tutorials, etc. on the project page
+ * Code cleanup and performance checks
 
 ----
  
