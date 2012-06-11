@@ -1,9 +1,19 @@
 = Released versions =
 
+== Version 0.9.5 (June 2012) ==
+
+To upgrade version 0.9.3 or newer to the latest version, use the upgrade option from the setup tool.
+
+ * 12h / 24h time format switch
+ * Advanced theme support
+ * Improved usability for touch devices
+ * Support for 5-man dungeons
+ * Version check
+ * Several smaller graphic upgrades
+
 == Version 0.9.4 (April 2012) ==
 
-To upgrade version 0.9.3 to the latest version use the upgrade option from the setup tool.
-If you encounter any errors, please file a bug in the Issues section.
+To upgrade version 0.9.3 to the latest version, use the upgrade option from the setup tool.
 
  * Icon update for the current raids
  * All new settings panel with editable locations and presets
