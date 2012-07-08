@@ -13,9 +13,11 @@ Current repository version is 0.9.5
 ETA: August 2012<br>
 "Release candidate 1"
 
+ * Redesign of the raid setup
+ * Update the user management list to the new look
+ * Remove unused localization strings
  * Bugfixes
  * Security checks on SQL injections and session/user hijacking
- * Minified script and css version
 
 ----
 
@@ -27,6 +29,7 @@ ETA: October 2012<br>
  * Fix all bugs tagged for release
  * Tutorials, etc. on the project page
  * Code cleanup and performance checks
+ * Minified script and css version
 
 ----
  
