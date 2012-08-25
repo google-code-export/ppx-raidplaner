@@ -5,12 +5,16 @@ Short todo list for upcoming versions.
 Items and timing may change.
 
 = Current status =
-Current repository version is 0.9.5
+Current repository version is 0.9.6
+
+Working on
+
+ * Redesign of the raid setup
 
 ----
 
 = Version 0.9.6 (RC1) =
-ETA: August 2012<br>
+ETA: ~~August~~ September 2012<br>
 "Release candidate 1"
 
  * Redesign of the raid setup
