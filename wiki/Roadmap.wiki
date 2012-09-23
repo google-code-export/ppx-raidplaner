@@ -9,15 +9,31 @@ Current repository version is 0.9.6
 
 Working on
 
+ * Bugfixes & polishing
+
+Done
+
+ * Latest jQuery version
  * Redesign of the raid setup
+ * MOP Raid icons
 
 ----
 
-= Version 0.9.6 (RC1) =
+= Version 0.9.6 =
 ETA: ~~August~~ September 2012<br>
 "Release candidate 1"
 
+ * Latest jQuery version
  * Redesign of the raid setup
+ * MOP Raid icons
+ * Bugfixes & polishing
+
+----
+
+= Version 0.9.7 (RC1) =
+ETA: November 2012<br>
+"Release candidate 1"
+
  * Update the user management list to the new look
  * Remove unused localization strings
  * Bugfixes
@@ -25,9 +41,9 @@ ETA: ~~August~~ September 2012<br>
 
 ----
 
-= Version 0.9.7 (RC2) = 
+= Version 0.9.8 (RC2) = 
 
-ETA: October 2012<br>
+ETA: December 2012<br>
 "Release candidate 2"
 
  * Fix all bugs tagged for release
