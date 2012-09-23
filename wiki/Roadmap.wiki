@@ -9,12 +9,14 @@ Current repository version is 0.9.6
 
 Working on
 
+ * Raid attendance modes
  * Bugfixes & polishing
 
 Done
 
  * Latest jQuery version
  * Redesign of the raid setup
+ * Raid attendance modes
  * MOP Raid icons
 
 ----
