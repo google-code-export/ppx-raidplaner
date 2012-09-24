@@ -28,7 +28,7 @@
 		  `CharacterId` int(10) unsigned NOT NULL,
 		  `UserId` int(11) unsigned NOT NULL,
 		  `RaidId` int(10) unsigned NOT NULL,
-		  `Status` tinyint(1) unsigned NOT NULL,
+		  `Status` enum('available','unavailable','ok') NOT NULL,
 		  `Role` enum('dmg','heal','tank') NOT NULL,
 		  `Comment` text NOT NULL,
 		  KEY `UserId` (`UserId`),
@@ -42,8 +42,8 @@
 		  `Name` varchar(64) NOT NULL,
 		  `Mainchar` enum('true','false') NOT NULL DEFAULT 'false',
 		  `Class` CHAR(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-		  `Role1` tinyint(1) unsigned NOT NULL,
-		  `Role2` tinyint(1) unsigned NOT NULL,
+		  `Role1` enum('dmg','heal','tank') NOT NULL,
+		  `Role2` enum('dmg','heal','tank') NOT NULL,
 		  PRIMARY KEY (`CharacterId`),
 		  KEY `UserId` (`UserId`)
 		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;" );
@@ -59,16 +59,13 @@
 		  `RaidId` int(10) unsigned NOT NULL AUTO_INCREMENT,
 		  `LocationId` int(10) unsigned NOT NULL,
 		  `Stage` enum('open','locked','canceled') NOT NULL DEFAULT 'open',
-		  `Size` tinyint(2) unsigned NOT NULL,
+		  `Size` tinyint(2) NOT NULL,
 		  `Start` datetime NOT NULL,
 		  `End` datetime NOT NULL,
-		  `Mode` enum('manual','attend','all') NOT NULL,
 		  `Description` text NOT NULL,
-		  `SlotsRole1` tinyint(2) unsigned NOT NULL,
-		  `SlotsRole2` tinyint(2) unsigned  NOT NULL,
-		  `SlotsRole3` tinyint(2) unsigned  NOT NULL,
-		  `SlotsRole4` tinyint(2) unsigned  NOT NULL,
-		  `SlotsRole5` tinyint(2) unsigned  NOT NULL,
+		  `TankSlots` int(11) NOT NULL,
+		  `DmgSlots` int(11) NOT NULL,
+		  `HealSlots` int(11) NOT NULL,
 		  PRIMARY KEY (`RaidId`),
 		  KEY `LocationId` (`LocationId`)
 		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;" );
@@ -111,7 +108,7 @@
 		$connector->exec( "INSERT INTO `".$_REQUEST["prefix"]."Setting` (`Name`, `IntValue`, `TextValue`) VALUES('Site', '', '');" );
 		$connector->exec( "INSERT INTO `".$_REQUEST["prefix"]."Setting` (`Name`, `IntValue`, `TextValue`) VALUES('Theme', '', 'cataclysm');" );
 		$connector->exec( "INSERT INTO `".$_REQUEST["prefix"]."Setting` (`Name`, `IntValue`, `TextValue`) VALUES('TimeFormat', 24, '');" );
-		$connector->exec( "INSERT INTO `".$_REQUEST["prefix"]."Setting` (`Name`, `IntValue`, `TextValue`) VALUES('Version', 96, '');" );	
+		$connector->exec( "INSERT INTO `".$_REQUEST["prefix"]."Setting` (`Name`, `IntValue`, `TextValue`) VALUES('Version', 95, '');" );	
 	}
 	
 	$testSt->closeCursor();

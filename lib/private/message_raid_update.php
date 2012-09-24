@@ -2,204 +2,271 @@
         
 function msgRaidUpdate( $Request )
 {
-    global $s_Roles;
-    
-    if ( ValidRaidlead() )
+	if ( ValidRaidlead() )
     {
-        $Connector = Connector::GetInstance();
-        
-        // The whole update is packed into one transaction.
-        // The transaction will be rolled back upon error so no half-updated
-        // data is stored in the database. This requires the database to
-        // support transactions.
-        
-        $Connector->beginTransaction();
-        $locationId = $Request["locationId"];
-        
-        
-        // Insert new location if necessary
-        
-        if ( $locationId == 0 )
-        {
-            $NewLocationSt = $Connector->prepare("INSERT INTO `".RP_TABLE_PREFIX."Location`".
-                                                 "(Name, Image) VALUES (:Name, :Image)");
-                                                 
-            $NewLocationSt->bindValue(":Name", requestToXML( $Request["locationName"], ENT_COMPAT, "UTF-8" ), PDO::PARAM_STR );
-            $NewLocationSt->bindValue(":Image", $Request["raidImage"], PDO::PARAM_STR );
-            
-            if (!$NewLocationSt->execute())
-            {
-                postErrorMessage( $NewLocationSt );
-                
-                $NewLocationSt->closeCursor();
-                $Connector->rollBack();
-                return; // ### return, error ###
-            }
-            else
-            {            
-                $locationId = $Connector->lastInsertId();
-            }
-            
-            $NewLocationSt->closeCursor();
-        }
-        
-        // Update raid
-        
-        $UpdateRaidSt = $Connector->prepare("UPDATE `".RP_TABLE_PREFIX."Raid` SET ".
-                                            "LocationId = :LocationId, Size = :Size, ".
-                                            "Stage = :Stage, ".
-                                            "Start = FROM_UNIXTIME(:Start), End = FROM_UNIXTIME(:End), ".
-                                            "Description = :Description, ".
-                                            "Mode = :Mode, ".
-                                            "SlotsRole1 = :SlotsRole1, SlotsRole2 = :SlotsRole2, SlotsRole3 = :SlotsRole3, SlotsRole4 = :SlotsRole4, SlotsRole5 = :SlotsRole5 ".
-                                            "WHERE RaidId = :RaidId" );
-        
-        $StartDateTime = mktime($Request["startHour"], $Request["startMinute"], 0, $Request["month"], $Request["day"], $Request["year"] );
-        $EndDateTime   = mktime($Request["endHour"], $Request["endMinute"], 0, $Request["month"], $Request["day"], $Request["year"] );
+    	$Connector = Connector::GetInstance();
+    	
+    	$Connector->beginTransaction();
+    	
+    	$locationId = $Request["locationId"];
+    	
+    	
+    	// Insert new location if necessary
+    	
+    	if ( $locationId == 0 )
+    	{
+    		$NewLocationSt = $Connector->prepare("INSERT INTO `".RP_TABLE_PREFIX."Location`".
+    											 "(Name, Image) VALUES (:Name, :Image)");
+    											 
+    		$NewLocationSt->bindValue(":Name", requestToXML( $Request["locationName"], ENT_COMPAT, "UTF-8" ), PDO::PARAM_STR );
+    		$NewLocationSt->bindValue(":Image", $Request["raidImage"], PDO::PARAM_STR );
+    		
+    		if (!$NewLocationSt->execute())
+        	{
+        		postErrorMessage( $NewLocationSt );
+            	
+            	$NewLocationSt->closeCursor();
+            	$Connector->rollBack();
+            	return;
+        	}
+        	else
+        	{        	
+    			$locationId = $Connector->lastInsertId();
+    		}
+    		
+    		$NewLocationSt->closeCursor();
+    	}
+    	
+    	// Update raid
+    	
+    	$UpdateRaidSt = $Connector->prepare("UPDATE `".RP_TABLE_PREFIX."Raid` SET ".
+    										"LocationId = :LocationId, Size = :Size, ".
+    										"Stage = :Stage, ".
+    										"Start = FROM_UNIXTIME(:Start), End = FROM_UNIXTIME(:End), ".
+    										"Description = :Description, ".
+    										"TankSlots = :TankSlots, DmgSlots = :DmgSlots, HealSlots = :HealSlots ".
+    										"WHERE RaidId = :RaidId" );
+    	
+		$StartDateTime = mktime($Request["startHour"], $Request["startMinute"], 0, $Request["month"], $Request["day"], $Request["year"]);
+        $EndDateTime   = mktime($Request["endHour"], $Request["endMinute"], 0, $Request["month"], $Request["day"], $Request["year"]);
         
         if ( $EndDateTime < $StartDateTime )
-            $EndDateTime += 60*60*24;
-
-        $UpdateRaidSt->bindValue(":RaidId",      $Request["id"], PDO::PARAM_INT);
+	           $EndDateTime += 60*60*24;
+        
+        $UpdateRaidSt->bindValue(":RaidId",  	 $Request["id"], PDO::PARAM_INT);
         $UpdateRaidSt->bindValue(":LocationId",  $locationId, PDO::PARAM_INT);
-        $UpdateRaidSt->bindValue(":Stage",       $Request["stage"], PDO::PARAM_STR);
+        $UpdateRaidSt->bindValue(":Stage",  	 $Request["stage"], PDO::PARAM_STR);
         $UpdateRaidSt->bindValue(":Size",        $Request["locationSize"], PDO::PARAM_INT);
         $UpdateRaidSt->bindValue(":Start",       $StartDateTime, PDO::PARAM_INT);
         $UpdateRaidSt->bindValue(":End",         $EndDateTime, PDO::PARAM_INT);
-        $UpdateRaidSt->bindValue(":Mode",        $Request["mode"], PDO::PARAM_STR);
         $UpdateRaidSt->bindValue(":Description", requestToXML( $Request["description"], ENT_COMPAT, "UTF-8" ), PDO::PARAM_STR);
         
-        $SlotSizes = Array(
-            intval($Request["slotsRole"][0]), intval($Request["slotsRole"][1]), intval($Request["slotsRole"][2]),
-            intval($Request["slotsRole"][3]), intval($Request["slotsRole"][4])
-        );
+        $RaidSize   = intval($Request["locationSize"]);
+        $NumTanks   = intval($Request["tankSlots"]);
+        $NumHealers = intval($Request["healSlots"]);
         
-        // sanity check, at least one slot per role
+        // sanity checks
         
-        $numRoles = sizeof($s_Roles);
-        $RaidSize = intval($Request["locationSize"]);
-        
-        for ( $i=0; $i<$numRoles; ++$i )
+        if ( $RaidSize - $NumTanks < 2 )
         {
-            $MinSlotsRequired = $numRoles-($i+1);
-            
-            if ( $RaidSize - $SlotSizes[$i] < $MinSlotsRequired )
-            {
-                $SlotSizes[$i] = $RaidSize - $MinSlotsRequired;
-            }
-            
-            $RaidSize -= $SlotSizes[$i];
+        	$NumTanks   = $RaidSize - 2;
+        	$NumHealers = 1;
+        }
+        else if ( $RaidSize - ($NumTanks + $NumHealers) < 1 )
+        {
+        	$NumHealers = $RaidSize - $NumTanks - 1;
         }
         
-        // upload slot sizes
-        
-        $UpdateRaidSt->bindValue(":SlotsRole1", $SlotSizes[0], PDO::PARAM_INT);
-        $UpdateRaidSt->bindValue(":SlotsRole2", $SlotSizes[1], PDO::PARAM_INT);
-        $UpdateRaidSt->bindValue(":SlotsRole3", $SlotSizes[2], PDO::PARAM_INT);
-        $UpdateRaidSt->bindValue(":SlotsRole4", $SlotSizes[3], PDO::PARAM_INT);
-        $UpdateRaidSt->bindValue(":SlotsRole5", $SlotSizes[4], PDO::PARAM_INT);
+        $UpdateRaidSt->bindValue(":TankSlots",	$NumTanks, PDO::PARAM_INT);
+        $UpdateRaidSt->bindValue(":HealSlots",	$NumHealers, PDO::PARAM_INT);
+        $UpdateRaidSt->bindValue(":DmgSlots",	$Request["locationSize"] - ( $NumTanks + $NumHealers ), PDO::PARAM_INT);
         
         if (!$UpdateRaidSt->execute())
         {
             postErrorMessage( $UpdateRaidSt );        
-            $UpdateRaidSt->closeCursor();
-            $Connector->rollBack();
+        	$UpdateRaidSt->closeCursor();
+        	$Connector->rollBack();
         }
         else
         {        
-            $UpdateRaidSt->closeCursor();
-            
-            // Remove all random slots (no user id assignmend, so always re-inserted)
-                
-            $DeleteReserved = $Connector->prepare( "DELETE FROM `".RP_TABLE_PREFIX."Attendance` ".
-                                                   "WHERE CharacterId = 0 AND UserId = 0 AND RaidId = :RaidId" );
-                                                    
-            $DeleteReserved->bindValue( ":RaidId", $Request["id"], PDO::PARAM_INT);
-                    
-            if (!$DeleteReserved->execute())
-            {
-                postErrorMessage( $DeleteReserved );
-                $DeleteReserved->closeCursor();
-                $Connector->rollBack();
-                return; // ### return, errror ###
-            }
-            
-            $DeleteReserved->closeCursor();
-            
-            // Now iterate over all role lists and update the players in it
-            // Random player will be re-inserted, "real" players will be update if they
-            // did not change to "unavailable" while editing the raid.
-            
-            for ( $RoleIdx=0; $RoleIdx < sizeof($s_Roles); ++$RoleIdx )
-            {
-                if ( isset($Request["role".($RoleIdx+1)]) )
-                {
-                    $NumAttends = 0;
-                    $AttendsForRole = $Request["role".($RoleIdx+1)];
-                    
-                    // Attendances are passed in the form [id,status,id,status, … ]
-                    // So we iterate with a stride of 2
-                    
-                    for ( $AttendIdx=0; $AttendIdx < sizeof($AttendsForRole); $AttendIdx += 2 )
-                    {
-                        $UpdateSlot = null;
-                        $Status = $AttendsForRole[$AttendIdx+1];
-                        
-                        if ( $Status == "ok" )
-                        {
-                            if ( $NumAttends < $SlotSizes[$RoleIdx] )
-                                ++$NumAttends;
-                            else
-                                $Status = "available";
-                        }
-                        
-                        if ( $AttendsForRole[$AttendIdx] < 0 )
-                        {
-                            // Random player, re-insert
-                            // Random players have one additional information set, so we need to
-                            // move $AttendIdx here.
-                            
-                            $UpdateSlot = $Connector->prepare( "INSERT INTO `".RP_TABLE_PREFIX."Attendance` ".
-                                                               "( CharacterId, UserId, RaidId, Status, Role, Comment ) ".
-                                                               "VALUES ( 0, 0, :RaidId, :Status, :Role, :Name )" );
-                        
-                            $UpdateSlot->bindValue( ":Name", $AttendsForRole[$AttendIdx+2], PDO::PARAM_STR);
-                            ++$AttendIdx;
-                        }
-                        else
-                        {
-                            // Real player, update if possible
-                            
-                            $UpdateSlot = $Connector->prepare( "UPDATE `".RP_TABLE_PREFIX."Attendance` SET ".
-                                                               "Status = :Status, Role = :Role ".
-                                                               "WHERE RaidId = :RaidId AND Status != 'unavialable' AND CharacterId = :CharacterId LIMIT 1" );
-                                                                    
-                            $UpdateSlot->bindValue( ":CharacterId", $AttendsForRole[$AttendIdx], PDO::PARAM_INT);
-                        }
-                        
-                        $UpdateSlot->bindValue( ":Status", $Status, PDO::PARAM_STR);
-                        $UpdateSlot->bindValue( ":RaidId", $Request["id"], PDO::PARAM_INT);
-                        $UpdateSlot->bindValue( ":Role", $RoleIdx, PDO::PARAM_INT);
-                        
-                        if (!$UpdateSlot->execute())
-                        {
-                            postErrorMessage( $UpdateSlot );
-                            $UpdateSlot->closeCursor();
-                            $Connector->rollBack();
-                            return; // ### return, error ###
-                        }
-                        
-                        $UpdateSlot->closeCursor();
-                    }
-                }
-            }
-            
-            $Connector->commit();
-        }
+	        $UpdateRaidSt->closeCursor();
+	        
+	        // Remove all reserved slots (no user id assignmend, so always re-inserted)
+				
+			$DeleteReserved = $Connector->prepare( "DELETE FROM `".RP_TABLE_PREFIX."Attendance` ".
+		    									   "WHERE CharacterId = 0 AND UserId = 0 AND RaidId = :RaidId" );
+		    										
+	        $DeleteReserved->bindValue( ":RaidId", $Request["id"], PDO::PARAM_INT);
+			        
+			if (!$DeleteReserved->execute())
+	        {
+	        	postErrorMessage( $DeleteReserved );
+	        	$DeleteReserved->closeCursor();
+	        	$Connector->rollBack();
+	            return;
+	        }
+	        
+	        $DeleteReserved->closeCursor();
+	        
+	        // Update tanks in list
+	        
+	        if ( isset($Request["tanks"]) && is_array( $Request["tanks"] ) )
+	        {
+		        foreach( $Request["tanks"] as $PlayerId )
+		        {
+		        	$UpdateAttendance = null;
+		        	
+		        	if ( intval($PlayerId) == 0 )
+		        	{
+		        		$UpdateAttendance = $Connector->prepare("INSERT INTO `".RP_TABLE_PREFIX."Attendance` ".
+			    												"( CharacterId, UserId, RaidId, Status, Role, Comment ) ".
+			    												"VALUES ( :CharacterId, 0, :RaidId, 'ok', 'tank', :Name )" );
+			    	
+			    		$UpdateAttendance->bindValue( ":Name", substr($PlayerId, 2, strlen($PlayerId) ), PDO::PARAM_STR);
+			       }
+		        	else
+		        	{
+		        		$UpdateAttendance = $Connector->prepare("UPDATE `".RP_TABLE_PREFIX."Attendance` SET ".
+			    												"Status = 'ok', Role = 'tank' ".
+			    												"WHERE RaidId = :RaidId AND (Status = 'available' OR Status = 'ok') AND CharacterId = :CharacterId LIMIT 1" );
+			    	}
+			    	
+			    	$UpdateAttendance->bindValue( ":RaidId", $Request["id"], PDO::PARAM_INT);
+			        $UpdateAttendance->bindValue( ":CharacterId", $PlayerId, PDO::PARAM_INT);
+			        
+			        if (!$UpdateAttendance->execute())
+			        {
+			        	postErrorMessage( $UpdateAttendance );
+			            $UpdateAttendance->closeCursor();
+			            $Connector->rollBack();
+			            return;
+			        }
+			        
+			        $UpdateAttendance->closeCursor();
+		        }
+		    }
+	        
+	        // Update healers in list
+	        
+	        if ( isset($Request["healers"]) && is_array( $Request["healers"] ) )
+	        {
+		        foreach( $Request["healers"] as $PlayerId )
+		        {
+		        	$UpdateAttendance = null;
+		        	
+		        	if ( intval($PlayerId) == 0 )
+		        	{
+		        		$UpdateAttendance = $Connector->prepare("INSERT INTO `".RP_TABLE_PREFIX."Attendance` ".
+			    												"( CharacterId, UserId, RaidId, Status, Role, Comment ) ".
+			    												"VALUES ( :CharacterId, 0, :RaidId, 'ok', 'heal', :Name )" );
+			    	
+			    		$UpdateAttendance->bindValue( ":Name", substr($PlayerId, 2, strlen($PlayerId) ), PDO::PARAM_STR);
+			    	}
+		        	else
+		        	{
+		        		$UpdateAttendance = $Connector->prepare("UPDATE `".RP_TABLE_PREFIX."Attendance` SET ".
+			    												"Status = 'ok', Role = 'heal' ".
+			    												"WHERE RaidId = :RaidId AND (Status = 'available' OR Status = 'ok') AND CharacterId = :CharacterId LIMIT 1" );
+			    	}
+			    							
+			    	$UpdateAttendance->bindValue(":RaidId", $Request["id"], PDO::PARAM_INT);
+			        $UpdateAttendance->bindValue(":CharacterId", $PlayerId, PDO::PARAM_INT);
+			               
+			        if (!$UpdateAttendance->execute())
+			        {
+			        	postErrorMessage( $UpdateAttendance );
+			        	$UpdateAttendance->closeCursor();
+			        	$Connector->rollBack();
+			            return;
+			        }
+			        
+			        $UpdateAttendance->closeCursor();
+		        }
+		    }
+	        
+	        // Update dds in list
+	        
+	        if ( isset($Request["damage"]) && is_array( $Request["damage"] ) )
+	        {
+		        foreach( $Request["damage"] as $PlayerId )
+		        {
+		        	$UpdateAttendance = null;
+		        	
+		        	if ( intval($PlayerId) == 0 )
+		        	{
+		        		$UpdateAttendance = $Connector->prepare("INSERT INTO `".RP_TABLE_PREFIX."Attendance` ".
+			    												"( CharacterId, UserId, RaidId, Status, Role, Comment ) ".
+			    												"VALUES ( :CharacterId, 0, :RaidId, 'ok', 'dmg', :Name )" );
+			    	
+			    		$UpdateAttendance->bindValue( ":Name", substr($PlayerId, 2, strlen($PlayerId) ), PDO::PARAM_STR);
+			    	}
+		        	else
+		        	{
+		        		$UpdateAttendance = $Connector->prepare("UPDATE `".RP_TABLE_PREFIX."Attendance` SET ".
+			    												"Status = 'ok', Role = 'dmg' ".
+			    												"WHERE RaidId = :RaidId AND (Status = 'available' OR Status = 'ok') AND CharacterId = :CharacterId LIMIT 1" );
+			    	}
+			    							
+			    	$UpdateAttendance->bindValue(":RaidId", $Request["id"], PDO::PARAM_INT);
+			        $UpdateAttendance->bindValue(":CharacterId", $PlayerId, PDO::PARAM_INT);
+			               
+			        if (!$UpdateAttendance->execute())
+			        {
+			        	postErrorMessage( $UpdateAttendance );
+			        	$UpdateAttendance->closeCursor();
+			        	$Connector->rollBack();
+			            return;
+			        }
+			        
+			        $UpdateAttendance->closeCursor();
+		        }
+		    }
+	        
+	        // Update players not in list
+		    
+		    if ( isset($Request["onBench"]) )
+	        {    
+		        $OnBench = "";
+		        $firstItem = true;
+		        
+		        foreach( $Request["onBench"] as $PlayerId )
+		        {
+		        	if ( intval($PlayerId) != 0 )
+		        	{
+			        	if (!$firstItem)
+			        		$OnBench .= " OR ";
+			        	
+			        	$OnBench .= "CharacterId = ".intval($PlayerId);
+			        	$firstItem = false;
+			        }
+		        }
+		        
+		        if ( strlen( $OnBench ) > 0 )
+		        {   
+			        $UpdateBench = $Connector->prepare( "UPDATE `".RP_TABLE_PREFIX."Attendance` SET ".
+			    										"Status = 'available' ".
+			    										"WHERE RaidId = :RaidId AND Status = 'ok' AND (". $OnBench .")" );
+			    										
+			    	$UpdateBench->bindValue(":RaidId", $Request["id"], PDO::PARAM_INT);
+			               
+			        if (!$UpdateBench->execute())
+			        {
+			        	postErrorMessage( $UpdateBench );
+			        	$UpdateBench->closeCursor();
+			        	$Connector->rollBack();
+			            return;
+			        }
+			        
+			        $UpdateBench->closeCursor(); 
+				}
+			}
+			
+			$Connector->commit();
+		}
         
         // reload detailed view
-        
-        msgRaidDetail( $Request );
+		
+		msgRaidDetail( $Request );
     }
     else
     {
