@@ -9,8 +9,9 @@ Current repository version is 0.9.6
 
 Working on
 
- * Raid attendance modes
- * Bugfixes & polishing
+ * Review of slot buttons
+ * Extended slackers list tooltip
+ * Testing & Bugfixing
 
 Done
 
@@ -18,7 +19,8 @@ Done
  * Redesign of the raid setup
  * Raid attendance modes
  * MOP Raid icons
-
+ * Raid attendance modes
+ 
 ----
 
 = Version 0.9.6 =
