@@ -25,8 +25,7 @@ Done
 ----
 
 = Version 0.9.6 =
-ETA: ~~August~~ September 2012<br>
-"Release candidate 1"
+ETA: October 8th 2012<br>
 
  * Latest jQuery version
  * Redesign of the raid setup
@@ -36,11 +35,11 @@ ETA: ~~August~~ September 2012<br>
 ----
 
 = Version 0.9.7 (RC1) =
-ETA: November 2012<br>
+ETA: December 2012<br>
 "Release candidate 1"
 
  * Update the user management list to the new look
- * Remove unused localization strings
+ * Remove unused localization strings, styles and images
  * Bugfixes
  * Security checks on SQL injections and session/user hijacking
 
@@ -48,7 +47,7 @@ ETA: November 2012<br>
 
 = Version 0.9.8 (RC2) = 
 
-ETA: December 2012<br>
+ETA: January 2013<br>
 "Release candidate 2"
 
  * Fix all bugs tagged for release
