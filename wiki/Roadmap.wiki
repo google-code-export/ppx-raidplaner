@@ -9,9 +9,8 @@ Current repository version is 0.9.6
 
 Working on
 
- * Review of slot buttons
- * Extended slackers list tooltip
- * Testing & Bugfixing
+ * Testing
+ * Packaging & Release
 
 Done
 
@@ -20,6 +19,8 @@ Done
  * Raid attendance modes
  * MOP Raid icons
  * Raid attendance modes
+ * Review of slot buttons
+ * Extended slackers list tooltip
  
 ----
 
