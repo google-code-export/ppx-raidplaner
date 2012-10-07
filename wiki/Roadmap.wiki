@@ -9,28 +9,7 @@ Current repository version is 0.9.6
 
 Working on
 
- * Testing
- * Packaging & Release
-
 Done
-
- * Latest jQuery version
- * Redesign of the raid setup
- * Raid attendance modes
- * MOP Raid icons
- * Raid attendance modes
- * Review of slot buttons
- * Extended slackers list tooltip
- 
-----
-
-= Version 0.9.6 =
-ETA: October 8th 2012<br>
-
- * Latest jQuery version
- * Redesign of the raid setup
- * MOP Raid icons
- * Bugfixes & polishing
 
 ----
 
