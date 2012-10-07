@@ -1,5 +1,14 @@
 = Released versions =
 
+== Version 0.9.6 (October 2012) ==
+
+ * The raid setup has been rewritten completely
+ * 2 new raid attendance modes: "Setup on attend" and "just list"
+ * Improved "slackers" lists
+ * Support for up to 5 roles (for games other than WoW)
+ * Improved iPad support
+ * Lots of minor improvements
+
 == Version 0.9.5 (June 2012) ==
 
 To upgrade version 0.9.3 or newer to the latest version, use the upgrade option from the setup tool.
