@@ -1,6 +1,6 @@
 = Supported Browsers =
 
-Last version tested was 0.9.4.<br>
+Last version tested was 0.9.6.<br>
 PPX Raidplaner has been tested successfully on the following browsers:
 
 *Android*<br>
