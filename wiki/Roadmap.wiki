@@ -9,6 +9,8 @@ Current repository version is 0.9.6
 
 Working on
 
+ * Bugfixes
+
 Done
 
 ----
@@ -17,9 +19,10 @@ Done
 ETA: December 2012<br>
 "Release candidate 1"
 
- * Update the user management list to the new look
- * Remove unused localization strings, styles and images
  * Bugfixes
+ * Check if some of the "apply changes" buttons can be removed
+ * Update the user management list to use "..." buttons instead of scrollbars
+ * Remove unused localization strings, styles and images
  * Security checks on SQL injections and session/user hijacking
 
 ----
