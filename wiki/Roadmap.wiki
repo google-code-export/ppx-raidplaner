@@ -10,6 +10,7 @@ Current repository version is 0.9.6
 Working on
 
  * Bugfixes for 0.9.6a
+ * Customization tutorial
 
 Done
 
@@ -23,6 +24,7 @@ ETA: December 2012<br>
  * Make it clearer that pressing "apply changes" is necessary to save the changes made
  * Update the user management list to use "..." buttons instead of scrollbars
  * Remove unused localization strings, styles and images
+ * Improve MoP theme
  * Security checks on SQL injections and session/user hijacking
 
 ----
