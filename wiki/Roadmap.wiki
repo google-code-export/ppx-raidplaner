@@ -17,7 +17,7 @@ Done
 ----
 
 = Version 0.9.7 (RC1) =
-ETA: December 2012<br>
+ETA: early/mid Q1 2013<br>
 "Release candidate 1"
 
  * Bugfixes
@@ -31,7 +31,7 @@ ETA: December 2012<br>
 
 = Version 0.9.8 (RC2) = 
 
-ETA: January 2013<br>
+ETA: late Q1/early Q2 2013<br>
 "Release candidate 2"
 
  * Fix all bugs tagged for release
