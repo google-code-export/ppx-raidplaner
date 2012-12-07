@@ -1,0 +1,86 @@
+= Raidplaner customization =
+
+== Creating custom themes ==
+
+The theme XML format
+Themes are described via XML and have to be placed in the "images/themes" folders.<br>
+Lets have a look at an example file:
+
+{{{
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <banner>cataclysm.jpg</banner>
+    <bgimage>cataclysm.jpg</bgimage>
+    <bgrepeat>repeat-x</bgrepeat>
+    <bgcolor>#8a8a8a</bgcolor>
+</theme>
+}}}
+
+The first line is the standard XML header. Leave this as-is (unless you know what you're doing).<br>
+The root element is called "theme". There are no additional attributes, so this can be left unchanged, too.
+Next are the elements describing the different parts of the theme.<br>
+All nodes (as in {{{<node></node>}}}) are mandatory should be written all lowercase.
+
+*Banner*<br>
+The image named here has to exist in the folder "images/banner" and will be displayed at the top of the page. The image has to be of the dimensions 1024x141.<br>
+If you leave the banner empty, a black area will be displayed.
+
+*BgImage*<br>
+This image will be displayed in the background of the raidplaner and has to exist in the folder "images/background". It can be of any dimension but should work well with whatever repeat pattern is defined with the "bgrepeat" node.<br>
+If you leave this setting empty, no background will be displayed.
+
+*BgRepeat*<br>
+This node defines the repeat mode of the background patterns. <br>
+The values entered have to be compatible with the css attribute "background-repeat".
+Possible values are "no-repeat", "repeat-x", "repeat-y", "repeat".
+
+*BgColor*<br>
+The color of the page behind the background image.<br>
+This can be useful if you don't want to use a background image, the image should blend into a single color or you want to use a transparent image.
+
+== Changes beyond theme files ==
+
+It is not recommended to do any changes that go beyond the standard theme mechanism.
+If you do want to modify other elements have a look at the folder "lib/layout". Here you will find stylesheets for each section of the raidplaner. All css files will be merged
+into a single file called "_layout.css.php". If you need to create any additional css file you should include it here.
+
+The raidplaner uses JQuery UI. If you want to change the optics of the used interface elements you can download a custom style from jquery.org and replace the
+"jquery-ui-1.8.23.custom.css" and the "ui-`*`" files in the folder "lib/layout/images".
+
+|| calendar.css || Styles for the calendar view ||
+|| combobox.css || Styles for dropdown boxes ||
+|| default.css || Common styles used throughout the raidplaner ||
+|| profile.css || Styles for the profile view ||
+|| raid.css || Styles for the raid detail view ||
+|| raidlist.css || Styles for the raid list view ||
+|| settings.css || Styles for the settings view ||
+|| shadow.css || Styles used for elements with shadows ||
+|| shadowIE.css || Internet Explorer specific style-overwrites for shadows ||
+|| sheet.css || Styles used for sheets (e.g. new raid sheet) ||
+|| sheetIE.css || Internet Explorer specific style-overwrites for sheets ||
+|| tooltip.css || Styles used in tooltips ||
+|| tooltipIE.css || Internet Explorer specific style-overwrites for tooltip ||
+
+You will find most game related images in the top level "images" folder. The images found in "lib/layout/images" are ment to be game-agnostic interface elements.<br>
+The top level "images" folder contains 5 folders for game specific images:
+
+|| classesbig || Class icons of size 64x64 ||
+|| classessmall || Class icons of size 32x32 ||
+|| raidbig || Raid location icons of size 64x64 ||
+|| raidsmall || Raid location icons of size 32x32 ||
+|| roles || Role icons and slot images ||
+
+All images placed in "raidbig" and "raidsmall" always have to exist in both folders.
+So if you want to add a new "mylocation.png" you should place a 32x32 version called "mylocation.png" in "raidsmall" and a 64x64 version called "mylocation.png" in "raidbig".<br>
+The images will automatically become available in the location image chooser.<br>
+Images placed in "classesbig" and "classessmall" follow the same rule but have to be referenced from the "gameconfig.php" (see below).
+
+The roles folder relies heavily on the settings you made in the "gameconfig.php". The images here must be named like the roles the refer to. So if you define a role "magic", there has to be a "magic.png" file in this folder.<br>
+This folder also contains slot graphics. You can use the existing graphics to create new ones for your role or simple use the ones available. As these images are referenced directly from the "gameconfig.php" you don't need to follow any name conventions here.
+
+== Configuring the raidplaner for other games ==
+
+The raidplaner comes with common settings for World of Warcraft. To use the raidplaner for other games you might want to change the available roles and classes.<br>
+To do this you will have to edit the "lib/private/gameconfig.php". The file contains several comments explaining which settings will have what effect. You will need basic knowledge of PHP when editing this file.<br>
+When configuring the raidplaner for a new game you should always work with an empty database, i.e. there should be no characters defined for any user. If this is not the case, you should backup your database and clear the tables "_`<`prefix`>`_Character" and "_`<`prefix`>`_Attendance".<br>
+If you do not work with an empty database, you will end up with incorrect profile pages and other weird stuff.
