@@ -1,3 +1,4 @@
+#labels Featured
 = Raidplaner customization =
 
 == Creating custom themes ==
