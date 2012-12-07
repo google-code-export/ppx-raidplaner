@@ -42,7 +42,7 @@ This can be useful if you don't want to use a background image, the image should
 
 It is not recommended to do any changes that go beyond the standard theme mechanism.<br>
 If you however *do* want to modify other elements have a look at the folder "lib/layout". Here you will find stylesheets for each section of the raidplaner. All css files will be merged
-into a single file called "_layout.css.php". If you need to create any additional css file you should include it here.
+into a single file called "`_`layout.css.php". If you need to create any additional css file you should include it here.
 
 The raidplaner uses JQuery UI. If you want to change the optics of the used interface elements you can download a custom style from jquery.org and replace the
 "jquery-ui-1.8.23.custom.css" and the "ui-`*`" files in the folder "lib/layout/images".
