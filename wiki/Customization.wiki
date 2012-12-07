@@ -44,7 +44,7 @@ It is not recommended to do any changes that go beyond the standard theme mechan
 If you however *do* want to modify other elements have a look at the folder "lib/layout". Here you will find stylesheets for each section of the raidplaner. All css files will be merged
 into a single file called "`_`layout.css.php". If you need to create any additional css file you should include it here.
 
-The raidplaner uses JQuery UI. If you want to change the optics of the used interface elements you can download a custom style from jquery.org and replace the
+The raidplaner uses JQuery UI. If you want to change the optics of the used interface elements you can download a custom style from http://jqueryui.com and replace the
 "jquery-ui-1.8.23.custom.css" and the "ui-`*`" files in the folder "lib/layout/images".
 
 || calendar.css || Styles for the calendar view ||
@@ -70,7 +70,7 @@ The top level "images" folder contains 5 folders for game specific images:
 || raidsmall || Raid location icons of size 32x32 ||
 || roles || Role icons and slot images ||
 
-All images placed in "raidbig" and "raidsmall" always have to exist in both folders.
+All images placed in "raidbig" and "raidsmall" have to exist in both folders.
 So if you want to add a new "mylocation.png" you should place a 32x32 version called "mylocation.png" in "raidsmall" and a 64x64 version called "mylocation.png" in "raidbig".<br>
 The images will automatically become available in the location image chooser.<br>
 Images placed in "classesbig" and "classessmall" follow the same rule but have to be referenced from the "gameconfig.php" (see below).
@@ -81,7 +81,8 @@ This folder also contains slot graphics. You can use the existing graphics to cr
 == Configuring the raidplaner for other games ==
 
 The raidplaner comes with common settings for World of Warcraft. To use the raidplaner for other games you might want to change the available roles and classes.<br>
-To do this you will have to edit the "lib/private/gameconfig.php". The file contains several comments explaining which settings will have what effect. You will need basic knowledge of PHP when editing this file.<br>
+To do this you will have to edit the "lib/private/gameconfig.php". The file contains several comments explaining which settings will have what effect. You will need basic knowledge of PHP when editing this file.
+
 When configuring the raidplaner for a new game you should always work with an empty database, i.e. there should be no characters defined for any user. If this is not the case, you should backup your database and clear the tables "_`<`prefix`>`_Character" and "_`<`prefix`>`_Attendance".<br>
 If you do not work with an empty database, you will end up with incorrect profile pages and other weird stuff.
 
@@ -96,7 +97,7 @@ $s_Roles = Array(
 );
 }}}
 
-The identifier will be used in the database as well as for identifying the correct image for the class (see above). The localization name has to be added to all localization files (or at least the one you are using).
+The key ("identifier") will be used in the database as well as for identifying the correct image for the role (see above). The localization name has to be added to all localization files (or at least the one you are using).
 Localization files can be found in "lib/private/locale".
 
 {{{
@@ -106,10 +107,9 @@ if ( defined("LOCALE_MAIN") )
     // ...
 }}} 
 
-After defining your new roles you have to set up the raid slot images. These images are shown in the raid detail view and should make it clear which slot is available for which role. The slotimages are assigned to the corresponding role at the same index as used in $s_Roles. So the first entry in $s_RoleImages will be the slot image for the first role defined in $s_Roles.
+After defining your new roles you have to set up the raid slot images. These images are shown in the raid detail view and should make it easy to see which slot is available for which role. The slotimages are assigned to the corresponding role at the same index as used in $s_Roles. So the first entry in $s_RoleImages will be the slot image for the first role defined in $s_Roles.
 
-Finally you might want to define role sets for the different classes. For example: A deathknight can be played as a damage dealer as wall as a tank. So you might want to define a role set for this combination.
-Role sets are optional but simplify the class defintions.
+Finally you might want to define role sets to by used by class definitions. For example: A deathknight can be played as a damage dealer as wall as a tank. So you might want to define a role set for this combination.
 
 {{{
 class Roles
@@ -120,9 +120,9 @@ class Roles
 
 === Defining new classes ===
 
-Defining new classes is similar to defining new roles. You have to edit or extend the $s_Classes array, which is again associative. As with the roles, the key is the class identifier used in the database and when finding the corresponding class image.<br>
-The value of each class has to be set to an array containing the localization key and an array of roles the class supports. If you defined role sets you can just use the corresponding role set here.<br>
-Note the the class "empty" in mandatory.
+Defining new classes is very similar to defining new roles. You have to edit or extend the $s_Classes array, which is again associative. As with the roles array, the key will be the class identifier used in the database and when finding the corresponding class image.<br>
+The value of each class entry has to be set to an array containing the localization key and a role set (array of role identifiers). If you defined role sets you can just use the fitting role set here.<br>
+Note the the class "empty" is mandatory.
 
 {{{
 $s_Classes = Array(
@@ -133,8 +133,8 @@ $s_Classes = Array(
 
 === Defining new group sizes ===
 
-The raidplaner supports custom group sizes. If your game does not support the common World of Warcraft group sizes (5,10,25) you can change this, too.<br>
-The $s_GroupSizes array needs to define the size of the group as kay and the default slot size for each role as value. So if you have 5 roles and want to define a new group with 20 players, it will look like this:
+The raidplaner supports custom group sizes. If your game does not support the common World of Warcraft group sizes (5,10,25) or you want to disallow/add a size you need to change this array.<br>
+The $s_GroupSizes array needs to define the size of the group as key and the default slot size for each role as value. So if you have 5 roles and want to define a new group with 20 players, it will look like this:
 
 {{{
 $s_GroupSizes = Array(
