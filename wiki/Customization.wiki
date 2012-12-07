@@ -3,7 +3,6 @@
 
 == Creating custom themes ==
 
-The theme XML format
 Themes are described via XML and have to be placed in the "images/themes" folders.<br>
 Lets have a look at an example file:
 
