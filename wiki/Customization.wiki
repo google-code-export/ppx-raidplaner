@@ -92,7 +92,7 @@ The roles have to be defined as a key/value pair like this:
 
 {{{
 $s_Roles = Array(
-    "identifier" => "Localization"
+    "identifier" => "roleLoca"
 );
 }}}
 
@@ -102,7 +102,7 @@ Localization files can be found in "lib/private/locale".
 {{{
 if ( defined("LOCALE_MAIN") )
 {
-    $g_Locale[ "Localization" ] = "Meine neue Rolle";
+    $g_Locale[ "roleLoca" ] = "Meine neue Rolle";
     // ...
 }}} 
 
@@ -110,3 +110,34 @@ After defining your new roles you have to set up the raid slot images. These ima
 
 Finally you might want to define role sets for the different classes. For example: A deathknight can be played as a damage dealer as wall as a tank. So you might want to define a role set for this combination.
 Role sets are optional but simplify the class defintions.
+
+{{{
+class Roles
+{
+    public static $all = Array("dmg","heal","tank","identifier");
+    // ...
+}}}
+
+=== Defining new classes ===
+
+Defining new classes is similar to defining new roles. You have to edit or extend the $s_Classes array, which is again associative. As with the roles, the key is the class identifier used in the database and when finding the corresponding class image.<br>
+The value of each class has to be set to an array containing the localization key and an array of roles the class supports. If you defined role sets you can just use the corresponding role set here.<br>
+Note the the class "empty" in mandatory.
+
+{{{
+$s_Classes = Array(
+    "empty" => Array( "", Roles::$damage ),
+    "newClass" => Array( "classLoca", Roles::$all ),
+    // ...
+}}}
+
+=== Defining new group sizes ===
+
+The raidplaner supports custom group sizes. If your game does not support the common World of Warcraft group sizes (5,10,25) you can change this, too.<br>
+The $s_GroupSizes array needs to define the size of the group as kay and the default slot size for each role as value. So if you have 5 roles and want to define a new group with 20 players, it will look like this:
+
+{{{
+$s_GroupSizes = Array(
+    20  => Array(4,4,4,4,4),
+    // ...
+}}}
