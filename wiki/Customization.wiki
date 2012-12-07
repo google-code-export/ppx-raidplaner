@@ -21,20 +21,20 @@ The root element is called "theme". There are no additional attributes, so this 
 Next are the elements describing the different parts of the theme.<br>
 All nodes (as in {{{<node></node>}}}) are mandatory should be written all lowercase.
 
-*Banner*<br>
+*banner*<br>
 The image named here has to exist in the folder "images/banner" and will be displayed at the top of the page. The image has to be of the dimensions 1024x141.<br>
 If you leave the banner empty, a black area will be displayed.
 
-*BgImage*<br>
+*bgimage*<br>
 This image will be displayed in the background of the raidplaner and has to exist in the folder "images/background". It can be of any dimension but should work well with whatever repeat pattern is defined with the "bgrepeat" node.<br>
 If you leave this setting empty, no background will be displayed.
 
-*BgRepeat*<br>
+*bgrepeat*<br>
 This node defines the repeat mode of the background patterns. <br>
 The values entered have to be compatible with the css attribute "background-repeat".
 Possible values are "no-repeat", "repeat-x", "repeat-y", "repeat".
 
-*BgColor*<br>
+*bgcolor*<br>
 The color of the page behind the background image.<br>
 This can be useful if you don't want to use a background image, the image should blend into a single color or you want to use a transparent image.
 
@@ -84,3 +84,29 @@ The raidplaner comes with common settings for World of Warcraft. To use the raid
 To do this you will have to edit the "lib/private/gameconfig.php". The file contains several comments explaining which settings will have what effect. You will need basic knowledge of PHP when editing this file.<br>
 When configuring the raidplaner for a new game you should always work with an empty database, i.e. there should be no characters defined for any user. If this is not the case, you should backup your database and clear the tables "_`<`prefix`>`_Character" and "_`<`prefix`>`_Attendance".<br>
 If you do not work with an empty database, you will end up with incorrect profile pages and other weird stuff.
+
+=== Defining new roles ===
+
+Roles are defined in the $s_Roles array. There can be up to 5 roles and there has to be at least 1 role.
+The roles have to be defined as a key/value pair like this:
+
+{{{
+$s_Roles = Array(
+    "identifier" => "Localization"
+);
+}}}
+
+The identifier will be used in the database as well as for identifying the correct image for the class (see above). The localization name has to be added to all localization files (or at least the one you are using).
+Localization files can be found in "lib/private/locale".
+
+{{{
+if ( defined("LOCALE_MAIN") )
+{
+    $g_Locale[ "Localization" ] = "Meine neue Rolle";
+    // ...
+}}} 
+
+After defining your new roles you have to set up the raid slot images. These images are shown in the raid detail view and should make it clear which slot is available for which role. The slotimages are assigned to the corresponding role at the same index as used in $s_Roles. So the first entry in $s_RoleImages will be the slot image for the first role defined in $s_Roles.
+
+Finally you might want to define role sets for the different classes. For example: A deathknight can be played as a damage dealer as wall as a tank. So you might want to define a role set for this combination.
+Role sets are optional but simplify the class defintions.
