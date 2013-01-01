@@ -31,6 +31,7 @@ ETA: early/mid Q1 2013<br>
  * Improve MoP theme
  * Security checks on SQL injections and session/user hijacking
  * Allow changing the gameconfig on an already existing database
+ * jQuery 1.9
 
 ----
 
