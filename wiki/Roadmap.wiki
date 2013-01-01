@@ -10,11 +10,11 @@ Working version can be found in branches/0.9.7
 
 Working on
 
- * Allow comments even if the player is not signed up or absent
  * Update the user management list to use "..." buttons instead of scrollbars
 
 Done
 
+ * Allow comments even if the player is not signed up or absent
  * Customization tutorial
  * Bugfixes for 0.9.6a
 
