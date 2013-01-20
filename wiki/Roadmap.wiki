@@ -10,10 +10,12 @@ Working version can be found in branches/0.9.7
 
 Working on
 
- * Update the user management list to use "..." buttons instead of scrollbars
+ * Make it clearer that pressing "apply changes" is necessary to save the changes made
 
 Done
 
+ * Update the user management list to use "..." buttons instead of scrollbars
+ * jQuery 1.9 and jQueryUI 1.10
  * Allow comments even if the player is not signed up or absent
  * Customization tutorial
  * Bugfixes for 0.9.6a
@@ -24,14 +26,15 @@ Done
 ETA: early/mid Q1 2013<br>
 "Release candidate 1"
 
- * Bugfixes
- * Make it clearer that pressing "apply changes" is necessary to save the changes made
-
+ * Bugfixes 
  * Remove unused localization strings, styles and images
  * Improve MoP theme
  * Security checks on SQL injections and session/user hijacking
  * Allow changing the gameconfig on an already existing database
- * jQuery 1.9
+ * Allow comments even if the player is not signed up or absent
+ * Update the user management list to use "..." buttons instead of scrollbars
+ * Make it clearer that pressing "apply changes" is necessary to save the changes made
+ * jQuery 1.9 and jQuery UI 1.10
 
 ----
 
