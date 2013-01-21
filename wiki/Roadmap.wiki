@@ -10,8 +10,8 @@ Working version can be found in branches/0.9.7
 
 Working on
 
- * Conversion of a bound user to a local user via UI
- * Allow changing the gameconfig on an already existing database
+ * Support for MyBB
+ * Support for Simple Machines Forum (SMF)
 
 Done
 
@@ -21,6 +21,7 @@ Done
  * Allow comments even if the player is not signed up or absent
  * Customization tutorial
  * Bugfixes for 0.9.6a
+ * ~~Conversion of a bound user to a local user via UI~~ Automatic conversion vor vbulletin users fixed
 
 ----
 
