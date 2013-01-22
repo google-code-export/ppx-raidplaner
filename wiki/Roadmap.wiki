@@ -10,6 +10,7 @@ Working version can be found in branches/0.9.7
 
 Working on
 
+ * Security improvements
  * Support for MyBB
  * Support for Simple Machines Forum (SMF)
 
