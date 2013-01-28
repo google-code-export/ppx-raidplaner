@@ -10,8 +10,8 @@ Working version can be found in branches/0.9.7
 
 Working on
 
+ * Minor optical improvements
  * Allow changing the gameconfig on an already existing database
- * Remove unused localization strings, styles and images
 
 Done
 
