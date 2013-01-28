@@ -15,6 +15,7 @@ Working on
 
 Done
 
+ * Fixed EQDKP binding
  * Support for MyBB
  * Support for Simple Machines Forum (SMF)
  * Security checks on SQL injections and session/user hijacking
