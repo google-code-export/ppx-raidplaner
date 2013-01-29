@@ -64,7 +64,7 @@ ETA: late Q1/early Q2 2013<br>
  
 = Version 1.0 =
 
-ETA: Not yet set<br>
+ETA: 1-2 months after RC2<br>
 "Release"
 
  * Bugfixes
