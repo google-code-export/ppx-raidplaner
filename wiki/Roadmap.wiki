@@ -10,6 +10,7 @@ Working version can be found in branches/0.9.7
 
 Working on
 
+ * HMAC authentication
  * Minor optical improvements (registration, character roles)
 
 Done
