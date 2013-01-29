@@ -50,7 +50,7 @@ ETA: early/mid Q1 2013<br>
 ETA: late Q1/early Q2 2013<br>
 "Release candidate 2"
  
- * No new UI related features (aka. feature freeze)
+ * *No new UI related features (aka. feature freeze)*
 
  * Cleanup: Merge redundand code paths
  * Cleanup: Dead code removal
@@ -74,7 +74,8 @@ ETA: 1-2 months after RC2<br>
 
 = Beyond 1.0 =
 
-The following features can be described as "yeah, I would totally like to see those, but they do not make sense before 1.0". If they make it into a (earlier) version depends on how much sense they make / how much they will break the code or concept.
+The following features can be described as "yeah, I would totally like to see those, but they do not make sense before 1.0".<br>
+If they make it into a (earlier) version depends on how much sense they make / how much they will break the code or concept.
 
  * Support for common loot distribution systems (DKP/NiKarma/MugKP)
  * Dark theme
