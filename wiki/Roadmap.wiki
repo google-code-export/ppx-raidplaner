@@ -10,8 +10,7 @@ Working version can be found in branches/0.9.7
 
 Working on
 
- * Minor optical improvements
- * Allow changing the gameconfig on an already existing database
+ * Minor optical improvements (registration, character roles)
 
 Done
 
@@ -34,17 +33,15 @@ ETA: early/mid Q1 2013<br>
 "Release candidate 1"
 
  * Bugfixes 
- * Remove unused localization strings, styles and images
- * Improve MoP theme
  * Security checks on SQL injections and session/user hijacking
- * jQuery 1.9 and jQuery UI 1.10
- 
+ * jQuery 1.9 and jQuery UI 1.10 
  * Allow changing the gameconfig on an already existing database
  * Allow comments even if the player is not signed up or absent
  * Update the user management list to use "..." buttons instead of scrollbars
  * Make it clearer that pressing "apply changes" is necessary to save the changes made
  * Support for MyBB
  * Support for Simple Machines Forum (SMF)
+ * Improve MoP theme
 
 ----
 
@@ -52,10 +49,16 @@ ETA: early/mid Q1 2013<br>
 
 ETA: late Q1/early Q2 2013<br>
 "Release candidate 2"
+ 
+ * No new UI related features (aka. feature freeze)
 
+ * Cleanup: Merge redundand code paths
+ * Cleanup: Dead code removal
+ * Cleanup: Remove unused localization strings, styles and images
+ * Performance: Improve queries by using more selectors
+ * Performance: Use JSON instead of XML 
+ * Performance: Minified script and css version
  * Fix all bugs tagged for release
- * Code cleanup and performance checks
- * Minified script and css version
 
 ----
  
@@ -64,16 +67,15 @@ ETA: late Q1/early Q2 2013<br>
 ETA: Not yet set<br>
 "Release"
 
- * API cleaned up, documented and "releaseable"
- * Bug Free
+ * Bugfixes
  * Displaying 100% correctly on IE7+, Safari, Chrome, Firefox3.5+, Opera11+ and Android2+ devices
 
 ----
 
 = Beyond 1.0 =
 
-The following features can be described as "yeah, I would totally like to see those, but they do not make sense before 1.0". If they make it into a version depends on how much sense they make / how much they will break the code or concept.
+The following features can be described as "yeah, I would totally like to see those, but they do not make sense before 1.0". If they make it into a (earlier) version depends on how much sense they make / how much they will break the code or concept.
 
- * Mobile phone version
- * Use JSON instead of XML for more performance
- * DKP Support
+ * Support for common loot distribution systems (DKP/NiKarma/MugKP)
+ * Dark theme
+ * Better integration into portal / content management systems
