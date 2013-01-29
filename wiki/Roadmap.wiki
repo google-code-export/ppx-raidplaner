@@ -52,13 +52,13 @@ ETA: late Q1/early Q2 2013<br>
  
  * *No new UI related features (aka. feature freeze)*
 
+ * Bugfixes
  * Cleanup: Merge redundand code paths
  * Cleanup: Dead code removal
  * Cleanup: Remove unused localization strings, styles and images
  * Performance: Improve queries by using more selectors
  * Performance: Use JSON instead of XML 
  * Performance: Minified script and css version
- * Fix all bugs tagged for release
 
 ----
  
@@ -67,7 +67,7 @@ ETA: late Q1/early Q2 2013<br>
 ETA: 1-2 months after RC2<br>
 "Release"
 
- * Bugfixes
+ * Fixed all bugs tagged for release 1.0
  * Displaying 100% correctly on IE7+, Safari, Chrome, Firefox3.5+, Opera11+ and Android2+ devices
 
 ----
