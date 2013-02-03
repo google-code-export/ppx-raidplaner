@@ -10,11 +10,11 @@ Working version can be found in branches/0.9.7
 
 Working on
 
- * HMAC authentication
  * Minor optical improvements (registration, character roles)
 
 Done
 
+ * HMAC based authentication
  * Fixed EQDKP binding
  * Support for MyBB
  * Support for Simple Machines Forum (SMF)
