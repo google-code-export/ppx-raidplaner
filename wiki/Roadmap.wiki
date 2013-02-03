@@ -12,7 +12,7 @@ Working on
 
  * Fixing errors caused by the authentication change
    * Password change for local users
-   * Error message after session time out
+   * Correct handling of session time out
  * Allow changing the gameconfig on an already existing database
 
 Done
