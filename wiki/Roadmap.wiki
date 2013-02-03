@@ -10,10 +10,14 @@ Working version can be found in branches/0.9.7
 
 Working on
 
- * Minor optical improvements (registration, character roles)
+ * Fixing errors caused by the authentication change
+   * Password change for local users
+   * Error message after session time out
+ * Allow changing the gameconfig on an already existing database
 
 Done
 
+ * Minor optical improvements (registration, character roles)
  * HMAC based authentication
  * Fixed EQDKP binding
  * Support for MyBB
