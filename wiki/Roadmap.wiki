@@ -11,6 +11,7 @@ Working version can be found in branches/0.9.7
 Working on
 
  * Re-enable password change for local users
+ * Switch to re-enable cleartext passwords (server side hashing)
  * Allow changing the gameconfig on an already existing database
 
 Done
