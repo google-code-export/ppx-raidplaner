@@ -18,17 +18,17 @@ Done
  * Challenge key authentication (cleartext authentication optional)
  * Rewritten user management and binding system
  * Fixed EQDKP binding
+ * Fixed sticky login
  * Support for MyBB
  * Support for Simple Machines Forum (SMF)
- * Security checks on SQL injections and session/user hijacking
+ * Better security regarding SQL injections and session/user hijacking
  * Make it clearer that pressing "apply changes" is necessary to save the changes made
  * Update the user management list to use "..." buttons instead of scrollbars
- * jQuery 1.9 and jQueryUI 1.10
+ * jQuery 1.9.1 and jQueryUI 1.10
  * Allow comments even if the player is not signed up or absent
  * Customization tutorial
  * Bugfixes for 0.9.6a
- * ~~Conversion of a bound user to a local user via UI~~ Automatic conversion vor vbulletin users fixed
-
+ * ~~Conversion of a bound user to a local user via UI~~ Automatic conversion for vbulletin users fixed
 ----
 
 = Version 0.9.7 (RC1) =
