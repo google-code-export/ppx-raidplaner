@@ -10,14 +10,13 @@ Working version can be found in branches/0.9.7
 
 Working on
 
- * Re-enable password change for local users
- * Switch to re-enable cleartext passwords (server side hashing)
  * Allow changing the gameconfig on an already existing database
 
 Done
 
  * Minor optical improvements (registration, character roles)
- * HMAC based authentication
+ * Challenge key authentication (cleartext authentication optional)
+ * Rewritten user management and binding system
  * Fixed EQDKP binding
  * Support for MyBB
  * Support for Simple Machines Forum (SMF)
