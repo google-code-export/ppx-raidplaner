@@ -14,6 +14,7 @@ Working on
 
 Done
 
+ * ~~Improve MoP theme~~ New MoP based theme (old theme still available)
  * Minor optical improvements (registration, character roles)
  * Challenge key authentication (cleartext authentication optional)
  * Rewritten user management and binding system
