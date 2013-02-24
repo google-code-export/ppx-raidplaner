@@ -10,10 +10,12 @@ Working version can be found in branches/0.9.7
 
 Working on
 
- * Allow changing the gameconfig on an already existing database
+ * Testing for release
 
 Done
 
+ * New interface for the setup tool
+ * Allow changing the gameconfig on an already existing database
  * ~~Improve MoP theme~~ New MoP based theme (old theme still available)
  * Minor optical improvements (registration, character roles)
  * Challenge key authentication (cleartext authentication optional)
@@ -30,10 +32,11 @@ Done
  * Customization tutorial
  * Bugfixes for 0.9.6a
  * ~~Conversion of a bound user to a local user via UI~~ Automatic conversion for vbulletin users fixed
+
 ----
 
 = Version 0.9.7 (RC1) =
-ETA: early/mid Q1 2013<br>
+ETA: March 3rd 2013<br>
 "Release candidate 1"
 
  * Bugfixes 
@@ -51,7 +54,7 @@ ETA: early/mid Q1 2013<br>
 
 = Version 0.9.8 (RC2) = 
 
-ETA: late Q1/early Q2 2013<br>
+ETA: mid/late Q2 2013<br>
 "Release candidate 2"
  
  * *No new UI related features (aka. feature freeze)*
@@ -61,7 +64,6 @@ ETA: late Q1/early Q2 2013<br>
  * Cleanup: Dead code removal
  * Cleanup: Remove unused localization strings, styles and images
  * Performance: Improve queries by using more selectors
- * Performance: Use JSON instead of XML 
  * Performance: Minified script and css version
 
 ----
@@ -84,3 +86,4 @@ If they make it into a (earlier) version depends on how much sense they make / h
  * Support for common loot distribution systems (DKP/NiKarma/MugKP)
  * Dark theme
  * Better integration into portal / content management systems
+ * Performance: Use JSON instead of XML 
