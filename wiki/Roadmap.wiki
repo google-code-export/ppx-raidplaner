@@ -10,46 +10,11 @@ Working version can be found in branches/0.9.7
 
 Working on
 
- * Testing for release
+ * Bugfixes for 0.9.7a
+ * CSS cleanup
 
 Done
-
- * New interface for the setup tool
- * Allow changing the gameconfig on an already existing database
- * ~~Improve MoP theme~~ New MoP based theme (old theme still available)
- * Minor optical improvements (registration, character roles)
- * Challenge key authentication (cleartext authentication optional)
- * Rewritten user management and binding system
- * Fixed EQDKP binding
- * Fixed sticky login
- * Support for MyBB
- * Support for Simple Machines Forum (SMF)
- * Better security regarding SQL injections and session/user hijacking
- * Make it clearer that pressing "apply changes" is necessary to save the changes made
- * Update the user management list to use "..." buttons instead of scrollbars
- * jQuery 1.9.1 and jQueryUI 1.10
- * Allow comments even if the player is not signed up or absent
- * Customization tutorial
- * Bugfixes for 0.9.6a
- * ~~Conversion of a bound user to a local user via UI~~ Automatic conversion for vbulletin users fixed
-
-----
-
-= Version 0.9.7 (RC1) =
-ETA: March 3rd 2013<br>
-"Release candidate 1"
-
- * Bugfixes 
- * Security checks on SQL injections and session/user hijacking
- * jQuery 1.9 and jQuery UI 1.10 
- * Allow changing the gameconfig on an already existing database
- * Allow comments even if the player is not signed up or absent
- * Update the user management list to use "..." buttons instead of scrollbars
- * Make it clearer that pressing "apply changes" is necessary to save the changes made
- * Support for MyBB
- * Support for Simple Machines Forum (SMF)
- * Improve MoP theme
-
+ 
 ----
 
 = Version 0.9.8 (RC2) = 
