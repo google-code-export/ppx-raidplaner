@@ -1,35 +1,65 @@
 = Released versions =
 
+== Version 0.9.7 (March 2013) ==
+
+ * [New] New interface for the setup tool
+ * [New] Repair tool for changing the gameconfig.php on an existing database
+ * [New] Challenge key authentication (cleartext authentication optional)
+ * [New] Support for MyBB
+ * [New] Support for Simple Machines Forum (SMF)
+ * [New] 2nd Mists of Pandaria theme
+
+ * [Mod] Comments are now possible without signing up
+ * [Mod] Rewritten user management system
+ * [Mod] Leaving a section with unapplied settings triggers a message
+ * [Mod] Improved raid setup usability
+ * [Mod] Star marker = main role / main character (removed twink marker)
+
+ * [Fix] EQDKP binding works again
+ * [Fix] vBulletin binding works again
+ * [Fix] Improved checks against SQL Injections
+ * [Fix] Improved checks against Session hijacking
+ * [Fix] Sticky login is now functional again
+ * [Fix] Profile display of more than 6 characters now works on all browser
+ * [Fix] Proper text shadow for IE
+ * [Fix] Combo boxes don't close tooltips anymore
+ * [Fix] Days with more than 4 raids don't destroy the calendar layout anymore
+ * [Fix] Raids now lock at start-time instead of end-time
+
 == Version 0.9.6 (October 2012) ==
 
- * The raid setup has been rewritten completely
- * 2 new raid attendance modes: "Setup on attend" and "just list"
- * Improved "slackers" lists
- * Support for up to 5 roles (for games other than WoW)
- * Improved iPad support
- * Lots of minor improvements
+ * [New] The raid setup has been rewritten completely
+ * [New] 2 new raid attendance modes: "Setup on attend" and "just list"
+ * [New] Improved "slackers" lists
+ * [New] Support for up to 5 roles (for games other than WoW)
+ 
+ * [Fix] Improved iPad support
+ * [Fix] Lots of minor improvements
 
 == Version 0.9.5 (June 2012) ==
 
 To upgrade version 0.9.3 or newer to the latest version, use the upgrade option from the setup tool.
 
- * 12h / 24h time format switch
- * Advanced theme support
- * Improved usability for touch devices
- * Support for 5-man dungeons
- * Version check
- * Several smaller graphic upgrades
+ * [New] 12h / 24h time format switch
+ * [New] Advanced theme support
+ * [New] Version check
+
+ * [Mod] Improved usability for touch devices
+ * [Mod] Support for 5-man dungeons
+
+ * [Fix] Several smaller graphic upgrades
 
 == Version 0.9.4 (April 2012) ==
 
 To upgrade version 0.9.3 to the latest version, use the upgrade option from the setup tool.
 
- * Icon update for the current raids
- * All new settings panel with editable locations and presets
- * Attendance statistics
- * Password change for local users (those not bound externally)
- * Exchangeable banner
- * Upgrade option in the installer
+ * [New] All new settings panel with editable locations and presets
+ * [New] Attendance statistics
+ * [New] Upgrade option in the installer
+
+ * [Mod] Icon update for the current raids
+ * [Mod] Password change for local users (those not bound externally)
+ * [Mod] Exchangeable banner
 
 
 == Version 0.9.3 (May 2011) ==
