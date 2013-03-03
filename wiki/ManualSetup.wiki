@@ -19,12 +19,13 @@ However - if something went wrong it will help me to know which update steps fai
 
 = Manual setup instructions =
 
+*It is highly recommended to use the setup tool to install the raidplaner.*
+
  # Copy the unzipped data in a separate folder on your server, e.g. "raid".
  # Import the database default layout (from the download section) into your database. A good tool for this is the import function from phpMyAdmin. All tables will be preceded by "raid`_`" so you can import everything into a database already in use by other systems (e.g. PhpBB3)
  # Create (or edit) the config files located in "lib/config" to match your setup. The files are listed in the section below.
- # Login with the user "admin" and the password "admin".
+ # Login with the user "admin" and the password "root".
 
-You can change the password manually in the "raid_User" table by encoding your desired password with an SHA1 hash.<br>
 The following defines can be made in each of the files listed below, e.g.
 {{{
 <?php
@@ -34,6 +35,7 @@ The following defines can be made in each of the files listed below, e.g.
 	define("RP_PASS", "root");
 	define("RP_TABLE_PREFIX", "raid_");
 	define("ALLOW_REGISTRATION", false);
+	define("USE_CLEARTEXT_PASSWORDS", false);
 ?>
 }}}
 
@@ -52,6 +54,8 @@ The default prefix is "raid_".
 
 *ALLOW_REGISTRATION* should be set to "false" if you do not want users to register manually.
 This only makes sense if your raidplaner is connected to e.g. a PhpBB3 forum.
+
+*USE_CLEARTEXT_PASSWORDS* should be set to "false" to improve security for non-https connections. You may want to set this to "true" to fix slow logins or problems with certain eqdkp configurations.
 
 = config.phpbb3.php =
 
@@ -77,38 +81,23 @@ You can find your PhpBB3 group ids in the table "phpbb_groups". The Id needed is
 
 = config.eqdkp.php =
 
-*EQDKP_BINDING* should be set to "false" if the raidplaner is not bound to an EQDKP installation.
-If you do that, ALLOW_REGISTRATION in the config.php should be set to "true".
-
-*EQDKP_DATABASE* refers to the database holding your EQDKP data, e.g. "mytable".
-
-*EQDKP_USER* refers to the mysql user that has access to the EQDKP_DATABASE, e.g. "root".
-
-*EQDKP_PASS* refers to the password of the given EQDKP_USER.
-
-*EQDKP_TABLE_PREFIX* should be set to the value preceding all your EQDKP tables, e.g. "eqdkp_".
-Use an empty string if your tables have no prefix.
-
-Note that users with rights to edit raids in eqdkp are automatically considered raidleads.
+Same as phpbb3 but with "EQDKP_" instead of "PHPBB3_".
+"_MEMBER_GROUPS" and "_RAIDLEAD_GROUPS" are not used for this binding.
 
 = config.vb3.php =
 
-*VB3_BINDING* should be set to "false" if the raidplaner is not bound to a vBulletin3 Forum.
-If you do that, ALLOW_REGISTRATION in the config.php should be set to "true".
-
-*VB3_DATABASE* refers to the database holding your vBulletin3 forum, e.g. "mytable".
-
-*VB3_USER* refers to the mysql user that has access to the VB3_DATABASE, e.g. "root".
-
-*VB3_PASS* refers to the password of the given VB3_USER.
-
-*VB3_TABLE_PREFIX* should be set to the value preceding all your vBulletin3 tables, e.g. "vb_".
-Use an empty string if your tables have no prefix.
-
-*VB3_MEMBER_GROUPS* Should be a comma separated list of vBulletin3 group ids (e.g. "2,3").
-Users within these groups will be automatically assigned the "member" status if they login the first time.
-
-*VB3_RAIDLEAD_GROUPS* Should be a comma separated list of  vBulletin3 group ids (e.g. "6").
-Users within these groups will be automatically assigned the "raidlead" status if they login the first time.
+Same as phpbb3 but with "VB3_" instead of "PHPBB3_".
 
 You can find your vBulletin3 group ids in the table "vb_usergroup". The Id needed is from the column "usergroupid".
+
+= config.mybb.php =
+
+Same as phpbb3 but with "MYBB_" instead of "PHPBB3_".
+
+You can find your mybb group ids in the table "mybb_usergroups". The Id needed is from the column "gid".
+
+= config.smf.php =
+
+Same as phpbb3 but with "SMF_" instead of "PHPBB3_".
+
+You can find your mybb group ids in the table "smf_membergroups". The Id needed is from the column "id_group".
