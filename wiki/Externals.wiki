@@ -1,13 +1,11 @@
 = Externals =
 
-Packedpixel Raidplaner uses the following 3rd party scripts:
+Packedpixel Raidplaner uses the following 3rd party scripts.<br>
+Some of these have been extended and/or modified to fix issues or improve integration.
 
-  * jQuery (http://www.jquery.com)
-
-  * jQuery UI (http://jqueryui.com/)
-
- * jQuery hash change event plugin (http://benalman.com/projects/jquery-hashchange-plugin/)
-
-  * Chris Schuld's Browser detection (http://chrisschuld.com/projects/browser-php-detecting-a-users-browser-from-php/)
- 
-  * PHPpass for PHPBB3 (http://www.openwall.com/phpass/)
+ * *jQuery* (http://jquery.com)
+ * *jQuery UI* (http://jqueryui.com/)
+ * *jQuery hash change event plugin* (http://benalman.com/projects/jquery-hashchange-plugin/)
+ * *Chris Schuld's Browser detection* (http://chrisschuld.com/projects/browser-php-detecting-a-users-browser-from-php/)
+ * *CryptoJS* (https://code.google.com/p/crypto-js/)
+ * *Javascript-BCrypt* (https://code.google.com/p/javascript-bcrypt/)
