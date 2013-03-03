@@ -3,6 +3,16 @@
 
 Although the language seen on the screenshots is german, the raidplaner will display all text in english (or any other supported language) depending on your browser's language.<br>
 
+= Version 0.9.7 =
+
+http://www.packedpixel.de/raidplaner/screenshots/097newraid.png
+http://www.packedpixel.de/raidplaner/screenshots/097raidsetup.png
+http://www.packedpixel.de/raidplaner/screenshots/097absent.png
+http://www.packedpixel.de/raidplaner/screenshots/097register.png
+http://www.packedpixel.de/raidplaner/screenshots/097signup.png
+http://www.packedpixel.de/raidplaner/screenshots/097profile.png
+http://www.packedpixel.de/raidplaner/screenshots/097setup.png
+
 = Version 0.9.6 =
 
 http://www.packedpixel.de/raidplaner/screenshots/raidlist096.png
