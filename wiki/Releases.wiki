@@ -2,12 +2,12 @@
 
 == Version 0.9.7 (March 2013) ==
 
- * [New] New interface for the setup tool
- * [New] Repair tool for changing the gameconfig.php on an existing database
- * [New] Challenge key authentication (cleartext authentication optional)
- * [New] Support for MyBB
- * [New] Support for Simple Machines Forum (SMF)
- * [New] 2nd Mists of Pandaria theme
+ * <span color="#0c0">*New*</span> New interface for the setup tool
+ * <span color="#0c0">*New*</span> Repair tool for changing the gameconfig.php on an existing database
+ * <span color="#0c0">*New*</span> Challenge key authentication (cleartext authentication optional)
+ * <span color="#0c0">*New*</span> Support for MyBB
+ * <span color="#0c0">*New*</span> Support for Simple Machines Forum (SMF)
+ * <span color="#0c0">*New*</span> 2nd Mists of Pandaria theme
 
  * [Mod] Comments are now possible without signing up
  * [Mod] Rewritten user management system
@@ -28,10 +28,10 @@
 
 == Version 0.9.6 (October 2012) ==
 
- * [New] The raid setup has been rewritten completely
- * [New] 2 new raid attendance modes: "Setup on attend" and "just list"
- * [New] Improved "slackers" lists
- * [New] Support for up to 5 roles (for games other than WoW)
+ * <span color="#0c0">*New*</span> The raid setup has been rewritten completely
+ * <span color="#0c0">*New*</span> 2 new raid attendance modes: "Setup on attend" and "just list"
+ * <span color="#0c0">*New*</span> Improved "slackers" lists
+ * <span color="#0c0">*New*</span> Support for up to 5 roles (for games other than WoW)
  
  * [Fix] Improved iPad support
  * [Fix] Lots of minor improvements
@@ -40,9 +40,9 @@
 
 To upgrade version 0.9.3 or newer to the latest version, use the upgrade option from the setup tool.
 
- * [New] 12h / 24h time format switch
- * [New] Advanced theme support
- * [New] Version check
+ * <span color="#0c0">*New*</span> 12h / 24h time format switch
+ * <span color="#0c0">*New*</span> Advanced theme support
+ * <span color="#0c0">*New*</span> Version check
 
  * [Mod] Improved usability for touch devices
  * [Mod] Support for 5-man dungeons
@@ -53,9 +53,9 @@ To upgrade version 0.9.3 or newer to the latest version, use the upgrade option 
 
 To upgrade version 0.9.3 to the latest version, use the upgrade option from the setup tool.
 
- * [New] All new settings panel with editable locations and presets
- * [New] Attendance statistics
- * [New] Upgrade option in the installer
+ * <span color="#0c0">*New*</span> All new settings panel with editable locations and presets
+ * <span color="#0c0">*New*</span> Attendance statistics
+ * <span color="#0c0">*New*</span> Upgrade option in the installer
 
  * [Mod] Icon update for the current raids
  * [Mod] Password change for local users (those not bound externally)
