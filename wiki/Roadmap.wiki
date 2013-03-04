@@ -10,8 +10,7 @@ Working version can be found in branches/0.9.7
 
 Working on
 
- * Bugfixes
- * Cleanup
+ * Tutorial Videos
 
 Done
  
