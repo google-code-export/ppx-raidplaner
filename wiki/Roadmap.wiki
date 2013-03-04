@@ -10,14 +10,14 @@ Working version can be found in branches/0.9.7
 
 Working on
 
- * Bugfixes for 0.9.7a
- * CSS cleanup
+ * Bugfixes
+ * Cleanup
 
 Done
  
 ----
 
-= Version 0.9.8 (RC2) = 
+= Version 0.9.8 (RC2) or 1.0 (Release) = 
 
 ETA: mid/late Q2 2013<br>
 "Release candidate 2"
@@ -35,11 +35,11 @@ ETA: mid/late Q2 2013<br>
  
 = Version 1.0 =
 
-ETA: 1-2 months after RC2<br>
+ETA: max. 1-2 months after RC2<br>
 "Release"
 
  * Fixed all bugs tagged for release 1.0
- * Displaying 100% correctly on IE7+, Safari, Chrome, Firefox3.5+, Opera11+ and Android2+ devices
+ * Displaying 100% correctly on IE7+, Safari4+, Chrome, Firefox3.5+, Opera11+, iOS6 and Android2+ devices
 
 ----
 
