@@ -5,12 +5,12 @@ Short todo list for upcoming versions.
 Items and timing may change.
 
 = Current status =
-Current repository version is 0.9.6a.<br>
-Working version can be found in branches/0.9.7
+Current repository version is 0.9.7a.<br>
+Working version can be found in branches/0.9.8
 
 Working on
 
- * Tutorial Videos
+ * Fixes for 0.9.7a
 
 Done
  
