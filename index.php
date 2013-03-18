@@ -1,15 +1,14 @@
 <?php
     define( "LOCALE_MAIN", true );
     require_once("lib/private/locale.php");
-    require_once("lib/private/tools_app.php");
     require_once("lib/private/gameconfig.php");
-		     
-    $siteVersion = 97.1;
     
     if ( !isset($_REQUEST["nocheck"]) )
+    {
         include_once("oldbrowser.php");
+    }
     
-    if ( !file_exists("lib/config/config.php") || !CheckVersion($siteVersion) )
+    if ( !file_exists("lib/config/config.php") )
     {
         include_once("runsetup.php");
         die();
@@ -20,6 +19,8 @@
     
     UserProxy::GetInstance(); // Init user
     loadSiteSettings();
+		     
+    $siteVersion = 97.1;
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
@@ -83,7 +84,7 @@
         <div id="appwindow"<?php if ($g_Site["PortalMode"]) echo " class=\"portalmode\""; ?>>
             <?php
                 if (strtolower($g_Site["Banner"]) != "disable")
-                {
+                { 
                     $bannerImage = (strtolower($g_Site["Banner"]) != "none") 
                         ? "url(images/banner/".$g_Site["Banner"].")"
                         : "none";

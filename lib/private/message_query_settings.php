@@ -60,22 +60,13 @@ function msgQuerySettings( $Request )
 
         $ThemeFiles = scandir( "../images/themes" );
 
-        foreach ( $ThemeFiles as $ThemeFileName )
+        foreach ( $ThemeFiles as $Theme )
         {
-            if (strpos($ThemeFileName,".") > 0)
+            $ThemeName = substr($Theme, 0, strrpos($Theme, "."));
+
+            if ( ($ThemeName != "") && ($ThemeName != ".") )
             {
-                $Theme = new SimpleXMLElement( file_get_contents("../images/themes/".$ThemeFileName) );
-                $SimpleThemeFileName = substr($ThemeFileName, 0, strrpos($ThemeFileName, "."));
-                
-                if ($Theme->name != "")
-                    $ThemeName = $Theme->name;
-                else
-                    $ThemeName = str_replace("_", " ", $SimpleThemeFileName);
-    
-                echo "<theme>";
-                echo "<name>".$ThemeName."</name>";
-                echo "<file>".$SimpleThemeFileName."</file>";
-                echo "</theme>";
+                echo "<theme>".$ThemeName."</theme>";
             }
         }
 
