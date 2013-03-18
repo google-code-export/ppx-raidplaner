@@ -1,0 +1,455 @@
+#raiddetail {
+    text-align: left;
+    color: black;
+    font-size: 12px;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    left: 20px;
+    top: 20px;
+    position: relative;
+    width: 980px;
+    float: left;
+}
+
+#raiddetail .tabs {
+    width: 47px;
+    height: 220px;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+#raiddetail .tab_icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+
+#raiddetail .setup {
+    background-image: url(images/block_users.png);
+}
+
+#raiddetail .slackers {
+    background-image: url(images/block_locations.png);
+}
+
+#raiddetail .settings {
+    background-image: url(images/block_settings.png);
+}
+
+#raiddetail .icon_setup {
+    background-image: url(images/icon_raid.png);
+}
+
+#raiddetail .icon_slackers {
+    background-image: url(images/icon_users.png);
+}
+
+#raiddetail .icon_settings {
+    background-image: url(images/icon_settings.png);
+}
+
+#raiddetail .icon_setup_off {
+    background-image: url(images/icon_raid_off.png);
+    opacity: 0.2;
+    filter:Alpha(opacity=20);
+    cursor: pointer;
+}
+
+#raiddetail .icon_setup_off:hover {
+    opacity: 1.0;
+    filter:Alpha(opacity=100);
+}
+
+#raiddetail .icon_slackers_off {
+    background-image: url(images/icon_users_off.png);
+    opacity: 0.2;
+    filter:Alpha(opacity=20);
+    cursor: pointer;
+}
+
+#raiddetail .icon_slackers_off:hover {
+    opacity: 1.0;
+    filter:Alpha(opacity=100);
+}
+
+#raiddetail .icon_settings_off {
+    background-image: url(images/icon_settings_off.png);
+    opacity: 0.2;
+    filter:Alpha(opacity=20);
+    cursor: pointer;
+}
+
+#raiddetail .icon_settings_off:hover {
+    opacity: 1.0;
+    filter:Alpha(opacity=100);
+}
+
+#raiddetail .raidinfo {
+    height: 64px;
+    margin-bottom: 5px;
+}
+
+#raiddetail .raidicon {
+    float:left;
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+    margin-left: 12px;
+    display: inline-block;
+}
+
+#raiddetail .raidname {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#raiddetail .raidsize {
+    font-size: 10px;
+}
+
+#raiddetail .datetime {
+    font-size: 10px;
+}
+
+#raiddetail .playerIcon {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+.activeSlot .playerIcon {
+    left: 4px;
+}
+
+.activeSlotComment .playerIcon {
+    left: 4px;
+}
+
+.spilledSlot .playerIcon {
+    left: 4px;
+}
+
+.spilledComment .playerIcon {
+    left: 4px;
+}
+
+.playerIcon .mainbadge {
+    background-image: url(images/star.png);
+    width: 18px;
+    height: 16px;
+    position: absolute;
+    left: 12px;
+    top: 14px;
+}
+
+.playerTooltipIcon {
+    width: 32px;
+    height: 32px;
+    float: left;
+}
+
+.playerTooltipRoleIcon {
+    width: 32px;
+    height: 32px;
+}
+
+.playerTooltipIconLarge {
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    float: left;
+}
+
+.playerTooltipIconLarge .twinkcount {
+    background-image: url(images/switchable.png);
+    font-size: 12px;
+    position: relative;
+    top: 45px;
+    width: 64px;
+    height: 15px;
+    text-align: center;
+    padding-top: 1px;
+}
+
+.secondaryAlpha {
+    opacity: 0.6;
+    filter:Alpha(opacity=60);
+}
+
+.playerTooltipText {
+    float: left;
+    margin-left: 10px;
+    min-width: 150px;
+    max-width: 200px;
+}
+
+.playerTooltipText .name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#raiddetail .playerName {
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    float: left;
+    font-size: 11px;
+    top: 10px;
+    left: 5px;
+    width: 80px;
+    overflow: hidden;
+}
+
+.activeSlot .playerName {
+    padding-left: 4px;
+    width: 76px!important;
+}
+
+.activeSlotComment .playerName {
+    padding-left: 4px;
+    width: 76px!important;
+}
+
+.spilledSlot .playerName {
+    padding-left: 4px;
+    width: 76px!important;
+}
+
+.spilledComment .playerName {
+    padding-left: 4px;
+    width: 76px!important;
+}
+
+#raiddetail .editableName {
+    height: 16px;
+    width: 92px;
+    display: inline-block;
+    position: relative;
+    float: left;
+    font-size: 11px;
+    top: 6px;
+    left: 4px;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-bottom: 1px dotted #AAA;
+}
+
+.activeSlot .editableName {
+    margin-left: 4px;
+    width: 88px!important;
+}
+
+.activeSlotComment .editableName {
+    margin-left: 4px;
+    width: 88px!important;
+}
+
+.spilledSlot .editableName {
+    margin-left: 4px;
+    width: 88px!important;
+}
+
+.spilledComment .editableName {
+    margin-left: 4px;
+    width: 88px!important;
+}
+
+#raiddetail .roleList {
+    margin-left: 12px; 
+    height: 380px;
+    float: left;
+    overflow: visible;
+}
+
+#raiddetail .roleList h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 20px;
+}
+
+#raiddetail .attendance_count {
+    color: #ccc;
+    font-size: 12px;
+    vertical-align: text-top;   
+}
+
+#raiddetail .clip {    
+    display: none;
+    float: left;
+    overflow: visible;
+}
+
+#raiddetail .nobreak {
+    float: left;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    width: 140px;
+    height: 32px;
+    overflow: visible;
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px; 
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#raiddetail .break {
+    clear: left;
+    float: left;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    width: 140px;
+    height: 32px;
+    overflow: visible;
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px; 
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#raiddetail .clickable {
+    -moz-box-shadow: 0px 1px 0 #aaa;
+    -webkit-box-shadow: 0px 1px 0 #aaa;
+    box-shadow: 0px 1px 0 #aaa;
+}
+
+#raiddetail .clickable:active {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-top: 1px;
+    margin-bottom: 3px;
+}
+
+#raiddetail .clickable2 {
+    cursor: pointer;
+}
+
+#raiddetail .dragable {
+    cursor: pointer;
+}
+
+#raiddetail .activeSlot {
+    background-image: url(images/slot_set.png);
+}
+
+#raiddetail .activeSlotComment {
+    background-image: url(images/slot_set_comment.png);
+    cursor: pointer;
+}
+
+#raiddetail .spilledSlot {
+    background-image: url(images/slot_spill.png);
+}
+
+#raiddetail .spilledSlotComment {
+    background-image: url(images/slot_spill_comment.png);
+    cursor: pointer;
+}
+
+#raiddetail .waitSlot {
+    background-image: url(images/slot_wait.png);
+}
+
+#raiddetail .waitSlotComment {
+    background-image: url(images/slot_wait_comment.png);
+    cursor: pointer;
+}
+
+#raiddetail .benchSlot {
+    background-image: url(images/slot_bench.png);
+}
+
+#raiddetail .benchSlotComment {
+    background-image: url(images/slot_bench_comment.png);
+    cursor: pointer;
+}
+
+#raiddetail .emptySlot {
+    height: 32px;
+}
+
+#raiddetail .randomSlot {
+    background-image: url(images/slot_random.png);
+    cursor: pointer;
+}
+
+#raiddetail .clipchange {
+    background-image: url(images/slot_more.png);
+    cursor: pointer;
+}
+
+.playerTooltipIconLarge .mainbadge {
+    background-image: url(images/star.png);
+    width: 24px;
+    height: 24px;
+    float: left;
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    display: inline-block;
+}
+
+#raiddetail .slotMarker {
+    background-image: url(images/slot_marker.png);
+    width: 9px;
+    height: 32px;
+    float: left;
+    position: relative;
+    left: -5px;
+    top: 0px;
+    display: inline-block;
+}
+
+#raiddetail .slackerspanel {
+    position: absolute;
+    left: 58px;
+    float: left;
+}
+
+#raiddetail .settingspanel {
+    position: relative;
+    left: 12px;
+    float: left;
+}
+
+#raiddetail .locationicon {
+    float:left;
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#raiddetail .settingLabel {
+    width: 120px;
+    max-width: 120px;
+    float: left;
+    display: inline-block;
+    clear: left;
+    margin-bottom: 8px;
+    vertical-align: top;
+}
+
+#raiddetail .settingField {
+    margin-left: 6px;
+    margin-bottom: 8px;
+    vertical-align: top;
+    float: left;
+    display: inline-block;
+}
+
+#raiddetail .settingEdit {
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    color: #fefefe;
+    padding: 3px;
+}
+
+#absentList {
+    height: 170px;
+}
