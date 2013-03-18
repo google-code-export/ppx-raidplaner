@@ -13,6 +13,7 @@ Lets have a look at an example file:
     <bgimage>cataclysm.jpg</bgimage>
     <bgrepeat>repeat-x</bgrepeat>
     <bgcolor>#8a8a8a</bgcolor>
+    <portalmode>false</portalmode>
 </theme>
 }}}
 
@@ -23,20 +24,24 @@ All nodes (as in {{{<node></node>}}}) are mandatory should be written all lowerc
 
 *banner*<br>
 The image named here has to exist in the folder "images/banner" and will be displayed at the top of the page. The image has to be of the dimensions 1024x141.<br>
-If you leave the banner empty, a black area will be displayed.
+If you set the banner to "_none_", a black area will be displayed. If you set the banner to "_disable_" the banner will not be shown.
 
 *bgimage*<br>
 This image will be displayed in the background of the raidplaner and has to exist in the folder "images/background". It can be of any dimension but should work well with whatever repeat pattern is defined with the "bgrepeat" node.<br>
-If you leave this setting empty, no background will be displayed.
+If set bgimage to "_none_" no background will be displayed.
 
 *bgrepeat*<br>
 This node defines the repeat mode of the background patterns. <br>
 The values entered have to be compatible with the css attribute "background-repeat".
-Possible values are "no-repeat", "repeat-x", "repeat-y", "repeat".
+Possible values are "_no-repeat_", "_repeat-x_", "_repeat-y_", "_repeat_".
 
 *bgcolor*<br>
 The color of the page behind the background image.<br>
 This can be useful if you don't want to use a background image, the image should blend into a single color or you want to use a transparent image.
+If set bgcolor to "_none_" the background color will be transparent.
+
+*portalmode*<br>
+When set to "_true_" this setting will move the raidplaner window to the top left of the document. This might be useful when integrating the raidplaner into a portal/cms.
 
 == Changes beyond theme files ==
 
