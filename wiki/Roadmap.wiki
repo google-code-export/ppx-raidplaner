@@ -5,12 +5,12 @@ Short todo list for upcoming versions.
 Items and timing may change.
 
 = Current status =
-Current repository version is 0.9.7a.<br>
+Current repository version is 0.9.7b (pre).<br>
 Working version can be found in branches/0.9.8
 
 Working on
 
- * Fixes for 0.9.7a
+ * Fixes for 0.9.7b
 
 Done
  
@@ -21,14 +21,13 @@ Done
 ETA: mid/late Q2 2013<br>
 "Release candidate 2"
  
- * *No new UI related features (aka. feature freeze)*
-
- * Bugfixes
- * Cleanup: Merge redundand code paths
+ * Default roles (Issue #28)
+ * User defined raid column layout (Issue #29)
+ * Cleanup: Merge redundant code paths
  * Cleanup: Dead code removal
  * Cleanup: Remove unused localization strings, styles and images
  * Performance: Improve queries by using more selectors
- * Performance: Minified script and css version
+ * Performance: Minified script and CSS version
 
 ----
  
@@ -42,12 +41,23 @@ ETA: max. 1-2 months after RC2<br>
 
 ----
 
-= Beyond 1.0 =
+= Version 1.1 =
 
-The following features can be described as "yeah, I would totally like to see those, but they do not make sense before 1.0".<br>
-If they make it into a (earlier) version depends on how much sense they make / how much they will break the code or concept.
+ETA: N/A
+"Automation"
+
+ * Messagehub generates JSON instead of XML
+ * API to allow read-only access for external applications (Issue #33)
+ * Batch create raids (Issue #31)
+ * Time based raid creation (Issue #31)
+ * Raid layout improvements (Issue #30)
+
+----
+
+= Later versions =
+
+The following features can be described as "yeah, I would totally like to see those, but there are no concrete plans yet".<br>
 
  * Support for common loot distribution systems (DKP/NiKarma/MugKP)
  * Dark theme
  * Better integration into portal / content management systems
- * Performance: Use JSON instead of XML 
