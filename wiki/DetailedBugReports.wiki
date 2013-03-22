@@ -1,3 +1,4 @@
+#labels Featured
 = Detailed bug reports =
 
 Some errors require more information than just a description about what happend.
