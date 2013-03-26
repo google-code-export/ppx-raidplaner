@@ -55,10 +55,19 @@ ETA: N/A
 
 ----
 
+= Version 1.2 =
+
+ETA: N/A
+"DKP and Events"
+
+ * Events as "lightweight" raids for regular members
+ * Support for common loot distribution systems (DKP/NiKarma/MugKP)
+
+----
+
 = Later versions =
 
 The following features can be described as "yeah, I would totally like to see those, but there are no concrete plans yet".<br>
 
- * Support for common loot distribution systems (DKP/NiKarma/MugKP)
  * Dark theme
  * Better integration into portal / content management systems
