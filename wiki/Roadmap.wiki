@@ -10,7 +10,7 @@ Working version can be found in branches/0.9.8
 
 Working on
 
- * Fixes for 0.9.7b
+ * Mini-features/fixes for 0.9.8
 
 Done
  
@@ -23,6 +23,7 @@ ETA: mid/late Q2 2013<br>
  
  * Default roles (Issue #28)
  * User defined raid column layout (Issue #29)
+ * Fix duplicate element ids for raid sheet
  * Cleanup: Merge redundant code paths
  * Cleanup: Dead code removal
  * Cleanup: Remove unused localization strings, styles and images
