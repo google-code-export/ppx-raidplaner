@@ -28,8 +28,8 @@ Sometimes an error needs more information about your php installation.
 The easiest way to do this is by attaching a "phpinfo dump" to the bug report.
 To create this you need to do the following:
 
- * Create a file called "phpinfo.php" (or something else as long as its ending with ".php".
- * The file should contain the following: {{{<?php phpinfo(); ?>}}}
+ * Create a file called "phpinfo.php" (or something else as long as its ending with ".php")
+ * The file should contain the following line: {{{<?php phpinfo(); ?>}}}
  * Upload the file and call "http://yourserver/phpinfo.php"
 
 The page displayed should show detailed information about your php installation.
