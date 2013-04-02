@@ -53,6 +53,7 @@ ETA: N/A
  * Batch create raids (Issue #31)
  * Time based raid creation (Issue #31)
  * Raid layout improvements (Issue #30)
+ * Creating a new forum post when creating a new raid
 
 ----
 
