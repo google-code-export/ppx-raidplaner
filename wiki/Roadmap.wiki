@@ -24,6 +24,7 @@ ETA: mid/late Q2 2013<br>
  * Default roles (Issue #28)
  * User defined raid column layout (Issue #29)
  * Fix duplicate element ids for raid sheet
+ * Add an option to make sunday the first day of the week
  * Cleanup: Merge redundant code paths
  * Cleanup: Dead code removal
  * Cleanup: Remove unused localization strings, styles and images
