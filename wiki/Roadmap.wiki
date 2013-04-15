@@ -10,7 +10,7 @@ Working version can be found in branches/0.9.8
 
 Working on
 
- * Mini-features/fixes for 0.9.8
+ * Full user sync (Issue #39)
 
 Done
  
@@ -23,8 +23,12 @@ ETA: mid/late Q2 2013<br>
  
  * Default roles (Issue #28)
  * User defined raid column layout (Issue #29)
+ * Full user sync (Issue #39)
+ * Vanilla forum integration (Issue #41)
+ * Fix character name UI (Issue #43)
  * Fix duplicate element ids for raid sheet
  * Add an option to make sunday the first day of the week
+ 
  * Cleanup: Merge redundant code paths
  * Cleanup: Dead code removal
  * Cleanup: Remove unused localization strings, styles and images
@@ -73,3 +77,4 @@ The following features can be described as "yeah, I would totally like to see th
 
  * Dark theme
  * Better integration into portal / content management systems
+ * Moving raids
