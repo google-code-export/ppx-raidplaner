@@ -43,6 +43,7 @@ ETA: max. 1-2 months after RC2<br>
 "Release"
 
  * Website and Forum
+ * Tutorial videos
  * Fixed all bugs tagged for release 1.0
  * Displaying 100% correctly on IE7+, Safari4+, Chrome, Firefox3.5+, Opera11+, iOS6 and Android2+ devices
 
