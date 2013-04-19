@@ -26,6 +26,7 @@ ETA: late Q2/early Q3 2013<br>
  * Full user sync (Issue #39)
  * Vanilla forum integration (Issue #41)
  * Fix character name UI (Issue #43)
+ * Link detection in comments (Issue #45)
  * Fix duplicate element ids for raid sheet
  * Add an option to make sunday the first day of the week
  
