@@ -20,6 +20,7 @@ Done
  * Fix character name UI (Issue #43)
  * User defined raid column layout (Issue #29)
  * Link detection in comments (Issue #45)
+ * Try to separate "players on the bench" and "players raiding" more clearly
 
 ----
 
@@ -38,7 +39,6 @@ ETA: late Q2/early Q3 2013<br>
  * Fix duplicate element ids for raid sheet
  * Add an option to make sunday the first day of the week
  * Add a possibility for raidleads to manually attend or remove users
- * Try to separate "players on the bench" and "players raiding" more clearly
  
  * Cleanup: Merge redundant code paths
  * Cleanup: Dead code removal
