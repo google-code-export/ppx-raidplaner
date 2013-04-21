@@ -10,13 +10,15 @@ Working version can be found in branches/0.9.8
 
 Working on
 
- * Default roles (Issue #28)
+ * User defined raid column layout (Issue #29)
 
 Done
 
  * Full user sync (Issue #39)
  * Vanilla forum integration (Issue #41)
- 
+ * Default roles (Issue #28)
+ * Fix character name UI (Issue #43)
+
 ----
 
 = Version 0.9.8 (RC2) or 1.0 (Release) = 
