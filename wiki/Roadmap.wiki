@@ -10,7 +10,7 @@ Working version can be found in branches/0.9.8
 
 Working on
 
- * Link detection in comments (Issue #45)
+ * Fix duplicate element ids for raid sheet
 
 Done
 
@@ -19,6 +19,7 @@ Done
  * Default roles (Issue #28)
  * Fix character name UI (Issue #43)
  * User defined raid column layout (Issue #29)
+ * Link detection in comments (Issue #45)
 
 ----
 
@@ -27,11 +28,11 @@ Done
 ETA: late Q2/early Q3 2013<br>
 "Release candidate 2"
  
- * Default roles (Issue #28)
- * User defined raid column layout (Issue #29)
  * Full user sync (Issue #39)
  * Vanilla forum integration (Issue #41)
+ * Default roles (Issue #28)
  * Fix character name UI (Issue #43)
+ * User defined raid column layout (Issue #29)
  * Link detection in comments (Issue #45)
  * Fix duplicate element ids for raid sheet
  * Add an option to make sunday the first day of the week
