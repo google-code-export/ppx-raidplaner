@@ -20,7 +20,7 @@ Done
  * Fix character name UI (Issue #43)
  * User defined raid column layout (Issue #29)
  * Link detection in comments (Issue #45)
- * Try to separate "players on the bench" and "players raiding" more clearly
+ * Separated "players on the bench" and "players raiding" more clearly
 
 ----
 
