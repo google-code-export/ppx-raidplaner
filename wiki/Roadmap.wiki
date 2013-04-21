@@ -10,11 +10,12 @@ Working version can be found in branches/0.9.8
 
 Working on
 
- * Vanilla forum integration (Issue #41)
+ * Default roles (Issue #28)
 
 Done
 
  * Full user sync (Issue #39)
+ * Vanilla forum integration (Issue #41)
  
 ----
 
