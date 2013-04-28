@@ -11,7 +11,6 @@ Working version can be found in branches/0.9.8
 Working on
 
  * Add an option to make sunday the first day of the week
- * Add a modifcation timestamp to attends to avoid edit race-conditions
 
 Done
 
@@ -24,6 +23,7 @@ Done
  * Separated "players on the bench" and "players raiding" more clearly
  * Fix duplicate element ids for raid sheet
  * Add a possibility for raidleads to manually attend or remove users
+ * Add a modifcation timestamp to attends to avoid edit race-conditions
 
 ----
 
@@ -42,6 +42,7 @@ ETA: late Q2/early Q3 2013<br>
  * Fix duplicate element ids for raid sheet
  * Add an option to make sunday the first day of the week
  * Add a possibility for raidleads to manually attend or remove users
+ * Add a modifcation timestamp to attends to avoid edit race-conditions
  
  * Cleanup: Merge redundant code paths
  * Cleanup: Dead code removal
