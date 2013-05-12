@@ -45,10 +45,11 @@ ETA: late Q2/early Q3 2013<br>
  * Add an option to make sunday the first day of the week
  * Add a possibility for raidleads to manually attend or remove users
  * Add a modifcation timestamp to attends to avoid edit race-conditions
- 
+
+ * Cleanup: Remove unused localization strings, styles and images
+ * Cleanup: Reorder and group localization strings
  * Cleanup: Merge redundant code paths
  * Cleanup: Dead code removal
- * Cleanup: Remove unused localization strings, styles and images
  * Performance: Improve queries by using more selectors
  * Performance: Minified script and CSS version
 
