@@ -10,8 +10,8 @@ Working version can be found in branches/0.9.8
 
 Working on
 
- * Cleanup: Remove unused localization strings, styles and images
- * Cleanup: Reorder and group localization strings
+ * Cleanup: Merge redundant code paths
+ * Cleanup: Dead code removal
 
 Done
 
@@ -27,6 +27,8 @@ Done
  * Add a possibility for raidleads to manually attend or remove users
  * Add a modifcation timestamp to attends to avoid edit race-conditions
  * Add an option to make any day the first day of the week
+ * Cleanup: Remove unused localization strings, styles and images
+ * Cleanup: Reorder and group localization strings
 
 ----
 
