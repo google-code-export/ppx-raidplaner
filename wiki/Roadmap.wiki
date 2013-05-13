@@ -73,6 +73,7 @@ ETA: N/A
 "Automation"
 
  * Messagehub generates JSON instead of XML
+ * Get rid of generated javascript to improve caching
  * API to allow read-only access for external applications (Issue #33)
  * Batch create raids (Issue #31)
  * Time based raid creation (Issue #31)
