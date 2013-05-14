@@ -22,7 +22,7 @@ Done
  * Fix character name UI (Issue #43)
  * User defined raid column layout (Issue #29)
  * Link detection in comments (Issue #45)
- * Separated "players on the bench" and "players raiding" more clearly
+ * Separated "players on the bench" and "players raiding" more clearly (Issue #30)
  * Fix duplicate element ids for raid sheet
  * Add a possibility for raidleads to manually attend or remove users
  * Add a modifcation timestamp to attends to avoid edit race-conditions
@@ -81,7 +81,7 @@ ETA: N/A
  * API to allow read-only access for external applications (Issue #33)
  * Batch create raids (Issue #31)
  * Time based raid creation (Issue #31)
- * Raid layout improvements (Issue #30)
+ * Raid layout improvements
  * Better portal integration (checking on an external, logged in user) (Issue #48)
  * Creating a new forum post when creating a new raid
 
