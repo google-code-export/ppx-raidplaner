@@ -10,8 +10,7 @@ Working version can be found in branches/0.9.8
 
 Working on
 
- * Cleanup: Merge redundant code paths
- * Cleanup: Dead code removal
+ * Performance: Improve queries by using more selectors
 
 Done
 
@@ -29,6 +28,9 @@ Done
  * Add an option to make any day the first day of the week
  * Cleanup: Remove unused localization strings, styles and images
  * Cleanup: Reorder and group localization strings
+ * Cleanup: Dead code removal
+ * Cleanup: Merge redundant code paths
+ * Cleanup: Consistent coding conventions
 
 ----
 
@@ -54,8 +56,8 @@ ETA: late Q2/early Q3 2013<br>
  * Cleanup: Reorder and group localization strings
  * Cleanup: Merge redundant code paths
  * Cleanup: Dead code removal
+ * Cleanup: Consistent coding conventions
  * Performance: Improve queries by using more selectors
- * Performance: Minified script and CSS version
 
 ----
  
@@ -66,6 +68,7 @@ ETA: max. 1-2 months after RC2<br>
 
  * Website and Forum
  * Tutorial videos
+ * Minified script and CSS version
  * Fixed all bugs tagged for release 1.0
  * Displaying 100% correctly on IE7+, Safari4+, Chrome, Firefox3.5+, Opera11+, iOS6 and Android2+ devices
 
