@@ -10,7 +10,7 @@ Working version can be found in branches/0.9.8
 
 Working on
 
- * Performance: Improve queries by using more selectors
+ * Testing and more code reviews
 
 Done
 
@@ -31,6 +31,7 @@ Done
  * Cleanup: Dead code removal
  * Cleanup: Merge redundant code paths
  * Cleanup: Consistent coding conventions
+ * Performance: Improve queries by using better selectors
 
 ----
 
@@ -57,7 +58,7 @@ ETA: late Q2/early Q3 2013<br>
  * Cleanup: Merge redundant code paths
  * Cleanup: Dead code removal
  * Cleanup: Consistent coding conventions
- * Performance: Improve queries by using more selectors
+ * Performance: Improve queries by using better selectors
 
 ----
  
