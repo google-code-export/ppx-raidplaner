@@ -17,6 +17,7 @@ Done
  * Full user sync (Issue #39)
  * Vanilla forum integration (Issue #41)
  * Joomla integration (Issue #48)
+ * Drupal integration
  * Default roles (Issue #28)
  * Fix character name UI (Issue #43)
  * User defined raid column layout (Issue #29)
@@ -43,6 +44,7 @@ ETA: late Q2/early Q3 2013<br>
  * Full user sync (Issue #39)
  * Vanilla forum integration (Issue #41)
  * Joomla integration (Issue #48)
+ * Drupal integration
  * Default roles (Issue #28)
  * Fix character name UI (Issue #43)
  * User defined raid column layout (Issue #29)
