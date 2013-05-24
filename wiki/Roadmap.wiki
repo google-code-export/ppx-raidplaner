@@ -108,6 +108,5 @@ ETA: N/A
 
 The following features can be described as "yeah, I would totally like to see those, but there are no concrete plans yet".<br>
 
- * Dark theme
- * Better integration into portal / content management systems
+ * More theme options
  * Moving raids
