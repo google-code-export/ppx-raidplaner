@@ -38,7 +38,7 @@ Done
 
 = Version 0.9.8 (RC2) or 1.0 (Release) = 
 
-ETA: late Q2/early Q3 2013<br>
+ETA: 27.5. (or in that week)<br>
 "Release candidate 2"
  
  * Full user sync (Issue #39)
@@ -66,14 +66,16 @@ ETA: late Q2/early Q3 2013<br>
  
 = Version 1.0 =
 
-ETA: max. 1-2 months after RC2<br>
+ETA: July/August<br>
 "Release"
+
+ * Messagehub generates JSON instead of XML
+ * Option to let local users register as members ("public mode")
+ * Option to not sync groups with external users ("classic mode")
+ * Minified script and CSS version
 
  * Website and Forum
  * Tutorial videos
- * Minified script and CSS version
- * Fixed all bugs tagged for release 1.0
- * Displaying 100% correctly on IE7+, Safari4+, Chrome, Firefox3.5+, Opera11+, iOS6 and Android2+ devices
 
 ----
 
@@ -82,9 +84,8 @@ ETA: max. 1-2 months after RC2<br>
 ETA: N/A
 "Automation"
 
- * Messagehub generates JSON instead of XML
  * Get rid of generated javascript to improve caching
- * API to allow read-only access for external applications (Issue #33)
+ * API to allow read-only access for external applications (Issue #33, Issue #49)
  * Batch create raids (Issue #31)
  * Time based raid creation (Issue #31)
  * Better portal integration (checking on an external, logged in user) (Issue #48)
@@ -97,7 +98,8 @@ ETA: N/A
 ETA: N/A
 "DKP and Events"
 
- * Events as "lightweight" raids for regular members
+ * Events as "lightweight" raids for regular members (Issue #34)
+ * An additional group for "pugs" (Issue #46)
  * Support for common loot distribution systems (DKP/NiKarma/MugKP)
 
 ----
