@@ -2,10 +2,6 @@
 
 == Version 0.9.8 (May 2013) ==
 
-Version 0.9.8 introduces removed and renamed many files. Almost every file was touched due to cleanup.
-So if you did any modifications to the codebase, grab yourself a good merge tool.<br>
-For all other users it is recommended to do a clean install, i.e. save your config files -> remove all files of your previous version -> copy the new version -> copy your old config files and run the update script.
-
  * *`[`New`]`* Vanilla forum integration (Issue #41)
  * *`[`New`]`* Joomla integration (Issue #48)
  * *`[`New`]`* Drupal integration
