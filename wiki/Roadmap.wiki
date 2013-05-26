@@ -5,62 +5,14 @@ Short todo list for upcoming versions.
 Items and timing may change.
 
 = Current status =
-Current repository version is 0.9.7b (pre).<br>
-Working version can be found in branches/0.9.8
+Current repository version is 0.9.8.<br>
+Working version can be found in branches/1.0.0
 
 Working on
 
- * Testing and more code reviews
+ * Bugfixes for 0.9.8a
 
 Done
-
- * Full user sync (Issue #39)
- * Vanilla forum integration (Issue #41)
- * Joomla integration (Issue #48)
- * Drupal integration
- * Default roles (Issue #28)
- * Fix character name UI (Issue #43)
- * User defined raid column layout (Issue #29)
- * Link detection in comments (Issue #45)
- * Separated "players on the bench" and "players raiding" more clearly (Issue #30)
- * Fix duplicate element ids for raid sheet
- * Add a possibility for raidleads to manually attend or remove users
- * Add a modifcation timestamp to attends to avoid edit race-conditions
- * Add an option to make any day the first day of the week
- * Cleanup: Remove unused localization strings, styles and images
- * Cleanup: Reorder and group localization strings
- * Cleanup: Dead code removal
- * Cleanup: Merge redundant code paths
- * Cleanup: Consistent coding conventions
- * Performance: Improve queries by using better selectors
-
-----
-
-= Version 0.9.8 (RC2) or 1.0 (Release) = 
-
-ETA: 27.5. (or in that week)<br>
-"Release candidate 2"
- 
- * Full user sync (Issue #39)
- * Vanilla forum integration (Issue #41)
- * Joomla integration (Issue #48)
- * Drupal integration
- * Default roles (Issue #28)
- * Fix character name UI (Issue #43)
- * User defined raid column layout (Issue #29)
- * Link detection in comments (Issue #45)
-
- * Fix duplicate element ids for raid sheet
- * Add an option to make any day the first day of the week
- * Add a possibility for raidleads to manually attend or remove users
- * Add a modifcation timestamp to attends to avoid edit race-conditions
-
- * Cleanup: Remove unused localization strings, styles and images
- * Cleanup: Reorder and group localization strings
- * Cleanup: Merge redundant code paths
- * Cleanup: Dead code removal
- * Cleanup: Consistent coding conventions
- * Performance: Improve queries by using better selectors
 
 ----
  
