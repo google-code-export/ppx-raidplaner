@@ -18,7 +18,7 @@ Done
  
 = Version 1.0 =
 
-ETA: July/August<br>
+ETA: August<br>
 "Release"
 
  * Messagehub generates JSON instead of XML
@@ -63,4 +63,4 @@ The following features can be described as "yeah, I would totally like to see th
 
  * More theme options
  * Moving raids
- * Replacing as many images as possible with CSS3 (and dump older browsers like IE7/8 in the process)
+ * Replace as many images as possible with CSS3 (and dump older browsers like IE7/8 in the process)
