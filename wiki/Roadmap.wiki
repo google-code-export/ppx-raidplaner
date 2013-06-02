@@ -10,9 +10,12 @@ Working version can be found in branches/1.0.0
 
 Working on
 
- * Bugfixes for 0.9.8a
+ * Bugfixes for 0.9.8b
+ * More tutorial videos
 
 Done
+
+  * Bugfixes for 0.9.8a
 
 ----
  
