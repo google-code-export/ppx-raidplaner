@@ -6,7 +6,7 @@ Items and timing may change.
 
 = Current status =
 Current repository version is 0.9.8.<br>
-Working version can be found in branches/1.0.0
+Working version will be placed in branches/1.0.0 once started
 
 Working on
 
