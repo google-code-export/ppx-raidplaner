@@ -28,6 +28,7 @@ ETA: August<br>
  * Settings for users in different timezones
  * Option to let local users register as members ("public mode")
  * Option to not sync groups with external users ("classic mode")
+ * Online help
  * Minified script and CSS version
 
  * Website and Forum
