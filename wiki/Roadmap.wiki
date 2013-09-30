@@ -20,6 +20,12 @@ Done
  * Class icon in character chooser (Issue #60)
 
 ----
+
+= Version 0.9.9 =
+
+Fallback version if "When its done" is not before mid/end of october.
+
+----
  
 = Version 1.0 =
 
