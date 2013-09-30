@@ -5,8 +5,7 @@ Short todo list for upcoming versions.
 Items and timing may change.
 
 = Current status =
-Current repository version is 0.9.8a + fixes.<br>
-Working version will be placed in branches/1.0.0 once started
+Current repository version is 0.9.8a + fixes.
 
 Working on
 
@@ -24,7 +23,7 @@ Done
  
 = Version 1.0 =
 
-ETA: August<br>
+ETA: "When its done"<br>
 "Release"
 
  * Messagehub generates JSON instead of XML
