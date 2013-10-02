@@ -19,6 +19,8 @@ Done
  * Class icon in character chooser (Issue #60)
  * Messagehub generates JSON instead of XML
  * 0.9.8 raid times converter
+ * Option to let local users register as members ("public mode")
+ * Option to not sync groups with external users ("classic mode")
 
 ----
 
