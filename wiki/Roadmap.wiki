@@ -9,11 +9,13 @@ Current repository version is 0.9.8a + fixes.
 
 Working on
 
+ * Bugs #62, #63, #65
  * Timezone manual overwrite and display
 
 Done
 
  * Bugfixes for 0.9.8a
+ * Bugs #58, #67, #70, #71
  * Timezone detection and correct display of times
  * Description text in raidview (Issue #59)
  * Class icon in character chooser (Issue #60)
