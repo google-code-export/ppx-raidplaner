@@ -18,6 +18,7 @@ Done
  * Timezone detection and correct display of times
  * Description text in raidview (Issue #59)
  * Class icon in character chooser (Issue #60)
+ * Messagehub generates JSON instead of XML
 
 ----
 
