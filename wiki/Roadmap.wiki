@@ -10,7 +10,6 @@ Current repository version is 0.9.8a + fixes.
 Working on
 
  * Timezone manual overwrite and display
- * 0.9.8 raid times converter
 
 Done
 
@@ -19,6 +18,7 @@ Done
  * Description text in raidview (Issue #59)
  * Class icon in character chooser (Issue #60)
  * Messagehub generates JSON instead of XML
+ * 0.9.8 raid times converter
 
 ----
 
