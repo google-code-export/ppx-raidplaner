@@ -28,7 +28,7 @@ Done
  
 = Version 1.0 =
 
-ETA: "When its done"<br>
+ETA: "When its done" (hopefully before the end of October)<br>
 "Release"
 
  * Messagehub generates JSON instead of XML
