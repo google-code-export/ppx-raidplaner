@@ -1,45 +1,19 @@
 #labels Featured
 = Screenshots =
 
-Although the language seen on the screenshots is german, the raidplaner will display all text in english (or any other supported language) depending on your browser's language.<br>
+Although the language seen on the screenshots is english, the raidplaner will display all text in the language set by your browser. Supported languages are english, german and french (as of 1.0.0).<br>
 
-= Version 0.9.7 =
+For screenshots prior to Version 1.0.0 see the BetaScreenshots page.
 
-http://www.packedpixel.de/raidplaner/screenshots/097newraid.png
-http://www.packedpixel.de/raidplaner/screenshots/097raidsetup.png
-http://www.packedpixel.de/raidplaner/screenshots/097absent.png
-http://www.packedpixel.de/raidplaner/screenshots/097register.png
-http://www.packedpixel.de/raidplaner/screenshots/097signup.png
-http://www.packedpixel.de/raidplaner/screenshots/097profile.png
-http://www.packedpixel.de/raidplaner/screenshots/097setup.png
+= Version 1.0.0 =
 
-= Version 0.9.6 =
-
-http://www.packedpixel.de/raidplaner/screenshots/raidlist096.png
-http://www.packedpixel.de/raidplaner/screenshots/raid096.png
-http://www.packedpixel.de/raidplaner/screenshots/raid096_2.png
-http://www.packedpixel.de/raidplaner/screenshots/absent096.png
-http://www.packedpixel.de/raidplaner/screenshots/raidsettings096.png
-http://www.packedpixel.de/raidplaner/screenshots/settings096.png
-
-= Version 0.9.5 =
-
-http://www.packedpixel.de/raidplaner/screenshots/theme_cata.png
-http://www.packedpixel.de/raidplaner/screenshots/theme_wotlk.png
-http://www.packedpixel.de/raidplaner/screenshots/theme_bc.png
-http://www.packedpixel.de/raidplaner/screenshots/theme_mop.png
-http://www.packedpixel.de/raidplaner/screenshots/raid_setup1.png
-http://www.packedpixel.de/raidplaner/screenshots/raid_setup2.png
-http://www.packedpixel.de/raidplaner/screenshots/monk.png
-http://www.packedpixel.de/raidplaner/screenshots/move_user.png
-
-= Version 0.9.4 =
-
-http://www.packedpixel.de/raidplaner/screenshots/profile.png
-http://www.packedpixel.de/raidplaner/screenshots/settings.png
-http://www.packedpixel.de/raidplaner/screenshots/settings2.png
-
-= Version 0.9 =
-
-http://www.packedpixel.de/raidplaner/screenshots/calendar.png
-http://www.packedpixel.de/raidplaner/screenshots/setup.png
+http://www.packedpixel.de/raidplaner/screenshots/100_login.jpg
+http://www.packedpixel.de/raidplaner/screenshots/100_register.jpg
+http://www.packedpixel.de/raidplaner/screenshots/100_profile.jpg
+http://www.packedpixel.de/raidplaner/screenshots/100_raid_create.jpg
+http://www.packedpixel.de/raidplaner/screenshots/100_raid_attend.jpg
+http://www.packedpixel.de/raidplaner/screenshots/100_raid_attend2.jpg
+http://www.packedpixel.de/raidplaner/screenshots/100_raid_setup2.jpg
+http://www.packedpixel.de/raidplaner/screenshots/100_raid_setup.jpg
+http://www.packedpixel.de/raidplaner/screenshots/100_users.jpg
+http://www.packedpixel.de/raidplaner/screenshots/100_raid_settings.jpg
