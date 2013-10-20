@@ -9,6 +9,7 @@
  * *`[`New`]`* Customizable help page button (Issue #42)
  * *`[`New`]`* New option to let local users register as members ("public mode")
  * *`[`New`]`* New option to not sync groups with external users ("classic mode")
+ * *`[`New`]`* Integrated french localization file
 
  * *`[`Mod`]`* Server communication now uses JSON instead of XML
  * *`[`Mod`]`* Page now loads one minified JS and CSS file by default
