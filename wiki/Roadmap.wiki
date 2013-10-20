@@ -9,13 +9,9 @@ Current repository version is 1.0.0.
 
 Working on
 
- * Waiting for french loca changes
- * Releasing 1.0.0
  * Forum and webpage
 
 Done
-
- * Site update
 
 ----
 
