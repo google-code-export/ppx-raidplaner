@@ -56,7 +56,7 @@ define("SCRIPT_DEBUG", true);
 
 }}}
 
-This will load each file separately. To load all files as one merged (but unoptimized) file, you need to change the loading code in the file index.php by switching comments to match the following:
+This will load each file separately. To load all files as one merged (but unoptimized) file, you need to change the loading code in the file index.php by switching comments. The result should look like this:
 
 {{{
 if (defined("SCRIPT_DEBUG") && SCRIPT_DEBUG)
