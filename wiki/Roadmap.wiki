@@ -5,43 +5,17 @@ Short todo list for upcoming versions.
 Items and timing may change.
 
 = Current status =
-Current repository version is 0.9.8a + fixes.
+Current repository version is 1.0.0.
 
 Working on
 
- * Testing and bugfixes
+ * Waiting for french loca changes
+ * Releasing 1.0.0
+ * Forum and webpage
 
 Done
 
- * Bugfixes for 0.9.8a
- * Bugfixes Issue #58, Issue #62, Issue #63, Issue #65, Issue #67, Issue #70, Issue #71
- * Timezone detection and correct display of times
- * Description text in raidview (Issue #59)
- * Class icon in character chooser (Issue #60)
- * Messagehub generates JSON instead of XML
- * 0.9.8 raid times converter
- * Option to let local users register as members ("public mode")
- * Option to not sync groups with external users ("classic mode")
- * Overbooking mode (Issue #64)
-
-----
- 
-= Version 1.0 =
-
-ETA: "When its done" (hopefully before the end of October)<br>
-"Release"
-
- * Messagehub generates JSON instead of XML
- * Settings for users in different timezones
- * Option to let local users register as members ("public mode")
- * Option to not sync groups with external users ("classic mode")
- * Online help (Issue #42)
- * Description text in raidview (Issue #59)
- * Class icon in character chooser (Issue #60)
- * Minified script and CSS version
-
- * Website and Forum
- * Tutorial videos
+ * Site update
 
 ----
 
