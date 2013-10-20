@@ -2,7 +2,7 @@
 
 == Version 1.0.0 (October 2013) ==
 
- * *`[`New`]`* Description text are now visible in the raid setup view (Issue #59)
+ * *`[`New`]`* Description text is now visible in the raid setup view (Issue #59)
  * *`[`New`]`* Class icons are being displayed in the character dropdown (Issue #60)
  * *`[`New`]`* New raidmode to allow overbooking with manual setup (Issue #64)
  * *`[`New`]`* Support for users in different timezones (Issue #61)
