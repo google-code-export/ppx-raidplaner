@@ -5,10 +5,10 @@
  * *`[`New`]`* Description text are now visible in the raid setup view (Issue #59)
  * *`[`New`]`* Class icons are being displayed in the character dropdown (Issue #60)
  * *`[`New`]`* New raidmode to allow overbooking with manual setup (Issue #64)
- * *`[`New`]`* New option to let local users register as members ("public mode")
- * *`[`New`]`* New option to not sync groups with external users ("classic mode")
  * *`[`New`]`* Support for users in different timezones (Issue #61)
  * *`[`New`]`* Customizable help page button (Issue #42)
+ * *`[`New`]`* New option to let local users register as members ("public mode")
+ * *`[`New`]`* New option to not sync groups with external users ("classic mode")
 
  * *`[`Mod`]`* Server communication now uses JSON instead of XML
  * *`[`Mod`]`* Page now loads one minified JS and CSS file by default
