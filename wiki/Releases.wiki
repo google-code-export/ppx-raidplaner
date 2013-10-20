@@ -1,5 +1,25 @@
 = Released versions =
 
+== Version 1.0.0 (October 2013) ==
+
+ * *`[`New`]`* Description text are now visible in the raid setup view (Issue #59)
+ * *`[`New`]`* Class icons are being displayed in the character dropdown (Issue #60)
+ * *`[`New`]`* New raidmode to allow overbooking with manual setup (Issue #64)
+ * *`[`New`]`* New option to let local users register as members ("public mode")
+ * *`[`New`]`* New option to not sync groups with external users ("classic mode")
+ * *`[`New`]`* Support for users in different timezones (Issue #61)
+ * *`[`New`]`* Customizable help page button (Issue #42)
+
+ * *`[`Mod`]`* Server communication now uses JSON instead of XML
+ * *`[`Mod`]`* Page now loads one minified JS and CSS file by default
+
+ * *`[`Fix`]`* Profile "more" button works as expected (Issue #58)
+ * *`[`Fix`]`* Main character displayed correctly when editing another user (Issue #71)
+ * *`[`Fix`]`* User comments are saved when forcing setup/unattend (Issue #63)
+ * *`[`Fix`]`* Icon indicator to show the number of undecided / absent players (Issue #65)
+ * *`[`Fix`]`* Deleting a user now properly clears all references to that user
+ * *`[`Fix`]`* Fixed binding errors with mybb and vanilla (Issue #67, Issue #70)
+
 == Version 0.9.8 (May 2013) ==
 
  * *`[`New`]`* Vanilla forum integration (Issue #41)
