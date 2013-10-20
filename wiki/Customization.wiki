@@ -45,6 +45,20 @@ When set to "_true_" this setting will move the raidplaner window to the top lef
 
 == Changes beyond theme files ==
 
+=== Modifying script files ===
+
+As of version 1.0.0 the raidplaner loads a unified, compiled javascript by default.
+This script is packed, so modifications are close to impossible.
+To use the separate script files included in every raidplaner installation, open the file "index.php" and change the line
+
+{{{ define("SCRIPT_DEBUG", false); }}}
+
+to
+
+{{{ define("SCRIPT_DEBUG", true); }}}
+
+=== CSS and image changes ===
+
 It is not recommended to do any changes that go beyond the standard theme mechanism.<br>
 If you however *do* want to modify other elements have a look at the folder "lib/layout". Here you will find stylesheets for each section of the raidplaner. All css files will be merged
 into a single file called "`_`layout.css.php". If you need to create any additional css file you should include it here.
