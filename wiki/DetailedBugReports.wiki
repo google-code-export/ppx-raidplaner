@@ -9,21 +9,18 @@ In this case I'm always glad about some extra data.
 The steps below work for Google Chrome, but Safari dev tools or Firefox/Firebug can be used, too (slightly different steps though).
 
  * In Chrome, open the dev tools _(menu -> tools -> developer tools, or ctrl+shift+i (win) / cmd+alt+i (mac))_
-
-http://www.packedpixel.de/raidplaner/tools.png
-
  * Switch to *"Network"*, Show only *"XHR"* (XML Http Requests) at the bottom
-
-http://www.packedpixel.de/raidplaner/xhr.png
-
  * Open the raidplaner, login, reproduce the problem
  * Check for an entry called *"messagehub.php"* choose the last entry in the list with that name
  * From *"headers"* I need the content of *"Form data"*
  * From *"response"* I need a copy of everything included (select all, copy, paste)
+ * If any javascript errors are reported (*"Console"* -> *"Errors"*) I need a copy/screenshot of those, too.
+
+http://www.packedpixel.de/raidplaner/tools.png
+
+http://www.packedpixel.de/raidplaner/xhr.png
 
 http://www.packedpixel.de/raidplaner/response.png
-
- * If any javascript errors are reported (*"Console"* -> *"Errors"*) I need a copy/screenshot of those, too.
 
 If you have access to the php.ini on your server it would be great to enable all errors before doing this:
 
