@@ -9,6 +9,7 @@ Current repository version is 1.0.0.
 
 Working on
 
+ * Fixes for 1.0.1
  * Forum and webpage
 
 Done
