@@ -5,7 +5,7 @@ Short todo list for upcoming versions.
 Items and timing may change.
 
 = Current status =
-Current repository version is 1.0.0.
+Current repository version is 1.0.0 + fixes.
 
 Working on
 
