@@ -4,6 +4,7 @@
 Although the language seen on the screenshots is english, the raidplaner will display all text in the language set by your browser. Supported languages are english, german and french (as of 1.0.0).<br>
 
 For screenshots prior to Version 1.0.0 see the BetaScreenshots page.
+There is a [http://www.youtube.com/watch?v=tp-ciKFpz7Y Tutorial Video], too.
 
 = Version 1.0.0 =
 
