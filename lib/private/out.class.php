@@ -98,29 +98,13 @@
             
             echo ($IsIndexedArray) ? ']' : '}';
         }
-        
-        // --------------------------------------------------------------------------------------------
-
-        public function flushXML($aTagName)
-        {        
-            $this->WriteXML($aTagName);
-            $this->Data = Array();
-        }
-        
-        // --------------------------------------------------------------------------------------------
-
-        public function writeXMLandStop($aTagName)
-        {
-            $this->WriteXML($aTagName);
-            die();           
-        }
 
         // --------------------------------------------------------------------------------------------
 
-        public function writeXML($aTagName, $aArray = null)
+        public function writeXML($aTagName = "MessageHub", $aArray = null)
         {
             $Root = ($aArray == null) ? $this->Data : $aArray;            
-            $IsIndexedArray = ($aTagName == "") || (($aArray != null) && $this->IsIndexed($Root));
+            $IsIndexedArray = $this->IsIndexed($Root);
             
             if (!$IsIndexedArray)
                 echo "<".$aTagName.">";
@@ -144,11 +128,11 @@
                 {
                     echo $Value;
                 }
-                else if (($Value === true) || ($Value == "true"))
+                else if ($Value === true)
                 {
                     echo 'true';
                 }
-                else if (($Value === false) || ($Value == "false"))
+                else if ($Value === false)
                 {
                     echo 'false';
                 }

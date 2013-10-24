@@ -296,7 +296,6 @@
         $gLocale[ "StrayRoles" ]               = "Ung&uuml;ltige Rollen";
         $gLocale[ "StrayCharacters" ]          = "Gel&ouml;schte Charaktere";
         $gLocale[ "StrayUsers" ]               = "Gel&ouml;schte Benutzer";
-        $gLocale[ "StrayBindings" ]            = "Ung&uuml;tige Benutzer";
         
         // Plugin setup
         $gLocale[ "LoadGroups" ]               = "Lade Gruppen mit den angegebenen Verbindungsdaten";
@@ -358,13 +357,6 @@
         $gLocale[ "DrupalConfigFile" ]         = "Drupal Konfigurationsdatei";
         $gLocale[ "DrupalDatabase" ]           = "Name der Drupal Datenbank";
         $gLocale[ "DrupalPasswordEmpty" ]      = "Drupal Datenbank Passwort darf nicht leer sein.";
-        $gLocale[ "DrupalDBPasswordsMatch" ]   = "Drupal Datenbank-Passw&ouml;rter stimmen nicht &uuml;berein.";      
-        
-        // Wordpress
-        $gLocale[ "WpBinding" ]                = "Wordpress";
-        $gLocale[ "WpConfigFile" ]             = "Wordpress Konfigurationsdatei";
-        $gLocale[ "WpDatabase" ]               = "Name der Wordpress Datenbank";
-        $gLocale[ "WpPasswordEmpty" ]          = "Wordpress Datenbank Passwort darf nicht leer sein.";
-        $gLocale[ "WpDBPasswordsMatch" ]       = "Wordpress Datenbank-Passw&ouml;rter stimmen nicht &uuml;berein.";
+        $gLocale[ "DrupalDBPasswordsMatch" ]   = "Drupal Datenbank-Passw&ouml;rter stimmen nicht &uuml;berein.";
     }
 ?>

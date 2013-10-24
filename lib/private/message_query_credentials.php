@@ -19,9 +19,9 @@ function msgQueryCredentials( $aRequest )
 
 // -----------------------------------------------------------------------------
 
-function msgQueryLocalCredentialsById( $aRequest )
+function msgQueryCredentialsById( $aRequest )
 {
-    $Credentials = UserProxy::getInstance()->getUserCredentialsById($aRequest["UserId"], "none");
+    $Credentials = UserProxy::getInstance()->getUserCredentialsById($aRequest["UserId"]);
     $Out = Out::getInstance();
         
     if ($Credentials == null )

@@ -411,13 +411,12 @@
         
         // --------------------------------------------------------------------------------------------
 
-        public function getUserCredentialsById( $aUserId, $aBindingName )
+        public function getUserCredentialsById( $aUserId )
         {
             // Iterate all bindings and search for the given user
             
-            if (isset(self::$mBindingsByName[$aBindingName]))
+            foreach( self::$mBindings as $Binding )
             {
-                $Binding = self::$mBindingsByName[$aBindingName];
                 if ( $Binding->isActive() )
                 {                    
                     $UserInfo    = $Binding->getUserInfoById($aUserId);
@@ -449,7 +448,7 @@
         
         // --------------------------------------------------------------------------------------------
 
-        public static function getAllUserInfosById( $aExternalId )
+        public function getAllUserInfosById( $aExternalId )
         {
             $Candidates = array();
             
@@ -736,7 +735,6 @@
         
         public function updateUserMirror( &$UserInfo, $aIsStoredLocally, $aKey )
         {   
-            $Out = Out::getInstance();
             $Connector = Connector::getInstance();
                  
             if ($UserInfo->BindingName == "none")
@@ -753,25 +751,18 @@
             {
                 if ( $aIsStoredLocally )
                 {
-                    if (!isset(self::$mBindingsByName[$UserInfo->PassBinding]))
+                    $Binding = self::$mBindingsByName[$UserInfo->PassBinding];
+                    
+                    if ($Binding->isActive())
                     {
-                        $Out->pushError($UserInfo->PassBinding." binding did not register correctly.");
+                        $ExternalInfo = $Binding->getUserInfoById($UserInfo->UserId);
+                        if ( $ExternalInfo != null )
+                            $UserInfo = $ExternalInfo;
+                    
                     }
                     else
                     {
-                        $Binding = self::$mBindingsByName[$UserInfo->PassBinding];
-                        
-                        if ($Binding->isActive())
-                        {
-                            $ExternalInfo = $Binding->getUserInfoById($UserInfo->UserId);
-                            if ( $ExternalInfo != null )
-                                $UserInfo = $ExternalInfo;
-                        
-                        }
-                        else
-                        {
-                            $Out->pushError($UserInfo->PassBinding." binding has been disabled.");
-                        }
+                        Out::getInstance()->pushError($UserInfo->PassBinding." binding has been disabled.");
                     }
                 }
                 
