@@ -1,5 +1,39 @@
 = Released versions =
 
+== Patch 1.0.2 ==
+
+ * *`[`New`]`* Polish localization
+ * *`[`New`]`* Siege of Orgrimmar icons
+
+ * *`[`Mod`]`* Classes and roles moved to the top of localizations
+ * *`[`Mod`]`* All loca-strings are now UTF8 (Issue #79)
+
+ * *`[`Fix`]`* Fixes a wrong date calculation at the end of certain months (Issue #84)
+ * *`[`Fix`]`* Players won't show up in lists for dates before their first registration (Issue #89)
+ * *`[`Fix`]`* Default message when setting a player to absent (Issue #86)
+ * *`[`Fix`]`* Log message when switching a character (Issue #88)
+ * *`[`Fix`]`* Statistics overview now match the statistics of a single player (Issue #86)
+ * *`[`Fix`]`* Improved setup checks (Issue #80, Issue #82)
+ * *`[`Fix`]`* All pages have a proper UTF8 header (Issue #79)
+
+
+== Patch 1.0.1 ==
+
+ * *`[`New`]`* Wordpress binding
+
+ * *`[`Mod`]`* Extended the repair tool support (Issue #72)
+ * *`[`Mod`]`* Slackers icon now shows only the number of absent people (Issue #75)
+
+ * *`[`Fix`]`* Fixes a "Warning: mktime() [...]" problem with newer PHP versions (Issue #72)
+ * *`[`Fix`]`* Checks during setup now work properly again (Issue #73)
+ * *`[`Fix`]`* Fixes a display error in months with DST switches (Issue #77)
+ * *`[`Fix`]`* Proper escaping when entering comments (Issue #76)
+ * *`[`Fix`]`* Statistics bars are displayed correctly when showing a scrollbar (Issue #78)
+ * *`[`Fix`]`* Clearer error messages when bindings cannot be used
+ * *`[`Fix`]`* The first user of a group can now be unlinked, too
+ * *`[`Fix`]`* Error messages are now displayed correctly, even when no JSON error occured
+ * *`[`Fix`]`* Theme parsing errors are now properly reported
+
 == Version 1.0.0 (October 2013) ==
 
  * *`[`New`]`* Description text is now visible in the raid setup view (Issue #59)
