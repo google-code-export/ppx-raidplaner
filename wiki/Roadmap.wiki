@@ -5,12 +5,11 @@ Short todo list for upcoming versions.
 Items and timing may change.
 
 = Current status =
-Current repository version is 1.0.0 + fixes.
+Current repository version is 1.0.2 + fixes.
 
 Working on
 
  * Fixes for 1.0.3
- * Tutorial
 
 Done
 
