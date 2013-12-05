@@ -9,13 +9,14 @@ Current repository version is 1.0.0 + fixes.
 
 Working on
 
- * Fixes for 1.0.2
+ * Fixes for 1.0.3
  * Tutorial
 
 Done
 
  * Forum
  * Fixes for 1.0.1
+ * Fixes for 1.0.2
 
 ----
 
@@ -30,6 +31,7 @@ ETA: N/A
  * Time based raid creation (Issue #31)
  * Better portal integration (checking on an external, logged in user) (Issue #48)
  * Creating a new forum post when creating a new raid
+ * "Ghost mode" to view secondary roles directly in the raid view
 
 ----
 
@@ -42,6 +44,7 @@ ETA: N/A
  * An additional group for "pugs" (Issue #46)
  * Support for common loot distribution systems (DKP/NiKarma/MugKP)
  * Log for raidlead changes
+ * Allow an alternative class system (Jobs like in FFXIV)
 
 ----
 
