@@ -10,6 +10,7 @@ Current repository version is 1.0.2 + fixes.
 Working on
 
  * Fixes for 1.0.3
+ * Get rid of generated javascript to improve caching
 
 Done
 
@@ -25,6 +26,7 @@ ETA: N/A
 "Automation"
 
  * Get rid of generated javascript to improve caching
+ * Improve binding setup code
  * API to allow read-only access for external applications (Issue #33, Issue #49)
  * Batch create raids (Issue #31)
  * Time based raid creation (Issue #31)
