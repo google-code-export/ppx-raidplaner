@@ -10,13 +10,14 @@ Current repository version is 1.0.2 + fixes.
 Working on
 
  * Fixes for 1.0.3
- * Get rid of generated javascript to improve caching
+ * Improve binding setup code
 
 Done
 
  * Forum
  * Fixes for 1.0.1
  * Fixes for 1.0.2
+ * Get rid of generated javascript to improve caching
 
 ----
 
