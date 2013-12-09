@@ -10,7 +10,7 @@ Current repository version is 1.0.2 + fixes.
 Working on
 
  * Fixes for 1.0.3
- * [1.1] Improve binding setup code
+ * Better portal integration (checking on an external, logged in user) (Issue #48)
 
 Done
 
@@ -19,6 +19,7 @@ Done
  * Fixes for 1.0.2
  * [1.1] Get rid of generated javascript to improve caching
  * [1.1] Use jQuery 2.0 and ditch older browsers (<IE9, <FF4, <OP13)
+ * [1.1] Improve binding setup code
 
 ----
 
