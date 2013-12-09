@@ -10,7 +10,7 @@ Current repository version is 1.0.2 + fixes.
 Working on
 
  * Fixes for 1.0.3
- * Better portal integration (checking on an external, logged in user) (Issue #48)
+ * [1.1] Better portal integration (checking on an external, logged in user) (Issue #48)
 
 Done
 
