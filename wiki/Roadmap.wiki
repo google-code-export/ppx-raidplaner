@@ -10,7 +10,7 @@ Current repository version is 1.0.2 + fixes.
 Working on
 
  * Fixes for 1.0.3
- * [1.1] Better portal integration (checking on an external, logged in user) (Issue #48)
+ * [1.1] Automatic binding configuration
 
 Done
 
@@ -20,6 +20,7 @@ Done
  * [1.1] Get rid of generated javascript to improve caching
  * [1.1] Use jQuery 2.0 and ditch older browsers (<IE9, <FF4, <OP13)
  * [1.1] Improve binding setup code
+ * [1.1] Better portal integration (checking on an external, logged in user) (Issue #48)
 
 ----
 
@@ -30,12 +31,13 @@ ETA: N/A
 
  * Get rid of generated javascript to improve caching
  * Improve binding setup code
+ * Better portal integration (checking on an external, logged in user) (Issue #48)
  * API to allow read-only access for external applications (Issue #33, Issue #49)
  * Batch create raids (Issue #31)
  * Time based raid creation (Issue #31)
- * Better portal integration (checking on an external, logged in user) (Issue #48)
  * Creating a new forum post when creating a new raid
  * "Ghost mode" to view secondary roles directly in the raid view
+ * Allow an alternative class system (Jobs like in FFXIV)
 
 ----
 
@@ -48,7 +50,6 @@ ETA: N/A
  * An additional group for "pugs" (Issue #46)
  * Support for common loot distribution systems (DKP/NiKarma/MugKP)
  * Log for raidlead changes
- * Allow an alternative class system (Jobs like in FFXIV)
 
 ----
 
