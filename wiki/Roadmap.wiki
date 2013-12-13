@@ -50,6 +50,7 @@ ETA: N/A
  * An additional group for "pugs" (Issue #46)
  * Support for common loot distribution systems (DKP/NiKarma/MugKP)
  * Log for raidlead changes
+ * Get rid of mcrypt support / db-backed session handling
 
 ----
 
