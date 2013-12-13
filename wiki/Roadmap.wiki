@@ -10,7 +10,7 @@ Current repository version is 1.0.2 + fixes.
 Working on
 
  * Fixes for 1.0.3
- * [1.1] Automatic binding configuration
+ * [1.1] Semi-automatic binding configuration
 
 Done
 
@@ -50,7 +50,7 @@ ETA: N/A
  * An additional group for "pugs" (Issue #46)
  * Support for common loot distribution systems (DKP/NiKarma/MugKP)
  * Log for raidlead changes
- * Get rid of mcrypt support / db-backed session handling
+ * Get rid of mcrypt requirement / db-backed session handling
 
 ----
 
