@@ -10,7 +10,7 @@ Current repository version is 1.0.2 + fixes.
 Working on
 
  * Fixes for 1.0.3
- * [1.1] Semi-automatic binding configuration
+ * [1.1] Batch create raids (Issue #31)
 
 Done
 
@@ -21,7 +21,8 @@ Done
  * [1.1] Use jQuery 2.0 and ditch older browsers (<IE9, <FF4, <OP13)
  * [1.1] Improve binding setup code
  * [1.1] Better portal integration (checking on an external, logged in user) (Issue #48)
-
+ * [1.1] Semi-automatic binding configuration
+ 
 ----
 
 = Version 1.1 =
@@ -32,9 +33,9 @@ ETA: N/A
  * Get rid of generated javascript to improve caching
  * Improve binding setup code
  * Better portal integration (checking on an external, logged in user) (Issue #48)
- * API to allow read-only access for external applications (Issue #33, Issue #49)
  * Batch create raids (Issue #31)
  * Time based raid creation (Issue #31)
+ * API to allow read-only access for external applications (Issue #33, Issue #49)
  * Creating a new forum post when creating a new raid
  * "Ghost mode" to view secondary roles directly in the raid view
  * Allow an alternative class system (Jobs like in FFXIV)
