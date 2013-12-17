@@ -10,7 +10,6 @@ Current repository version is 1.0.2 + fixes.
 Working on
 
  * Fixes for 1.0.3
- * [1.1] Time based raid creation (Issue #31)
  * [1.1] Vacation settings / user settings
 
 Done
@@ -24,6 +23,7 @@ Done
  * [1.1] Better portal integration (checking on an external, logged in user) (Issue #48)
  * [1.1] Semi-automatic binding configuration
  * [1.1] Batch create raids (Issue #31)
+ * [1.1] ~~ Time based raid creation (Issue #31) ~~  dropped because of too many side effects
  
 ----
 
@@ -36,7 +36,7 @@ ETA: N/A
  * Improve binding setup code
  * Better portal integration (checking on an external, logged in user) (Issue #48)
  * Batch create raids (Issue #31)
- * Time based raid creation (Issue #31)
+ * ~~ Time based raid creation (Issue #31) ~~  dropped because of too many side effects
  * Vacation settings / user settings
  * API to allow read-only access for external applications (Issue #33, Issue #49)
  * Creating a new forum post when creating a new raid
