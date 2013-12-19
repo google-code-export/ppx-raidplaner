@@ -24,7 +24,7 @@ Done
  * [1.1] Better portal integration (checking on an external, logged in user) (Issue #48)
  * [1.1] Semi-automatic binding configuration
  * [1.1] Batch create raids (Issue #31)
- * [1.1] ~~Time based raid creation (Issue #31)~~ dropped because of too many side effects and redundancy to batch creation
+ * [1.1] ~~Time based raid creation (Issue #31)~~ _dropped because of too many side effects and redundancy to batch creation_
  * [1.1] Vacation settings / user settings
  
 ----
@@ -38,7 +38,7 @@ ETA: N/A
  * Improve binding setup code
  * Better portal integration (checking on an external, logged in user) (Issue #48)
  * Batch create raids (Issue #31)
- * ~~Time based raid creation (Issue #31)~~ dropped because of too many side effects and redundancy to batch creation
+ * ~~Time based raid creation (Issue #31)~~ _dropped because of too many side effects and redundancy to batch creation_
  * Vacation settings / user settings
  * Creating a new forum post when creating a new raid
  * "Ghost mode" to view secondary roles directly in the raid view
