@@ -10,8 +10,7 @@ Current repository version is 1.0.2 + fixes.
 Working on
 
  * Fixes for 1.0.3
- * Theme extensions (randomizer, disable logout)
- * Creating a new forum post when creating a new raid
+ * [1.1] Allow an alternative class system (Jobs like in FFXIV)
 
 Done
 
@@ -26,6 +25,8 @@ Done
  * [1.1] Batch create raids (Issue #31)
  * [1.1] ~~Time based raid creation (Issue #31)~~ _dropped because of too many side effects and redundancy to batch creation_
  * [1.1] Vacation settings / user settings
+ * [1.1] Theme extensions (randomizer, disable logout)
+ * [1.1] Creating a new forum post when creating a new raid
  
 ----
 
