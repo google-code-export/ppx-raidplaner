@@ -1,5 +1,16 @@
 = Released versions =
 
+== Patch 1.0.3 ==
+
+ * *`[`Fix`]`* Empty roles are allowed now (Issue #90)
+ * *`[`Fix`]`* Fixes the count of undecided members in settings view (Issue #92)
+ * *`[`Fix`]`* Raidplaner cookies are now path based to allow multiple instances on one server (Issue #93)
+ * *`[`Fix`]`* Fixed several issues with attending raids under certain conditions (Issue #96, Issue #95)
+ * *`[`Fix`]`* Fixed update check hanging
+ * *`[`Fix`]`* Comments now detect https links as clickable, too
+ * *`[`Fix`]`* Proper JSON escaping of certain characters
+ * *`[`Fix`]`* Minor localization fixes
+
 == Patch 1.0.2 ==
 
  * *`[`New`]`* Polish localization
